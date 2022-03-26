@@ -148,7 +148,11 @@ nav .dropdown ul {
   background-color: rgb(255 255 255 / 66%);
 }
 
-
+#diagnostic,
+#coordination,
+#virtual{
+  padding: 0px;
+}
 
 .mentalHealth div.row, 
 .coordinationCare div.row,
