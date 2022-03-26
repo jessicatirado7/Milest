@@ -38,9 +38,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
-    // Activate SimpleLightbox plugin for portfolio items
-    new SimpleLightbox({
-        elements: '#portfolio a.portfolio-box'
+    $('.navbar-collapse a').click(function(){
+        $(".navbar-collapse").collapse('hide');
     });
-
 });
