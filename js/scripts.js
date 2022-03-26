@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
-    $('.navbar-collapse a').click(function(){
+    $('.navbar-collapse a:not(.dropdown-toggle)').click(function(){
         $(".navbar-collapse").collapse('hide');
     });
 });
