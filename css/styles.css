@@ -487,6 +487,11 @@ section.circleInfo {
   .masthead .container-fluid {
     margin-top:25%
   }
+
+  div.row.servicesInfo {
+    padding: 0px;
+  }
+
   .team .rachel {
     margin-top:10% !important;
   }
@@ -494,10 +499,15 @@ section.circleInfo {
     margin-top: 25%;
   }
 
+  .paymentInfo, .ratesInfo, .schedulingInfo {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+
   .paymentInfo .container , .ratesInfo .container, .schedulingInfo .container{
     flex-direction: column;
     width: 100%;
-    margin: 0 20px;
+    margin:20px auto;
   }
 
   .paymentImg, .ratesImg, .schedulingImg {
@@ -507,6 +517,10 @@ section.circleInfo {
 
   .paymentImg, .schedulingImg {
     margin-top: 25px;
+  }
+
+  .paymentList, .ratesList, .schedulingList {
+    padding:20px;
   }
 
   .paymentList, .schedulingList {
