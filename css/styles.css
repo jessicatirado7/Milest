@@ -122,7 +122,6 @@ nav .dropdown ul {
   background: linear-gradient(to bottom, rgb(255 255 255 / 80%)  0%, rgb(182 203 193) 100%), url(../assets/img/portfolio/thumbnails/childrenplaying.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -11905,7 +11904,6 @@ header.masthead {
   background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/family-6475821_1920.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
