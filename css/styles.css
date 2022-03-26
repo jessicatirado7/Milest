@@ -148,29 +148,7 @@ nav .dropdown ul {
   background-color: rgb(255 255 255 / 66%);
 }
 
-.mentalHealth div.row div.row,
-.coordinationCare div.row div.row,
-.virtualTherapy div.row div.row,
-.mentalHealthTherapy div.row div.row,
-.groupTherapy div.row div.row {
-  padding:0px;
-}
 
-.mentalHealth div.row div.row .collapse,
-.coordinationCare div.row div.row .collapse,
-.virtualTherapy div.row div.row .collapse,
-.mentalHealthTherapy div.row div.row .collapse,
-.groupTherapy div.row div.row .collapse {
-  padding:0px;
-}
-
-.mentalHealth div.row div.row .collapse .card-body,
-.coordinationCare div.row div.row .collapse .card-body,
-.virtualTherapy div.row div.row .collapse .card-body,
-.mentalHealthTherapy div.row div.row .collapse .card-body,
-.groupTherapy div.row div.row .collapse .card-body {
-  padding:0px;
-}
 
 .mentalHealth div.row, 
 .coordinationCare div.row,
@@ -5048,7 +5026,7 @@ textarea.form-control-lg {
 
 .card-body {
   flex: 1 1 auto;
-  padding: 1rem 1rem;
+
 }
 
 .card-title {
