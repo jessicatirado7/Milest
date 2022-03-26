@@ -126,6 +126,8 @@ nav .dropdown ul {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
 
 .services .row h3 {
@@ -11909,6 +11911,8 @@ header.masthead {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
