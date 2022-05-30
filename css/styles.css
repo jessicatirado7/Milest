@@ -113,13 +113,11 @@ nav .dropdown ul {
   margin-bottom: 50px;
 }
 
-#services {
-  padding: 4rem 0;
-}
 .services {
-  padding-top: 5rem;
-  padding-bottom: calc(10rem - 4.5rem);
+  padding-top: 7rem;
+  padding-bottom: 10rem;
   background: linear-gradient(to bottom, rgb(255 255 255 / 80%)  0%, rgb(182 203 193) 100%), url(../assets/img/portfolio/thumbnails/childrenplaying.jpg);
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -140,6 +138,9 @@ nav .dropdown ul {
   padding: 0px 25px ;
 }
 
+#portfolio {
+  padding-bottom: 7rem;
+}
 .mentalHealth, .coordinationCare, .virtualTherapy,
 .mentalHealthTherapy, .groupTherapy {
   border-radius: 10px;
@@ -506,6 +507,28 @@ section.careerInfo {
 address {
  font-size: .85em;
 }
+
+.secondFooter {
+  font-size: .75em;
+}
+
+.secondFooter p {
+  margin: 0;
+}
+
+.secondFooter ,
+.secondFooter a {
+  background-color: #5a5959;
+  color: #adadad;
+}
+
+.secondFooter a {
+  text-decoration: none;
+}
+.secondFooter a:hover {
+  color:white;
+}
+
 
 @media only screen and (max-width: 991px) {
   .dropdown-item {
