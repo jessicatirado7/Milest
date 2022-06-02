@@ -113,6 +113,35 @@ nav .dropdown ul {
   margin-bottom: 50px;
 }
 
+.imgFamily {
+  border-radius: 8px;
+}
+
+.weTreatRow {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+    align-items: center;
+}
+
+.treatList li{
+  list-style: none;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+    align-items: center;
+}
+
+.treatList li i {
+  font-size: 1.5rem;
+  color: #6e9aaa;
+  padding-right: 10px;
+}
+
 .services {
   padding-top: 7rem;
   padding-bottom: 10rem;
@@ -136,6 +165,18 @@ nav .dropdown ul {
 
 .services .container .row{
   padding: 0px 25px ;
+}
+
+.serviceImg {
+  border-radius: 8px;
+  margin: 0px 10px;
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.serviceImg:hover {
+  
+  transform: translateY(-8px);
 }
 
 #portfolio {
