@@ -115,6 +115,13 @@ nav .dropdown ul {
 
 .imgFamily {
   border-radius: 8px;
+  transition-duration: .3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+
+.imgFamily:hover {
+  transform: translateY(-8px);
 }
 
 .weTreatRow {
