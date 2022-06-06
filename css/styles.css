@@ -167,15 +167,17 @@ nav .dropdown ul {
   padding: 0px 25px ;
 }
 
-.serviceImg {
+.mentalHealthPic {
+  background: url(/assets/img/portfolio/thumbnails/Momhuggingchild.jpg);
   border-radius: 8px;
-  margin: 0px 10px;
-    transition-duration: .3s;
-    transition-property: transform;
-    transition-timing-function: ease-out;
 }
-.serviceImg:hover {
-  
+
+.serviceImg {
+  transition-duration: .3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.serviceImg:hover { 
   transform: translateY(-8px);
 }
 
