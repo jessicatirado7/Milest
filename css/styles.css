@@ -295,12 +295,8 @@ nav .dropdown ul {
   margin:50px 0px;
 }
 .payment {
-  /*background-color: #97b7c2;*/
+  background-color: #97b7c2;
   padding: 4rem;
-}
-
-.payment h2 {
-  color:black;
 }
 
 .payment .card {
@@ -362,11 +358,7 @@ nav .dropdown ul {
 }
 
 .team {
-  /*background-color: #b6cbc1;*/
-}
-
-.team h2 {
-  color:black;
+  background-color: #b6cbc1;
 }
 
 .team .container hr {
