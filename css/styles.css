@@ -223,9 +223,7 @@ nav .dropdown ul {
   transform: translateY(-8px);
 }
 
-#portfolio {
-  padding-bottom: 7rem;
-}
+
 .mentalHealth, .coordinationCare, .virtualTherapy,
 .mentalHealthTherapy, .groupTherapy {
   border-radius: 10px;
@@ -737,7 +735,7 @@ address {
 
   }
 
-  #traumaLink , #childEmo, #attachmentFamily {
+  #traumaLink , #childEmo, #attachmentFamily, #perinatalWoman {
     margin-right: 0px;
     margin-left: 0px;
   }
