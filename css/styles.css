@@ -297,8 +297,12 @@ nav .dropdown ul {
   margin:50px 0px;
 }
 .payment {
-  background-color: #97b7c2;
+  /*background-color: #97b7c2;*/
   padding: 4rem;
+}
+
+.payment h2 {
+  color:black;
 }
 
 .payment .card {
@@ -360,7 +364,11 @@ nav .dropdown ul {
 }
 
 .team {
-  background-color: #b6cbc1;
+  /*background-color: #b6cbc1;*/
+}
+
+.team h2 {
+  color:black;
 }
 
 .team .container hr {
@@ -378,6 +386,14 @@ nav .dropdown ul {
 .team .card img {
   max-width: 80%;
   height:auto;
+  border-radius: 8px;
+  transition-duration: .3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+
+.team .card img:hover {
+  transform: translateY(-8px);
 }
 
 .team .card-img-overlay {
