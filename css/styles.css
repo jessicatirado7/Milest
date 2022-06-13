@@ -240,7 +240,6 @@ nav .dropdown ul {
 
 .mentalHealth div.row, 
 .coordinationCare div.row,
-.virtualTherapy div.row,
 .mentalHealthTherapy div.row,
 .groupTherapy div.row {
   justify-content: center;
@@ -742,6 +741,23 @@ address {
   .mentalHealthTherapy,
   .groupTherapy {
     margin-bottom: 25px;
+  }
+
+  .weTreatRow,
+  .serviceFlex{
+    flex-direction: column-reverse;
+  }
+
+  .mentalHealthPic,
+  .consultationPic,
+  .virtualPic,
+  .familytherapyPic,
+  .couplesPic {
+	  --bs-gutter-x: 0 !important;
+  }
+
+  .virtualTherapy {
+    margin-left:0px !important;
   }
 }
 
