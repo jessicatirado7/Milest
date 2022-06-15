@@ -174,7 +174,7 @@ nav .dropdown ul {
   padding: 0px 25px ;
 }
 
-.serviceTitle {
+#services > div > div.row {
   justify-content: center;
 }
 
