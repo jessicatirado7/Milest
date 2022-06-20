@@ -3693,7 +3693,7 @@ textarea.form-control-lg {
 
 .btn {
   display: inline-block;
-  font-family: 'Cinzel', serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -3731,13 +3731,13 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #b6cbc1;
-  border-color: #b6cbc1;
+  background-color: #a2b4ab;
+  border-color: #a2b4ab;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #a2b4ab;
-  border-color:#a2b4ab;
+  background-color: #87958e;
+  border-color:#87958e;
   ;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
@@ -12006,7 +12006,6 @@ body {
 .btn-xl {
   padding: 1.25rem 2.25rem;
   font-size: 0.85rem;
-  font-weight: 700;
   text-transform: uppercase;
   border: none;
   border-radius: 10rem;
