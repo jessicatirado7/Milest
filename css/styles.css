@@ -10,10 +10,6 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-
- /* 
- Theme was updated by JVT Design Studios for Milestone Mental Health
- */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -176,10 +172,6 @@ nav .dropdown ul {
 
 .services .container .row{
   padding: 0px 25px ;
-}
-
-#services > div > div.row {
-  justify-content: center;
 }
 
 .mentalHealthPic {
@@ -400,7 +392,7 @@ nav .dropdown ul {
 }
 
 .team .card-img-overlay p {
-  background-color: #5392a9;
+  background-color: #6e9aaa;
   color: white;
   padding: 25px;
   margin:0px;
@@ -937,7 +929,7 @@ sup {
 }
 
 a {
-  color:#001e28;
+  color:#0d6581;
   text-decoration: underline;
 }
 a:hover {
@@ -3189,8 +3181,6 @@ textarea.form-control-lg {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  -webkit-print-color-adjust: exact;
-          color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -3695,7 +3685,7 @@ textarea.form-control-lg {
 
 .btn {
   display: inline-block;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Cinzel', serif;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -3733,13 +3723,13 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #a2b4ab;
-  border-color: #a2b4ab;
+  background-color: #b6cbc1;
+  border-color: #b6cbc1;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #87958e;
-  border-color:#87958e;
+  background-color: #a2b4ab;
+  border-color:#a2b4ab;
   ;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
@@ -12008,6 +11998,7 @@ body {
 .btn-xl {
   padding: 1.25rem 2.25rem;
   font-size: 0.85rem;
+  font-weight: 700;
   text-transform: uppercase;
   border: none;
   border-radius: 10rem;
@@ -12104,7 +12095,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgb(116 159 138 / 80%)  0%, rgba(151, 183, 194, 0.8) 100%), url(../assets/img/family-6475821_1920.jpg);
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/family-6475821_1920.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

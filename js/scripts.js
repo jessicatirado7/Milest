@@ -42,5 +42,12 @@ window.addEventListener('DOMContentLoaded', event => {
 
     //AOS
     AOS.init();
+
+    function refreshForm() {
+        
+    }
+
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', refreshForm);
     
 });
