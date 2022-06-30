@@ -20,14 +20,8 @@
         <!--AOS CSS-->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+        <!--reCaptcha-->
         <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdmDqUgAAAAABEl-To0vZeda1lHAEtTqadCrYJe"></script>
-        <script>
-            grecaptcha.enterprise.ready(function() {
-                grecaptcha.enterprise.execute('6LdmDqUgAAAAABEl-To0vZeda1lHAEtTqadCrYJe', {action: 'login'}).then(function(token) {
-                ...
-                });
-            });
-        </script>
         <script>
             function onSubmit(token) {
               document.getElementById("contactForm").submit();
@@ -430,7 +424,7 @@
                     <div data-aos="zoom-in-up" class="col-lg-4 card rachel">
                         <img src="assets/img/portfolio/thumbnails/rachel.jpg" alt="Rachel"/>
                         <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
-                          <p  class="card-title text-left">Rachel Milan, MA, LMFT
+                          <p  class="card-title text-left">Rachel Milan, MA, LMFT, PMH-C, IMH-E®
                           <br>
                               <span class="card-subtitle mb-2 text-muted">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#rachelModal">Read more...</a>
@@ -485,7 +479,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                     <div  class="col-lg-6">
                         <form action="https://getform.io/f/794fad1f-e20c-4c3e-9801-231235d68605" method="POST" data-aos="zoom-in-up" id="contactForm">
-                            <div class="g-recaptcha" data-sitekey="6LdmDqUgAAAAABEl-To0vZeda1lHAEtTqadCrYJe">
+                            <div>
                                <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" name="name"/>
                                 <label for="name">Name</label>
@@ -604,7 +598,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="rachelModalLabel">Rachel Milan, MN, LMFT</h5>
+                        <h5 class="modal-title" id="rachelModalLabel">Rachel Milan, MA, LMFT, PMH-C, IMH-E®</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
