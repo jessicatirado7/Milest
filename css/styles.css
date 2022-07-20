@@ -627,6 +627,25 @@ section.careerInfo {
   padding-bottom: 0;
 }
 
+/*404 Error*/
+
+.heading404 {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/404error.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.heading404 {
+  height: 100vh;
+  min-height: 40rem;
+  padding-top: 4.5rem;
+  padding-bottom: 0;
+}
+
 /*footer*/
 
 address {
