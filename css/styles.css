@@ -678,7 +678,8 @@ address {
   .dropdown-item {
     color: #212529 !important;
   }
-  .masthead .container-fluid {
+  .masthead .container-fluid,
+  .masthead-form .container-fluid  {
     margin-top:25%
   }
 
@@ -12110,6 +12111,22 @@ hr.divider-light {
     background-color: transparent;
   }
 }
+header.masthead-form {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+header.masthead-form h1, header.masthead-form .h1 {
+  font-size: 2.25rem;
+}
+
 
 header.masthead {
   padding-top: 10rem;
@@ -12126,21 +12143,25 @@ header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
 @media (min-width: 992px) {
-  header.masthead {
+  header.masthead,
+  header.masthead-form {
     height: 100vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
   }
-  header.masthead p {
+  header.masthead p,
+  header.masthead-form p {
     font-size: 1.35rem;
   }
-  header.masthead h1, header.masthead .h1 {
+  header.masthead h1, header.masthead .h1,
+  header.masthead-form h1, header.masthead-form .h1 {
     font-size: 3rem;
   }
 }
 @media (min-width: 1200px) {
-  header.masthead h1, header.masthead .h1 {
+  header.masthead h1, header.masthead .h1,
+  header.masthead-form h1, header.masthead-form .h1 {
     font-size: 3.5rem;
   }
 }
