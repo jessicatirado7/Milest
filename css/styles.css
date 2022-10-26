@@ -165,37 +165,67 @@ nav .dropdown ul {
   border-radius: 8px;
 }
 
+.no-webp .consultationPic {
+  background: url(../assets/img/portfolio/thumbnails/girlpainting.jpg)
+    no-repeat center / cover;
+}
 
+.webp .consultationPic {
+  background: url(../assets/img/portfolio/thumbnails/girlpainting.webp)
+    no-repeat center / cover;
+}
 
 .consultationPic {
   width: 100%;
   height: 424px;
-  background: url(../assets/img/portfolio/thumbnails/girlpainting.jpg)
-    no-repeat center / cover;
   border-radius: 8px;
+}
+
+.no-webp .virtualPic {
+  background: url(../assets/img/portfolio/thumbnails/kidsonthecomputer.jpg)
+    no-repeat center / cover;
+}
+
+.webp .virtualPic {
+  background: url(../assets/img/portfolio/thumbnails/kidsonthecomputer.webp)
+    no-repeat center / cover;
 }
 
 .virtualPic{
   width: 100%;
   height: 424px;
-  background: url(../assets/img/portfolio/thumbnails/kidsonthecomputer.jpg)
-    no-repeat center / cover;
   border-radius: 8px;
+}
+
+.no-webp .familytherapyPic {
+  background: url(../assets/img/portfolio/thumbnails/Familytherapy.jpg)
+    no-repeat center / cover;
+}
+
+.webp .familytherapyPic {
+  background: url(../assets/img/portfolio/thumbnails/Familytherapy.webp)
+    no-repeat center / cover;
 }
 
 .familytherapyPic {
   width: 100%;
   height: 424px;
-  background: url(../assets/img/portfolio/thumbnails/Familytherapy.jpg)
-    no-repeat center / cover;
   border-radius: 8px;
+}
+
+.no-webp .couplesPic {
+  background: url(../assets/img/portfolio/thumbnails/coupletherpay.jpg)
+    no-repeat center / cover;
+}
+
+.webp .couplesPic {
+  background: url(../assets/img/portfolio/thumbnails/Familytherapy.webp)
+    no-repeat center / cover;
 }
 
 .couplesPic {
   width: 100%;
   height: 424px;
-  background: url(../assets/img/portfolio/thumbnails/coupletherpay.jpg)
-    no-repeat center / cover;
   border-radius: 8px;
 }
 
@@ -231,35 +261,67 @@ nav .dropdown ul {
   color: #5f7671;
 }
 
+.no-webp #traumaLink > .serviceImg {
+  background: url(../assets/img/portfolio/thumbnails/women_sitting_on_rock.jpg)
+    no-repeat center / cover;
+}
+
+.webp #traumaLink > .serviceImg {
+  background: url(../assets/img/portfolio/thumbnails/women_sitting_on_rock.webp)
+    no-repeat center / cover;
+}
+
 #traumaLink > .serviceImg {
   width: 100%;
   height: 412px;
-  background: url(../assets/img/portfolio/thumbnails/women_sitting_on_rock.jpg)
-    no-repeat center / cover;
   border-radius: 8px;
+}
+
+.no-webp #childEmo > .serviceImg {
+  background: url(../assets/img/portfolio/thumbnails/Kidsatplay.jpg)
+    no-repeat center / cover;
+}
+
+.webp #childEmo > .serviceImg {
+  background: url(../assets/img/portfolio/thumbnails/Kidsatplay.webp)
+    no-repeat center / cover;
 }
 
 #childEmo > .serviceImg {
   width: 100%;
   height: 412px;
-  background: url(../assets/img/portfolio/thumbnails/Kidsatplay.jpg)
-    no-repeat center / cover;
   border-radius: 8px;
+}
+
+.no-webp #attachmentFamily > .serviceImg {
+  background: url(../assets/img/portfolio/thumbnails/family.jpg)
+    no-repeat center / cover;
+}
+
+.webp #attachmentFamily > .serviceImg {
+  background: url(../assets/img/portfolio/thumbnails/family.webp)
+    no-repeat center / cover;
 }
 
 #attachmentFamily > .serviceImg {
   width: 100%;
   height: 412px;
-  background: url(../assets/img/portfolio/thumbnails/family.jpg)
-    no-repeat center / cover;
   border-radius: 8px;
+}
+
+.no-webp #perinatalWoman > .serviceImg {
+  background: url(../assets/img/portfolio/thumbnails/womenwithbabies.jpg)
+    no-repeat center / cover;
+}
+
+.webp #perinatalWoman > .serviceImg {
+  background: url(../assets/img/portfolio/thumbnails/womenwithbabies.webp)
+    no-repeat center / cover;
 }
 
 #perinatalWoman > .serviceImg {
   width: 100%;
   height: 412px;
-  background: url(../assets/img/portfolio/thumbnails/womenwithbabies.jpg)
-    no-repeat center / cover;
   border-radius: 8px;
 }
 
@@ -304,11 +366,19 @@ nav .dropdown ul {
   justify-content: center;
 }
 
+.no-webp .paymentImg {
+  background: url(../assets/img/portfolio/thumbnails/family2.jpg)
+    no-repeat center / cover;
+}
+
+.webp .paymentImg {
+  background: url(../assets/img/portfolio/thumbnails/family2.webp)
+    no-repeat center / cover;
+}
+
 .paymentImg {
   width: 50%;
   height:600px;
-  background: url(../assets/img/portfolio/thumbnails/family2.jpg)
-    no-repeat center / cover;
   border-radius: 8px;
 }
 
@@ -325,19 +395,35 @@ nav .dropdown ul {
   margin-left: -20px;
 }
 
+.no-webp .ratesImg {
+  background: url(../assets/img/portfolio/thumbnails/family3.jpg)
+    no-repeat center / cover;
+}
+
+.webp .ratesImg {
+  background: url(../assets/img/portfolio/thumbnails/family3.webp)
+    no-repeat center / cover;
+}
+
 .ratesImg {
   width: 50%;
   height: 600px;
-  background: url(../assets/img/portfolio/thumbnails/family3.jpg)
-    no-repeat center / cover;
   border-radius: 8px;
+}
+
+.no-webp .schedulingImg {
+  background: url(../assets/img/portfolio/thumbnails/family4.jpg)
+    no-repeat center / cover;
+}
+
+.webp .schedulingImg {
+  background: url(../assets/img/portfolio/thumbnails/family4.webp)
+    no-repeat center / cover;
 }
 
 .schedulingImg {
   width: 50%;
   height: 600px;
-  background: url(../assets/img/portfolio/thumbnails/family4.jpg)
-    no-repeat center / cover;
   border-radius: 8px;
 }
 
@@ -402,129 +488,144 @@ nav .dropdown ul {
 }
 
 /*EMDR*/
+
 .headingEmdr {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/happy\ girl.jpg");
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url(../assets/img/portfolio/thumbnails/happy\ girl.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
-section.emdrInfo {
-  background-color: #b6cbc126;
-}
-
-.headingEmdr {
   height: 100vh;
   min-height: 40rem;
   padding-top: 4.5rem;
   padding-bottom: 0;
 }
+
+.no-webp .headingEmdr {
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url(../assets/img/portfolio/thumbnails/happy\ girl.jpg);
+}
+
+section.emdrInfo {
+  background-color: #b6cbc126;
+}
+
 
 /*TF*/
 .headingTf {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/girlslayingdown.jpg");
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/girlslayingdown.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
-section.tfInfo {
-  background-color: #b6cbc126;
-}
-
-.headingTf {
   height: 100vh;
   min-height: 40rem;
   padding-top: 4.5rem;
   padding-bottom: 0;
 }
+
+.no-webp .headingTf {
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/girlslayingdown.jpg");
+}
+
+
+section.tfInfo {
+  background-color: #b6cbc126;
+}
+
 
 /*Ti*/
 .headingTi {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/girlwithbigsmile.jpg");
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/girlwithbigsmile.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
-section.tiInfo {
-  background-color: #b6cbc126;
-}
-
-.headingTi {
   height: 100vh;
   min-height: 40rem;
   padding-top: 4.5rem;
   padding-bottom: 0;
+}
+
+.no-webp .headingTi {
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/girlwithbigsmile.jpg");
+}
+
+section.tiInfo {
+  background-color: #b6cbc126;
 }
 
 /*Pc*/
 .headingPc {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/Kidsrunning.jpg");
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/Kidsrunning.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
-section.pcInfo {
-  background-color: #b6cbc126;
-}
-
-.headingPc {
   height: 100vh;
   min-height: 40rem;
   padding-top: 4.5rem;
   padding-bottom: 0;
 }
+
+.no-webp .headingPc {
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/Kidsrunning.jpg");
+}
+
+section.pcInfo {
+  background-color: #b6cbc126;
+}
+
 
 /*Play*/
 .headingPlay {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/boyplaying.jpg");
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/boyplaying.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  height: 100vh;
+  min-height: 40rem;
+  padding-top: 4.5rem;
+  padding-bottom: 0;
 }
 section.playInfo {
   background-color: #b6cbc126;
 }
 
-.headingPlay {
-  height: 100vh;
-  min-height: 40rem;
-  padding-top: 4.5rem;
-  padding-bottom: 0;
+.no-webp .headingPlay {
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/boyplaying.jpg");
 }
 
 /*Caregiver*/
 .headingCare {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/womanandgirl.jpg");
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/womanandgirl\ copy.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  height: 100vh;
+  min-height: 40rem;
+  padding-top: 4.5rem;
+  padding-bottom: 0;
 }
 section.careInfo {
   background-color: #b6cbc126;
 }
 
-.headingCare {
-  height: 100vh;
-  min-height: 40rem;
-  padding-top: 4.5rem;
-  padding-bottom: 0;
+.no-webp .headingCare{
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/womanandgirl.jpg");
 }
 
 /*Social-Emotional*/
@@ -536,37 +637,40 @@ section.careInfo {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
-section.socialInfo {
-  background-color: #b6cbc126;
-}
-
-.headingSocial {
   height: 100vh;
   min-height: 40rem;
   padding-top: 4.5rem;
   padding-bottom: 0;
+}
+
+.no-webp .headingSocial {
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/happyfamily.webp");
+}
+
+section.socialInfo {
+  background-color: #b6cbc126;
 }
 
 /*Theraplay*/
 .headingTheraplay {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/motherplaying.jpg");
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/motherplaying.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
-section.theraplayInfo {
-  background-color: #b6cbc126;
-}
-
-.headingTheraplay {
   height: 100vh;
   min-height: 40rem;
   padding-top: 4.5rem;
   padding-bottom: 0;
+}
+
+.no-webp .headingTheraplay {
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/motherplaying.jpg");
+}
+section.theraplayInfo {
+  background-color: #b6cbc126;
 }
 
 /*Cirlce*/
@@ -578,38 +682,42 @@ section.theraplayInfo {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  height: 100vh;
+  min-height: 40rem;
+  padding-top: 4.5rem;
+  padding-bottom: 0;
+}
+
+.no-webp .headingCircle {
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/parentswithbaby.webp");
 }
 section.circleInfo {
   background-color: #b6cbc126;
 }
 
-.headingCircle {
-  height: 100vh;
-  min-height: 40rem;
-  padding-top: 4.5rem;
-  padding-bottom: 0;
-}
+
 
 /*Career*/
 .headingCareer {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/womenwithipad.jpg");
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/womenwithipad.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
-
-section.careerInfo {
-  background-color: #b6cbc126;
-}
-
-.headingCareer {
   height: 100vh;
   min-height: 40rem;
   padding-top: 4.5rem;
   padding-bottom: 0;
+}
+
+.no-webp .headingCareer {
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/portfolio/thumbnails/womenwithipad.jpg");
+}
+
+section.careerInfo {
+  background-color: #b6cbc126;
 }
 
 /*404 Error*/
