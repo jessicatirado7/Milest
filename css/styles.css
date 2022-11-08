@@ -219,7 +219,7 @@ nav .dropdown ul {
 }
 
 .webp .couplesPic {
-  background: url(../assets/img/portfolio/thumbnails/Familytherapy.webp)
+  background: url(../assets/img/portfolio/thumbnails/coupletherpay.webp)
     no-repeat center / cover;
 }
 
@@ -780,9 +780,10 @@ address {
     padding: 0px;
   }
 
-  .team .rachel {
+  /*.team .rachel {
     margin-top:10% !important;
-  }
+  }*/
+  
   .team .card {
     margin-top: 25%;
   }

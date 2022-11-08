@@ -109,8 +109,18 @@
                 <div class="row mb-5 pb-5 weTreatRow">
                     <div class="col">
                         <picture>
-                            <source srcset="./assets/img/portfolio/thumbnails/happyfamilylayingonthebed.webp" type="image/webp">
-                            <source srcset="./assets/img/portfolio/thumbnails/happylayingonthebed.jpg" type="image/jpeg">
+                            <source type="image/webp"
+                                sizes ="(min-width: 1200px) 825px, 
+                                        (min-width: 992px) 720px,
+                                        (min-width: 768px) 540px, 
+                                        100vw"
+
+                                srcset="./assets/img/portfolio/thumbnails/happyfamilylayingonthebed825.webp 825w,
+                                        ./assets/img/portfolio/thumbnails/happyfamilylayingonthebed720.webp 720w,
+                                        ./assets/img/portfolio/thumbnails/happyfamilylayingonthebed540.webp 540w,
+                                        ./assets/img/portfolio/thumbnails/happyfamilylayingonthebed.webp,
+                                        ">
+
                             <img data-aos="zoom-in-up" src="./assets/img/portfolio/thumbnails/happyfamilylayingonthebed.jpg" class="img-fluid imgFamily" alt="happy family laying in bed">
                         </picture>
                     </div>
@@ -345,15 +355,15 @@
                             <div class = "col">
                                 <picture>
                                     <source srcset="assets/img/portfolio/thumbnails/COSP_logo_closed_blue.webp" type="image/webp">
-                                    <source srcset="assets/img/portfolio/thumbnails/happylayingonthebed.jpg" type="image/jpeg">
+                                    <source srcset="assets/img/portfolio/thumbnails/COSP_logo_closed_blue.jpg" type="image/jpeg">
                                     <img class="img-fluid" src="assets/img/portfolio/thumbnails/COSP_logo_closed_blue.jpg" alt="COSP Logo">
                                 </picture>
                             </div>
                             <div class = "col">
                                 <picture>
-                                    <source srcset="assets/img/portfolio/thumbnails/PSI PMH-C SEAL Only-01.webp" type="image/webp">
-                                    <source srcset="assets/img/portfolio/thumbnails/PSI PMH-C Seal Only-01.jpg" type="image/jpeg">
-                                    <img class="img-fluid" src="assets/img/portfolio/thumbnails/PSI PMH-C Seal Only-01.jpg" alt="PSI Logo">   
+                                    <source srcset="assets/img/portfolio/thumbnails/PSISeal.webp" type="image/webp">
+                                    <source srcset="assets/img/portfolio/thumbnails/PSISeal.jpg" type="image/jpeg">
+                                    <img class="img-fluid" src="assets/img/portfolio/thumbnails/PSI-PMH-C Seal Only-01.jpg" alt="PSI Logo">   
                                 </picture>
                                
                             </div>   
@@ -444,10 +454,19 @@
                 <h2 data-aos="zoom-in-up" class="mb-4 text-center">Our Team</h2>
                 <hr  data-aos="zoom-in-up" class="divider" />
                 <div data-aos="zoom-in-up" class="row">
-                    <div data-aos="zoom-in-up" class="col card rachel">
+                    <div data-aos="zoom-in-up" class="col col-md-6 card rachel">
                         <picture>
-                            <source srcset="./assets/img/portfolio/thumbnails/rachel.webp" type="image/webp">
-                            <source srcset="./assets/img/portfolio/thumbnails/rachel.jpg" type="image/jpeg">
+                            <source type="image/webp"
+                            sizes ="(min-width: 768px) 540px,
+                                    (min-width: 992px) 720px,
+                                    (min-width: 1200px) 825px, 
+                                    100vw"
+
+                            srcset="./assets/img/portfolio/thumbnails/rachel540.webp 540w,
+                                    ./assets/img/portfolio/thumbnails/rachel720.webp 720w,
+                                    ./assets/img/portfolio/thumbnails/rachel825.webp 825w,
+                                    ./assets/img/portfolio/thumbnails/rachel.webp
+                                    " >
                             <img src="./assets/img/portfolio/thumbnails/rachel.jpg" alt="Rachel Milan"/>
                         </picture>   
                         <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
@@ -460,10 +479,18 @@
                         </div> 
                     </div>
                     
-                    <div data-aos="zoom-in-up" class="card col">
+                    <div data-aos="zoom-in-up" class="card col col-md-6 col-sm-12">
                         <picture>
-                            <source srcset="./assets/img/portfolio/thumbnails/Ciara.webp" type="image/webp">
-                            <source srcset="./assets/img/portfolio/thumbnails/Ciara.jpg" type="image/jpeg">
+                            <source type="image/webp"
+                                sizes ="(min-width: 768px) 540px,
+                                        (min-width: 992px) 720px,
+                                        (min-width: 1200px) 825px, 
+                                        100vw"
+
+                                srcset="./assets/img/portfolio/thumbnails/Ciara540.webp 540w,
+                                        ./assets/img/portfolio/thumbnails/Ciara720.webp 720w,
+                                        ./assets/img/portfolio/thumbnails/Ciara825.webp 825w,
+                                        ./assets/img/portfolio/thumbnails/Ciara.webp" >
                             <img src="assets/img/portfolio/thumbnails/Ciara.jpg" alt="Ciara Legato"/>
                         </picture>
                         <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
@@ -476,10 +503,15 @@
                         </div> 
                     </div>
                     
-                    <div data-aos="zoom-in-up" class="card col">
+                    <div data-aos="zoom-in-up" class="card col col-md-6 col-sm-12">
                         <picture>
-                            <source srcset="./assets/img/portfolio/thumbnails/jENNIFER.webp" type="image/webp">
-                            <source srcset="./assets/img/portfolio/thumbnails/jENNIFER.jpg" type="image/jpeg">
+                            <source type="image/webp"
+                                sizes ="(min-width: 768px) 540px,
+                                        100vw"
+
+                                srcset="./assets/img/portfolio/thumbnails/jENNIFER540.webp 540w,
+                                        ./assets/img/portfolio/thumbnails/jENNIFER.webp
+                                " >
                             <img src="assets/img/portfolio/thumbnails/jENNIFER.jpg"  alt="Jennifer Olsen"/>
                         </picture>
                         
@@ -493,11 +525,19 @@
                         </div>
                     </div>
 
-                    <div data-aos="zoom-in-up" class="card col">
+                    <div data-aos="zoom-in-up" class="card col col-md-6 col-sm-12">
                         <picture>
-                            <source srcset="./assets/img/portfolio/thumbnails/taylor.webp" type="image/webp">
-                            <source srcset="./assets/img/portfolio/thumbnails/taylor.jpg" type="image/jpeg">
-                            <img src="assets/img/portfolio/thumbnails/taylor.jpeg"  alt="Taylor  Cravey"/>
+                            <source type="image/webp"
+                                sizes ="(min-width: 768px) 540px,
+                                        (min-width: 992px) 720px,
+                                        (min-width: 1200px) 825px, 
+                                        100vw"
+
+                                srcset="./assets/img/portfolio/thumbnails/taylor540.webp 540w,
+                                 ./assets/img/portfolio/thumbnails/taylor720.webp 720w,
+                                        ./assets/img/portfolio/thumbnails/taylor825.webp 825w,
+                                        ./assets/img/portfolio/thumbnails/taylor.webp" >
+                            <img src="assets/img/portfolio/thumbnails/taylor.jpeg"  alt="Taylor Cravey"/>
                         </picture>
                         
                         <div class="card-img-overlay  h-100 d-flex flex-column justify-content-end">
@@ -510,10 +550,15 @@
                         </div>
                     </div>
 
-                    <div data-aos="zoom-in-up" class="card col">
+                    <div data-aos="zoom-in-up" class="card col col-md-6 col-sm-12">
                         <picture>
-                            <source srcset="./assets/img/portfolio/thumbnails/samantha.webp" type="image/webp">
-                            <source srcset="./assets/img/portfolio/thumbnails/samantha.jpg" type="image/jpeg">
+                            <source type="image/webp"
+                                sizes ="(min-width: 992px) 720px,
+                                        (min-width: 768px) 540px,
+                                        100vw"
+
+                            srcset="./assets/img/portfolio/thumbnails/samantha720.webp 720w,
+                                    ./assets/img/portfolio/thumbnails/samantha540.webp 540w" >
                             <img src="assets/img/portfolio/thumbnails/samantha.jpg"  alt="Samantha Lee"/>
                         </picture>
                         
