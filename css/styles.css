@@ -436,7 +436,7 @@ nav .dropdown ul {
 }
 .team .card {
   border-radius: 0rem;
-  padding:0px;
+  padding: 0px 10px;
   background-color: transparent;
   border:none;
   align-items: center;
@@ -444,8 +444,6 @@ nav .dropdown ul {
 }
 
 .team .card img {
-  max-width: 80%;
-  height:auto;
   border-radius: 8px;
   transition-duration: .3s;
   transition-property: transform;
