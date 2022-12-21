@@ -742,7 +742,7 @@ section.careerInfo {
 .headingSupervision {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url(https://ik.imagekit.io/qjk625zh0/thumbnails/clinicalsupervision.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1671497738647);
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url(https://ik.imagekit.io/qjk625zh0/thumbnails/clinicalsupervision.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -754,7 +754,7 @@ section.careerInfo {
 }
 
 .no-webp .headingSupervision {
-  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url(https://ik.imagekit.io/qjk625zh0/thumbnails/clinicalsupervision.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1671497738647);
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url(https://ik.imagekit.io/qjk625zh0/thumbnails/clinicalsupervision.jpg);
 }
 
 section.supervisionInfo {
