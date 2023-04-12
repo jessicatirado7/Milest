@@ -12243,11 +12243,10 @@ header.masthead-form h1, header.masthead-form .h1 {
   font-size: 2.25rem;
 }
 
-
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url("../assets/img/family-6475821_1920.jpg");
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url(https://ik.imagekit.io/qjk625zh0/thumbnails/family-6475821_1920.jpg?updatedAt=1681258577997);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12255,6 +12254,12 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
 }
+
+.no-webp header.masthead {
+  background: linear-gradient(to bottom, rgba(182, 203, 193, 0.8)  0%, rgba(151, 183, 194, 0.8) 100%), url(https://ik.imagekit.io/qjk625zh0/thumbnails/family-6475821_1920_copy.webp?updatedAt=1681258578677);
+}
+
+
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
