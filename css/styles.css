@@ -463,10 +463,11 @@ nav .dropdown ul {
 .team .card-img-overlay p {
   background-color: #6e9aaa;
   color: white;
-  padding: 25px;
+  padding: 15px;
   margin:0px;
   max-width: 70%;
-  border-radius: 0.25rem
+  border-radius: 0.25rem;
+  font-size: 14px;
 }
 
 .team .modal {
@@ -802,9 +803,9 @@ address {
     padding: 0px;
   }
 
-  /*.team .rachel {
+  .team .rachel {
     margin-top:10% !important;
-  }*/
+  }
   
   .team .card {
     margin-top: 25%;
@@ -903,6 +904,12 @@ address {
   }
 }
 
+@media only screen and(min-width: 768px) {
+  .team .card img {
+    width: 50%;
+    height: auto;
+  }
+}
 /*End of Custom*/
 
 body {
