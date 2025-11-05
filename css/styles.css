@@ -431,6 +431,8 @@ nav .dropdown ul {
   background-color: #b6cbc1;
 }
 
+
+
 .team .container hr {
   background-color: #8dafa9
 }
@@ -465,7 +467,7 @@ nav .dropdown ul {
   color: white;
   padding: 15px;
   margin:0px;
-  max-width: 70%;
+  width: 80%;
   border-radius: 0.25rem;
   font-size: 14px;
 }
@@ -947,6 +949,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-weight: 500;
   line-height: 1.2;
 }
+
+
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
@@ -5362,6 +5366,7 @@ textarea.form-control-lg {
   word-wrap: break-word;
   background-clip: border-box;
   border-radius: 0.25rem;
+  
 }
 .card > hr {
   margin-right: 0;
@@ -5447,6 +5452,7 @@ textarea.form-control-lg {
   left: 0;
   padding: 1rem;
   border-radius: calc(0.25rem - 1px);
+  
 }
 
 .card-img,
@@ -6443,7 +6449,7 @@ textarea.form-control-lg {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 800px;
     margin: 1.75rem auto;
   }
 
