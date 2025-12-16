@@ -385,7 +385,7 @@ nav .dropdown ul {
 .paymentList, .ratesList, .schedulingList {
   background-color: #98b6a7;
   max-width: 50%;
-  min-height: 400px;
+  min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -407,7 +407,7 @@ nav .dropdown ul {
 
 .ratesImg {
   width: 50%;
-  height: 600px;
+  height: 400px;
   border-radius: 8px;
 }
 
