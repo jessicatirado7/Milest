@@ -1,0 +1,1810 @@
+[
+  {
+    "file": "css/milestone-404.css",
+    "bytes": 5881,
+    "urls": [],
+    "imports": [],
+    "exactRuleTextGroups": []
+  },
+  {
+    "file": "css/milestone-contact.css",
+    "bytes": 11205,
+    "urls": [],
+    "imports": [],
+    "exactRuleTextGroups": [
+      [
+        {
+          "selector": "#site-footer.mm-footer .mm-footer__cta",
+          "line": 338,
+          "context": "root"
+        },
+        {
+          "selector": "#site-footer.mm-footer .mm-footer__cta",
+          "line": 402,
+          "context": "root"
+        }
+      ],
+      [
+        {
+          "selector": "#site-footer.mm-footer a:focus-visible",
+          "line": 351,
+          "context": "root"
+        },
+        {
+          "selector": "#site-footer.mm-footer a:focus-visible",
+          "line": 425,
+          "context": "root"
+        }
+      ]
+    ]
+  },
+  {
+    "file": "css/milestone-footer.css",
+    "bytes": 5361,
+    "urls": [],
+    "imports": [],
+    "exactRuleTextGroups": []
+  },
+  {
+    "file": "css/milestone-hero.css",
+    "bytes": 6228,
+    "urls": [],
+    "imports": [],
+    "exactRuleTextGroups": []
+  },
+  {
+    "file": "css/milestone-home.min.css",
+    "bytes": 89554,
+    "urls": [
+      {
+        "selector": "header.masthead",
+        "line": 45,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family-6475821_1920.jpg?updatedAt=1681258577997"
+      },
+      {
+        "selector": ".no-webp header.masthead",
+        "line": 45,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family-6475821_1920_copy.webp?updatedAt=1681258578677"
+      },
+      {
+        "selector": ".no-webp .mentalHealthPic",
+        "line": 49,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Momhuggingchild.jpg"
+      },
+      {
+        "selector": ".webp .mentalHealthPic",
+        "line": 50,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Momhuggingchild.webp"
+      },
+      {
+        "selector": ".no-webp .consultationPic",
+        "line": 51,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlpainting.jpg"
+      },
+      {
+        "selector": ".webp .consultationPic",
+        "line": 52,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlpainting.webp"
+      },
+      {
+        "selector": ".no-webp .virtualPic",
+        "line": 53,
+        "url": "../assets/img/portfolio/thumbnails/kidsonthecomputer.jpg"
+      },
+      {
+        "selector": ".webp .virtualPic",
+        "line": 54,
+        "url": "../assets/img/portfolio/thumbnails/kidsonthecomputer.webp"
+      },
+      {
+        "selector": ".no-webp .familytherapyPic",
+        "line": 55,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Familytherapy.jpg"
+      },
+      {
+        "selector": ".webp .familytherapyPic",
+        "line": 56,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Familytherapy.webp"
+      },
+      {
+        "selector": ".no-webp .couplesPic",
+        "line": 57,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/coupletherpay.jpg"
+      },
+      {
+        "selector": ".webp .couplesPic",
+        "line": 58,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/coupletherpay.webp"
+      },
+      {
+        "selector": ".no-webp #traumaLink > .serviceImg",
+        "line": 65,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/women_sitting_on_rock.jpg"
+      },
+      {
+        "selector": ".webp #traumaLink > .serviceImg",
+        "line": 66,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/women_sitting_on_rock.webp"
+      },
+      {
+        "selector": ".no-webp #childEmo > .serviceImg",
+        "line": 67,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Kidsatplay.jpg"
+      },
+      {
+        "selector": ".webp #childEmo > .serviceImg",
+        "line": 68,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Kidsatplay.webp"
+      },
+      {
+        "selector": ".no-webp #attachmentFamily > .serviceImg",
+        "line": 69,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family.jpg"
+      },
+      {
+        "selector": ".webp #attachmentFamily > .serviceImg",
+        "line": 70,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family.webp"
+      },
+      {
+        "selector": ".no-webp #perinatalWoman > .serviceImg",
+        "line": 71,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithbabies.jpg"
+      },
+      {
+        "selector": ".webp #perinatalWoman > .serviceImg",
+        "line": 72,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithbabies.webp"
+      },
+      {
+        "selector": ".no-webp .paymentImg",
+        "line": 73,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family2.jpg"
+      },
+      {
+        "selector": ".webp .paymentImg",
+        "line": 74,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family2.webp"
+      },
+      {
+        "selector": ".no-webp .ratesImg",
+        "line": 75,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family3.jpg"
+      },
+      {
+        "selector": ".webp .ratesImg",
+        "line": 76,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family3.webp"
+      },
+      {
+        "selector": ".no-webp .schedulingImg",
+        "line": 77,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family4.jpg"
+      },
+      {
+        "selector": ".webp .schedulingImg",
+        "line": 78,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family4.webp"
+      },
+      {
+        "selector": ".headingEmdr",
+        "line": 82,
+        "url": "../assets/img/portfolio/thumbnails/happy\\ girl.webp"
+      },
+      {
+        "selector": ".no-webp .headingEmdr",
+        "line": 82,
+        "url": "../assets/img/portfolio/thumbnails/happy\\ girl.jpg"
+      },
+      {
+        "selector": ".headingTf",
+        "line": 82,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlslayingdown.webp"
+      },
+      {
+        "selector": ".no-webp .headingTf",
+        "line": 82,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlslayingdown.jpg"
+      },
+      {
+        "selector": ".headingTi",
+        "line": 82,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlwithbigsmile.webp"
+      },
+      {
+        "selector": ".no-webp .headingTi",
+        "line": 82,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlwithbigsmile.jpg"
+      },
+      {
+        "selector": ".headingPc",
+        "line": 82,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Kidsrunning.webp"
+      },
+      {
+        "selector": ".no-webp .headingPc",
+        "line": 82,
+        "url": "/assets/img/portfolio/thumbnails/Kidsrunning.jpg"
+      },
+      {
+        "selector": ".headingPlay",
+        "line": 82,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/boyplaying.webp"
+      },
+      {
+        "selector": ".no-webp .headingPlay",
+        "line": 82,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/boyplaying.jpg"
+      },
+      {
+        "selector": ".headingCare",
+        "line": 82,
+        "url": "../assets/img/portfolio/thumbnails/womanandgirl\\ copy.webp"
+      },
+      {
+        "selector": ".no-webp .headingCare",
+        "line": 82,
+        "url": "../assets/img/portfolio/thumbnails/womanandgirl.jpg"
+      },
+      {
+        "selector": ".headingSocial",
+        "line": 82,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/happyfamily.jpg"
+      },
+      {
+        "selector": ".no-webp .headingSocial",
+        "line": 82,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/happyfamily.webp"
+      },
+      {
+        "selector": ".headingTheraplay",
+        "line": 82,
+        "url": "../assets/img/portfolio/thumbnails/motherplaying.webp"
+      },
+      {
+        "selector": ".no-webp .headingTheraplay",
+        "line": 82,
+        "url": "../assets/img/portfolio/thumbnails/motherplaying.jpg"
+      },
+      {
+        "selector": ".headingCircle",
+        "line": 82,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/parentswithbaby.jpg"
+      },
+      {
+        "selector": ".no-webp .headingCircle",
+        "line": 82,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/parentswithbaby.webp"
+      },
+      {
+        "selector": ".headingCareer",
+        "line": 82,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithipad.webp"
+      },
+      {
+        "selector": ".no-webp .headingCareer",
+        "line": 82,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithipad.jpg"
+      },
+      {
+        "selector": ".heading404",
+        "line": 82,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/404error.jpg"
+      },
+      {
+        "selector": ".headingSupervision",
+        "line": 82,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/clinicalsupervision.webp"
+      },
+      {
+        "selector": ".no-webp .headingSupervision",
+        "line": 82,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/clinicalsupervision.jpg"
+      }
+    ],
+    "imports": [],
+    "exactRuleTextGroups": [
+      [
+        {
+          "selector": "0%",
+          "line": 45,
+          "context": "-webkit-keyframes progress-bar-stripes"
+        },
+        {
+          "selector": "0%",
+          "line": 45,
+          "context": "keyframes progress-bar-stripes"
+        }
+      ],
+      [
+        {
+          "selector": "to",
+          "line": 45,
+          "context": "-webkit-keyframes spinner-border"
+        },
+        {
+          "selector": "to",
+          "line": 45,
+          "context": "keyframes spinner-border"
+        }
+      ],
+      [
+        {
+          "selector": "0%",
+          "line": 45,
+          "context": "-webkit-keyframes spinner-grow"
+        },
+        {
+          "selector": "0%",
+          "line": 45,
+          "context": "keyframes spinner-grow"
+        }
+      ],
+      [
+        {
+          "selector": "50%",
+          "line": 45,
+          "context": "-webkit-keyframes spinner-grow"
+        },
+        {
+          "selector": "50%",
+          "line": 45,
+          "context": "keyframes spinner-grow"
+        }
+      ],
+      [
+        {
+          "selector": "50%",
+          "line": 45,
+          "context": "-webkit-keyframes placeholder-glow"
+        },
+        {
+          "selector": "50%",
+          "line": 45,
+          "context": "keyframes placeholder-glow"
+        }
+      ],
+      [
+        {
+          "selector": "100%",
+          "line": 45,
+          "context": "-webkit-keyframes placeholder-wave"
+        },
+        {
+          "selector": "100%",
+          "line": 45,
+          "context": "keyframes placeholder-wave"
+        }
+      ],
+      [
+        {
+          "selector": "#site-footer.mm-footer .mm-footer__cta",
+          "line": 194,
+          "context": "root"
+        },
+        {
+          "selector": "#site-footer.mm-footer .mm-footer__cta",
+          "line": 202,
+          "context": "root"
+        }
+      ],
+      [
+        {
+          "selector": "#site-footer.mm-footer a:focus-visible",
+          "line": 194,
+          "context": "root"
+        },
+        {
+          "selector": "#site-footer.mm-footer a:focus-visible",
+          "line": 203,
+          "context": "root"
+        }
+      ]
+    ]
+  },
+  {
+    "file": "css/milestone-pages.css",
+    "bytes": 130953,
+    "urls": [],
+    "imports": [],
+    "exactRuleTextGroups": [
+      [
+        {
+          "selector": ":root",
+          "line": 40,
+          "context": "root"
+        },
+        {
+          "selector": ":root",
+          "line": 431,
+          "context": "root"
+        },
+        {
+          "selector": ":root",
+          "line": 930,
+          "context": "root"
+        },
+        {
+          "selector": ":root",
+          "line": 1418,
+          "context": "root"
+        },
+        {
+          "selector": ":root",
+          "line": 1622,
+          "context": "root"
+        },
+        {
+          "selector": ":root",
+          "line": 2610,
+          "context": "root"
+        },
+        {
+          "selector": ":root",
+          "line": 3083,
+          "context": "root"
+        },
+        {
+          "selector": ":root",
+          "line": 3566,
+          "context": "root"
+        }
+      ],
+      [
+        {
+          "selector": "html",
+          "line": 413,
+          "context": "media (prefers-reduced-motion: reduce)"
+        },
+        {
+          "selector": "html",
+          "line": 922,
+          "context": "media (prefers-reduced-motion: reduce)"
+        },
+        {
+          "selector": "html",
+          "line": 1309,
+          "context": "media (prefers-reduced-motion: reduce)"
+        },
+        {
+          "selector": "html",
+          "line": 2001,
+          "context": "media (prefers-reduced-motion: reduce)"
+        },
+        {
+          "selector": "html",
+          "line": 2989,
+          "context": "media (prefers-reduced-motion: reduce)"
+        },
+        {
+          "selector": "html",
+          "line": 3462,
+          "context": "media (prefers-reduced-motion: reduce)"
+        },
+        {
+          "selector": "html",
+          "line": 3945,
+          "context": "media (prefers-reduced-motion: reduce)"
+        },
+        {
+          "selector": "html",
+          "line": 5623,
+          "context": "media (prefers-reduced-motion: reduce)"
+        }
+      ]
+    ]
+  },
+  {
+    "file": "css/milestone-payment-scheduling.css",
+    "bytes": 9997,
+    "urls": [],
+    "imports": [],
+    "exactRuleTextGroups": []
+  },
+  {
+    "file": "css/milestone-philosophy.css",
+    "bytes": 2870,
+    "urls": [],
+    "imports": [],
+    "exactRuleTextGroups": []
+  },
+  {
+    "file": "css/milestone-services.css",
+    "bytes": 6924,
+    "urls": [],
+    "imports": [],
+    "exactRuleTextGroups": []
+  },
+  {
+    "file": "css/milestone-specializations.css",
+    "bytes": 6689,
+    "urls": [],
+    "imports": [],
+    "exactRuleTextGroups": []
+  },
+  {
+    "file": "css/milestone-styles.cleaned.css",
+    "bytes": 234771,
+    "urls": [
+      {
+        "selector": "header.masthead",
+        "line": 11360,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family-6475821_1920.jpg?updatedAt=1681258577997"
+      },
+      {
+        "selector": ".no-webp header.masthead",
+        "line": 11370,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family-6475821_1920_copy.webp?updatedAt=1681258578677"
+      },
+      {
+        "selector": ".no-webp .mentalHealthPic",
+        "line": 11536,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Momhuggingchild.jpg"
+      },
+      {
+        "selector": ".webp .mentalHealthPic",
+        "line": 11541,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Momhuggingchild.webp"
+      },
+      {
+        "selector": ".no-webp .consultationPic",
+        "line": 11552,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlpainting.jpg"
+      },
+      {
+        "selector": ".webp .consultationPic",
+        "line": 11557,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlpainting.webp"
+      },
+      {
+        "selector": ".no-webp .virtualPic",
+        "line": 11568,
+        "url": "../assets/img/portfolio/thumbnails/kidsonthecomputer.jpg"
+      },
+      {
+        "selector": ".webp .virtualPic",
+        "line": 11573,
+        "url": "../assets/img/portfolio/thumbnails/kidsonthecomputer.webp"
+      },
+      {
+        "selector": ".no-webp .familytherapyPic",
+        "line": 11584,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Familytherapy.jpg"
+      },
+      {
+        "selector": ".webp .familytherapyPic",
+        "line": 11589,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Familytherapy.webp"
+      },
+      {
+        "selector": ".no-webp .couplesPic",
+        "line": 11600,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/coupletherpay.jpg"
+      },
+      {
+        "selector": ".webp .couplesPic",
+        "line": 11605,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/coupletherpay.webp"
+      },
+      {
+        "selector": ".no-webp #traumaLink > .serviceImg",
+        "line": 11648,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/women_sitting_on_rock.jpg"
+      },
+      {
+        "selector": ".webp #traumaLink > .serviceImg",
+        "line": 11653,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/women_sitting_on_rock.webp"
+      },
+      {
+        "selector": ".no-webp #childEmo > .serviceImg",
+        "line": 11664,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Kidsatplay.jpg"
+      },
+      {
+        "selector": ".webp #childEmo > .serviceImg",
+        "line": 11669,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Kidsatplay.webp"
+      },
+      {
+        "selector": ".no-webp #attachmentFamily > .serviceImg",
+        "line": 11680,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family.jpg"
+      },
+      {
+        "selector": ".webp #attachmentFamily > .serviceImg",
+        "line": 11685,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family.webp"
+      },
+      {
+        "selector": ".no-webp #perinatalWoman > .serviceImg",
+        "line": 11696,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithbabies.jpg"
+      },
+      {
+        "selector": ".webp #perinatalWoman > .serviceImg",
+        "line": 11701,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithbabies.webp"
+      },
+      {
+        "selector": ".no-webp .paymentImg",
+        "line": 11753,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family2.jpg"
+      },
+      {
+        "selector": ".webp .paymentImg",
+        "line": 11758,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family2.webp"
+      },
+      {
+        "selector": ".no-webp .ratesImg",
+        "line": 11782,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family3.jpg"
+      },
+      {
+        "selector": ".webp .ratesImg",
+        "line": 11787,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family3.webp"
+      },
+      {
+        "selector": ".no-webp .schedulingImg",
+        "line": 11798,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family4.jpg"
+      },
+      {
+        "selector": ".webp .schedulingImg",
+        "line": 11803,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family4.webp"
+      },
+      {
+        "selector": ".headingEmdr",
+        "line": 11886,
+        "url": "../assets/img/portfolio/thumbnails/happy\\ girl.webp"
+      },
+      {
+        "selector": ".no-webp .headingEmdr",
+        "line": 11890,
+        "url": "../assets/img/portfolio/thumbnails/happy\\ girl.jpg"
+      },
+      {
+        "selector": ".headingTf",
+        "line": 11900,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlslayingdown.webp"
+      },
+      {
+        "selector": ".no-webp .headingTf",
+        "line": 11904,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlslayingdown.jpg"
+      },
+      {
+        "selector": ".headingTi",
+        "line": 11915,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlwithbigsmile.webp"
+      },
+      {
+        "selector": ".no-webp .headingTi",
+        "line": 11919,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlwithbigsmile.jpg"
+      },
+      {
+        "selector": ".headingPc",
+        "line": 11928,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Kidsrunning.webp"
+      },
+      {
+        "selector": ".no-webp .headingPc",
+        "line": 11932,
+        "url": "/assets/img/portfolio/thumbnails/Kidsrunning.jpg"
+      },
+      {
+        "selector": ".headingPlay",
+        "line": 11942,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/boyplaying.webp"
+      },
+      {
+        "selector": ".no-webp .headingPlay",
+        "line": 11949,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/boyplaying.jpg"
+      },
+      {
+        "selector": ".headingCare",
+        "line": 11954,
+        "url": "../assets/img/portfolio/thumbnails/womanandgirl\\ copy.webp"
+      },
+      {
+        "selector": ".no-webp .headingCare",
+        "line": 11961,
+        "url": "../assets/img/portfolio/thumbnails/womanandgirl.jpg"
+      },
+      {
+        "selector": ".headingSocial",
+        "line": 11966,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/happyfamily.jpg"
+      },
+      {
+        "selector": ".no-webp .headingSocial",
+        "line": 11970,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/happyfamily.webp"
+      },
+      {
+        "selector": ".headingTheraplay",
+        "line": 11979,
+        "url": "../assets/img/portfolio/thumbnails/motherplaying.webp"
+      },
+      {
+        "selector": ".no-webp .headingTheraplay",
+        "line": 11983,
+        "url": "../assets/img/portfolio/thumbnails/motherplaying.jpg"
+      },
+      {
+        "selector": ".headingCircle",
+        "line": 11991,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/parentswithbaby.jpg"
+      },
+      {
+        "selector": ".no-webp .headingCircle",
+        "line": 11995,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/parentswithbaby.webp"
+      },
+      {
+        "selector": ".headingCareer",
+        "line": 12004,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithipad.webp"
+      },
+      {
+        "selector": ".no-webp .headingCareer",
+        "line": 12008,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithipad.jpg"
+      },
+      {
+        "selector": ".heading404",
+        "line": 12020,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/404error.jpg"
+      },
+      {
+        "selector": ".headingSupervision",
+        "line": 12033,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/clinicalsupervision.webp"
+      },
+      {
+        "selector": ".no-webp .headingSupervision",
+        "line": 12037,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/clinicalsupervision.jpg"
+      }
+    ],
+    "imports": [],
+    "exactRuleTextGroups": [
+      [
+        {
+          "selector": ".form-control::-webkit-file-upload-button",
+          "line": 2255,
+          "context": "root"
+        },
+        {
+          "selector": ".form-control::-webkit-file-upload-button",
+          "line": 2301,
+          "context": "root"
+        }
+      ],
+      [
+        {
+          "selector": ".form-control::-webkit-file-upload-button",
+          "line": 2287,
+          "context": "media (prefers-reduced-motion: reduce)"
+        },
+        {
+          "selector": ".form-control::-webkit-file-upload-button",
+          "line": 2318,
+          "context": "media (prefers-reduced-motion: reduce)"
+        }
+      ],
+      [
+        {
+          "selector": ".form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button",
+          "line": 2295,
+          "context": "root"
+        },
+        {
+          "selector": ".form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button",
+          "line": 2323,
+          "context": "root"
+        }
+      ],
+      [
+        {
+          "selector": ".form-control-sm::-webkit-file-upload-button",
+          "line": 2349,
+          "context": "root"
+        },
+        {
+          "selector": ".form-control-sm::-webkit-file-upload-button",
+          "line": 2361,
+          "context": "root"
+        }
+      ],
+      [
+        {
+          "selector": ".form-control-lg::-webkit-file-upload-button",
+          "line": 2374,
+          "context": "root"
+        },
+        {
+          "selector": ".form-control-lg::-webkit-file-upload-button",
+          "line": 2386,
+          "context": "root"
+        }
+      ],
+      [
+        {
+          "selector": "0%",
+          "line": 5018,
+          "context": "-webkit-keyframes progress-bar-stripes"
+        },
+        {
+          "selector": "0%",
+          "line": 5024,
+          "context": "keyframes progress-bar-stripes"
+        }
+      ],
+      [
+        {
+          "selector": "to",
+          "line": 6208,
+          "context": "-webkit-keyframes spinner-border"
+        },
+        {
+          "selector": "to",
+          "line": 6214,
+          "context": "keyframes spinner-border"
+        }
+      ],
+      [
+        {
+          "selector": "0%",
+          "line": 6237,
+          "context": "-webkit-keyframes spinner-grow"
+        },
+        {
+          "selector": "0%",
+          "line": 6247,
+          "context": "keyframes spinner-grow"
+        }
+      ],
+      [
+        {
+          "selector": "50%",
+          "line": 6240,
+          "context": "-webkit-keyframes spinner-grow"
+        },
+        {
+          "selector": "50%",
+          "line": 6250,
+          "context": "keyframes spinner-grow"
+        }
+      ],
+      [
+        {
+          "selector": "50%",
+          "line": 6408,
+          "context": "-webkit-keyframes placeholder-glow"
+        },
+        {
+          "selector": "50%",
+          "line": 6414,
+          "context": "keyframes placeholder-glow"
+        }
+      ],
+      [
+        {
+          "selector": "100%",
+          "line": 6428,
+          "context": "-webkit-keyframes placeholder-wave"
+        },
+        {
+          "selector": "100%",
+          "line": 6435,
+          "context": "keyframes placeholder-wave"
+        }
+      ]
+    ]
+  },
+  {
+    "file": "css/milestone-team.css",
+    "bytes": 13528,
+    "urls": [],
+    "imports": [],
+    "exactRuleTextGroups": []
+  },
+  {
+    "file": "css/styles.css",
+    "bytes": 249692,
+    "urls": [
+      {
+        "selector": ".no-webp .mentalHealthPic",
+        "line": 310,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Momhuggingchild.jpg"
+      },
+      {
+        "selector": ".webp .mentalHealthPic",
+        "line": 315,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Momhuggingchild.webp"
+      },
+      {
+        "selector": ".no-webp .consultationPic",
+        "line": 326,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlpainting.jpg"
+      },
+      {
+        "selector": ".webp .consultationPic",
+        "line": 331,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlpainting.webp"
+      },
+      {
+        "selector": ".no-webp .virtualPic",
+        "line": 342,
+        "url": "../assets/img/portfolio/thumbnails/kidsonthecomputer.jpg"
+      },
+      {
+        "selector": ".webp .virtualPic",
+        "line": 347,
+        "url": "../assets/img/portfolio/thumbnails/kidsonthecomputer.webp"
+      },
+      {
+        "selector": ".no-webp .familytherapyPic",
+        "line": 358,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Familytherapy.jpg"
+      },
+      {
+        "selector": ".webp .familytherapyPic",
+        "line": 363,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Familytherapy.webp"
+      },
+      {
+        "selector": ".no-webp .couplesPic",
+        "line": 374,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/coupletherpay.jpg"
+      },
+      {
+        "selector": ".webp .couplesPic",
+        "line": 379,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/coupletherpay.webp"
+      },
+      {
+        "selector": ".no-webp #traumaLink > .serviceImg",
+        "line": 422,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/women_sitting_on_rock.jpg"
+      },
+      {
+        "selector": ".webp #traumaLink > .serviceImg",
+        "line": 427,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/women_sitting_on_rock.webp"
+      },
+      {
+        "selector": ".no-webp #childEmo > .serviceImg",
+        "line": 438,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Kidsatplay.jpg"
+      },
+      {
+        "selector": ".webp #childEmo > .serviceImg",
+        "line": 443,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Kidsatplay.webp"
+      },
+      {
+        "selector": ".no-webp #attachmentFamily > .serviceImg",
+        "line": 454,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family.jpg"
+      },
+      {
+        "selector": ".webp #attachmentFamily > .serviceImg",
+        "line": 459,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family.webp"
+      },
+      {
+        "selector": ".no-webp #perinatalWoman > .serviceImg",
+        "line": 470,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithbabies.jpg"
+      },
+      {
+        "selector": ".webp #perinatalWoman > .serviceImg",
+        "line": 475,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithbabies.webp"
+      },
+      {
+        "selector": ".no-webp .paymentImg",
+        "line": 527,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family2.jpg"
+      },
+      {
+        "selector": ".webp .paymentImg",
+        "line": 532,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family2.webp"
+      },
+      {
+        "selector": ".no-webp .ratesImg",
+        "line": 556,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family3.jpg"
+      },
+      {
+        "selector": ".webp .ratesImg",
+        "line": 561,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family3.webp"
+      },
+      {
+        "selector": ".no-webp .schedulingImg",
+        "line": 572,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family4.jpg"
+      },
+      {
+        "selector": ".webp .schedulingImg",
+        "line": 577,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family4.webp"
+      },
+      {
+        "selector": ".headingEmdr",
+        "line": 653,
+        "url": "../assets/img/portfolio/thumbnails/happy\\ girl.webp"
+      },
+      {
+        "selector": ".no-webp .headingEmdr",
+        "line": 665,
+        "url": "../assets/img/portfolio/thumbnails/happy\\ girl.jpg"
+      },
+      {
+        "selector": ".headingTf",
+        "line": 677,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlslayingdown.webp"
+      },
+      {
+        "selector": ".no-webp .headingTf",
+        "line": 689,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlslayingdown.jpg"
+      },
+      {
+        "selector": ".headingTi",
+        "line": 702,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlwithbigsmile.webp"
+      },
+      {
+        "selector": ".no-webp .headingTi",
+        "line": 714,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlwithbigsmile.jpg"
+      },
+      {
+        "selector": ".headingPc",
+        "line": 725,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Kidsrunning.webp"
+      },
+      {
+        "selector": ".no-webp .headingPc",
+        "line": 737,
+        "url": "/assets/img/portfolio/thumbnails/Kidsrunning.jpg"
+      },
+      {
+        "selector": ".headingPlay",
+        "line": 749,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/boyplaying.webp"
+      },
+      {
+        "selector": ".no-webp .headingPlay",
+        "line": 764,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/boyplaying.jpg"
+      },
+      {
+        "selector": ".headingCare",
+        "line": 771,
+        "url": "../assets/img/portfolio/thumbnails/womanandgirl\\ copy.webp"
+      },
+      {
+        "selector": ".no-webp .headingCare",
+        "line": 786,
+        "url": "../assets/img/portfolio/thumbnails/womanandgirl.jpg"
+      },
+      {
+        "selector": ".headingSocial",
+        "line": 793,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/happyfamily.jpg"
+      },
+      {
+        "selector": ".no-webp .headingSocial",
+        "line": 805,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/happyfamily.webp"
+      },
+      {
+        "selector": ".headingTheraplay",
+        "line": 816,
+        "url": "../assets/img/portfolio/thumbnails/motherplaying.webp"
+      },
+      {
+        "selector": ".no-webp .headingTheraplay",
+        "line": 828,
+        "url": "../assets/img/portfolio/thumbnails/motherplaying.jpg"
+      },
+      {
+        "selector": ".headingCircle",
+        "line": 838,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/parentswithbaby.jpg"
+      },
+      {
+        "selector": ".no-webp .headingCircle",
+        "line": 850,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/parentswithbaby.webp"
+      },
+      {
+        "selector": ".headingCareer",
+        "line": 862,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithipad.webp"
+      },
+      {
+        "selector": ".no-webp .headingCareer",
+        "line": 874,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithipad.jpg"
+      },
+      {
+        "selector": ".heading404",
+        "line": 886,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/404error.jpg"
+      },
+      {
+        "selector": ".headingSupervision",
+        "line": 905,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/clinicalsupervision.webp"
+      },
+      {
+        "selector": ".no-webp .headingSupervision",
+        "line": 917,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/clinicalsupervision.jpg"
+      },
+      {
+        "selector": "header.masthead",
+        "line": 12541,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family-6475821_1920.jpg?updatedAt=1681258577997"
+      },
+      {
+        "selector": ".no-webp header.masthead",
+        "line": 12551,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family-6475821_1920_copy.webp?updatedAt=1681258578677"
+      }
+    ],
+    "imports": [],
+    "exactRuleTextGroups": [
+      [
+        {
+          "selector": ".form-control::-webkit-file-upload-button",
+          "line": 3364,
+          "context": "root"
+        },
+        {
+          "selector": ".form-control::-webkit-file-upload-button",
+          "line": 3410,
+          "context": "root"
+        }
+      ],
+      [
+        {
+          "selector": ".form-control::-webkit-file-upload-button",
+          "line": 3396,
+          "context": "media (prefers-reduced-motion: reduce)"
+        },
+        {
+          "selector": ".form-control::-webkit-file-upload-button",
+          "line": 3427,
+          "context": "media (prefers-reduced-motion: reduce)"
+        }
+      ],
+      [
+        {
+          "selector": ".form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button",
+          "line": 3404,
+          "context": "root"
+        },
+        {
+          "selector": ".form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button",
+          "line": 3432,
+          "context": "root"
+        }
+      ],
+      [
+        {
+          "selector": ".form-control-sm::-webkit-file-upload-button",
+          "line": 3458,
+          "context": "root"
+        },
+        {
+          "selector": ".form-control-sm::-webkit-file-upload-button",
+          "line": 3470,
+          "context": "root"
+        }
+      ],
+      [
+        {
+          "selector": ".form-control-lg::-webkit-file-upload-button",
+          "line": 3483,
+          "context": "root"
+        },
+        {
+          "selector": ".form-control-lg::-webkit-file-upload-button",
+          "line": 3495,
+          "context": "root"
+        }
+      ],
+      [
+        {
+          "selector": "0%",
+          "line": 6127,
+          "context": "-webkit-keyframes progress-bar-stripes"
+        },
+        {
+          "selector": "0%",
+          "line": 6133,
+          "context": "keyframes progress-bar-stripes"
+        }
+      ],
+      [
+        {
+          "selector": "to",
+          "line": 7317,
+          "context": "-webkit-keyframes spinner-border"
+        },
+        {
+          "selector": "to",
+          "line": 7323,
+          "context": "keyframes spinner-border"
+        }
+      ],
+      [
+        {
+          "selector": "0%",
+          "line": 7346,
+          "context": "-webkit-keyframes spinner-grow"
+        },
+        {
+          "selector": "0%",
+          "line": 7356,
+          "context": "keyframes spinner-grow"
+        }
+      ],
+      [
+        {
+          "selector": "50%",
+          "line": 7349,
+          "context": "-webkit-keyframes spinner-grow"
+        },
+        {
+          "selector": "50%",
+          "line": 7359,
+          "context": "keyframes spinner-grow"
+        }
+      ],
+      [
+        {
+          "selector": "50%",
+          "line": 7517,
+          "context": "-webkit-keyframes placeholder-glow"
+        },
+        {
+          "selector": "50%",
+          "line": 7523,
+          "context": "keyframes placeholder-glow"
+        }
+      ],
+      [
+        {
+          "selector": "100%",
+          "line": 7537,
+          "context": "-webkit-keyframes placeholder-wave"
+        },
+        {
+          "selector": "100%",
+          "line": 7544,
+          "context": "keyframes placeholder-wave"
+        }
+      ]
+    ]
+  },
+  {
+    "file": "dist/styles.6ceb2bb4.css",
+    "bytes": 178594,
+    "urls": [
+      {
+        "selector": ".no-webp .mentalHealthPic",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Momhuggingchild.jpg"
+      },
+      {
+        "selector": ".webp .mentalHealthPic",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Momhuggingchild.webp"
+      },
+      {
+        "selector": ".no-webp .consultationPic",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlpainting.jpg"
+      },
+      {
+        "selector": ".webp .consultationPic",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlpainting.webp"
+      },
+      {
+        "selector": ".no-webp .virtualPic",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/kidsonthecomputer.jpg"
+      },
+      {
+        "selector": ".webp .virtualPic",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/kidsonthecomputer.webp"
+      },
+      {
+        "selector": ".no-webp .familytherapyPic",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Familytherapy.jpg"
+      },
+      {
+        "selector": ".webp .familytherapyPic",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Familytherapy.webp"
+      },
+      {
+        "selector": ".no-webp .couplesPic",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/coupletherpay.jpg"
+      },
+      {
+        "selector": ".webp .couplesPic",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/coupletherpay.webp"
+      },
+      {
+        "selector": ".no-webp #traumaLink>.serviceImg",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/women_sitting_on_rock.jpg"
+      },
+      {
+        "selector": ".webp #traumaLink>.serviceImg",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/women_sitting_on_rock.webp"
+      },
+      {
+        "selector": ".no-webp #childEmo>.serviceImg",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Kidsatplay.jpg"
+      },
+      {
+        "selector": ".webp #childEmo>.serviceImg",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Kidsatplay.webp"
+      },
+      {
+        "selector": ".no-webp #attachmentFamily>.serviceImg",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family.jpg"
+      },
+      {
+        "selector": ".webp #attachmentFamily>.serviceImg",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family.webp"
+      },
+      {
+        "selector": ".no-webp #perinatalWoman>.serviceImg",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithbabies.jpg"
+      },
+      {
+        "selector": ".webp #perinatalWoman>.serviceImg",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithbabies.webp"
+      },
+      {
+        "selector": ".no-webp .paymentImg",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family2.jpg"
+      },
+      {
+        "selector": ".webp .paymentImg",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family2.webp"
+      },
+      {
+        "selector": ".no-webp .ratesImg",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family3.jpg"
+      },
+      {
+        "selector": ".webp .ratesImg",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family3.webp"
+      },
+      {
+        "selector": ".no-webp .schedulingImg",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family4.jpg"
+      },
+      {
+        "selector": ".webp .schedulingImg",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family4.webp"
+      },
+      {
+        "selector": ".headingEmdr",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/happy girl.webp"
+      },
+      {
+        "selector": ".no-webp .headingEmdr",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/happy girl.jpg"
+      },
+      {
+        "selector": ".headingTf",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlslayingdown.webp"
+      },
+      {
+        "selector": ".no-webp .headingTf",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlslayingdown.jpg"
+      },
+      {
+        "selector": ".headingTi",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlwithbigsmile.webp"
+      },
+      {
+        "selector": ".no-webp .headingTi",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlwithbigsmile.jpg"
+      },
+      {
+        "selector": ".headingPc",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Kidsrunning.webp"
+      },
+      {
+        "selector": ".no-webp .headingPc",
+        "line": 1,
+        "url": "Kidsrunning.9804155d.jpg"
+      },
+      {
+        "selector": ".headingPlay",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/boyplaying.webp"
+      },
+      {
+        "selector": ".no-webp .headingPlay",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/boyplaying.jpg"
+      },
+      {
+        "selector": ".headingCare",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womanandgirlcopy.webp"
+      },
+      {
+        "selector": ".no-webp .headingCare",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womanandgirl.jpg"
+      },
+      {
+        "selector": ".headingSocial",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/happyfamily.jpg"
+      },
+      {
+        "selector": ".no-webp .headingSocial",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/happyfamily.webp"
+      },
+      {
+        "selector": ".headingTheraplay",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/motherplaying.webp"
+      },
+      {
+        "selector": ".no-webp .headingTheraplay",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/motherplaying.jpg"
+      },
+      {
+        "selector": ".headingCircle",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/parentswithbaby.jpg"
+      },
+      {
+        "selector": ".no-webp .headingCircle",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/parentswithbaby.webp"
+      },
+      {
+        "selector": ".headingCareer",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithipad.webp"
+      },
+      {
+        "selector": ".no-webp .headingCareer",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithipad.jpg"
+      },
+      {
+        "selector": ".heading404",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/404error.jpg"
+      },
+      {
+        "selector": ".headingSupervision",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/clinicalsupervision.webp"
+      },
+      {
+        "selector": ".no-webp .headingSupervision",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/clinicalsupervision.jpg"
+      },
+      {
+        "selector": "header.masthead",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family-6475821_1920.jpg?updatedAt=1681258577997"
+      },
+      {
+        "selector": ".no-webp header.masthead",
+        "line": 1,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family-6475821_1920_copy.webp?updatedAt=1681258578677"
+      }
+    ],
+    "imports": [],
+    "exactRuleTextGroups": []
+  },
+  {
+    "file": "dist/styles.748ad148.css",
+    "bytes": 222541,
+    "urls": [
+      {
+        "selector": ".no-webp .mentalHealthPic",
+        "line": 136,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Momhuggingchild.jpg"
+      },
+      {
+        "selector": ".webp .mentalHealthPic",
+        "line": 140,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Momhuggingchild.webp"
+      },
+      {
+        "selector": ".no-webp .consultationPic",
+        "line": 150,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlpainting.jpg"
+      },
+      {
+        "selector": ".webp .consultationPic",
+        "line": 154,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlpainting.webp"
+      },
+      {
+        "selector": ".no-webp .virtualPic",
+        "line": 164,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/kidsonthecomputer.jpg"
+      },
+      {
+        "selector": ".webp .virtualPic",
+        "line": 168,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/kidsonthecomputer.webp"
+      },
+      {
+        "selector": ".no-webp .familytherapyPic",
+        "line": 178,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Familytherapy.jpg"
+      },
+      {
+        "selector": ".webp .familytherapyPic",
+        "line": 182,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Familytherapy.webp"
+      },
+      {
+        "selector": ".no-webp .couplesPic",
+        "line": 192,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/coupletherpay.jpg"
+      },
+      {
+        "selector": ".webp .couplesPic",
+        "line": 196,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/coupletherpay.webp"
+      },
+      {
+        "selector": ".no-webp #traumaLink > .serviceImg",
+        "line": 232,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/women_sitting_on_rock.jpg"
+      },
+      {
+        "selector": ".webp #traumaLink > .serviceImg",
+        "line": 236,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/women_sitting_on_rock.webp"
+      },
+      {
+        "selector": ".no-webp #childEmo > .serviceImg",
+        "line": 246,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Kidsatplay.jpg"
+      },
+      {
+        "selector": ".webp #childEmo > .serviceImg",
+        "line": 250,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Kidsatplay.webp"
+      },
+      {
+        "selector": ".no-webp #attachmentFamily > .serviceImg",
+        "line": 260,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family.jpg"
+      },
+      {
+        "selector": ".webp #attachmentFamily > .serviceImg",
+        "line": 264,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family.webp"
+      },
+      {
+        "selector": ".no-webp #perinatalWoman > .serviceImg",
+        "line": 274,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithbabies.jpg"
+      },
+      {
+        "selector": ".webp #perinatalWoman > .serviceImg",
+        "line": 278,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithbabies.webp"
+      },
+      {
+        "selector": ".no-webp .paymentImg",
+        "line": 329,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family2.jpg"
+      },
+      {
+        "selector": ".webp .paymentImg",
+        "line": 333,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family2.webp"
+      },
+      {
+        "selector": ".no-webp .ratesImg",
+        "line": 356,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family3.jpg"
+      },
+      {
+        "selector": ".webp .ratesImg",
+        "line": 360,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family3.webp"
+      },
+      {
+        "selector": ".no-webp .schedulingImg",
+        "line": 370,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family4.jpg"
+      },
+      {
+        "selector": ".webp .schedulingImg",
+        "line": 374,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family4.webp"
+      },
+      {
+        "selector": ".headingEmdr",
+        "line": 444,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/happy girl.webp"
+      },
+      {
+        "selector": ".no-webp .headingEmdr",
+        "line": 456,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/happy girl.jpg"
+      },
+      {
+        "selector": ".headingTf",
+        "line": 467,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlslayingdown.webp"
+      },
+      {
+        "selector": ".no-webp .headingTf",
+        "line": 479,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlslayingdown.jpg"
+      },
+      {
+        "selector": ".headingTi",
+        "line": 490,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlwithbigsmile.webp"
+      },
+      {
+        "selector": ".no-webp .headingTi",
+        "line": 502,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/girlwithbigsmile.jpg"
+      },
+      {
+        "selector": ".headingPc",
+        "line": 513,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/Kidsrunning.webp"
+      },
+      {
+        "selector": ".no-webp .headingPc",
+        "line": 525,
+        "url": "Kidsrunning.ee7942bb.jpg"
+      },
+      {
+        "selector": ".headingPlay",
+        "line": 536,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/boyplaying.webp"
+      },
+      {
+        "selector": ".no-webp .headingPlay",
+        "line": 552,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/boyplaying.jpg"
+      },
+      {
+        "selector": ".headingCare",
+        "line": 559,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womanandgirlcopy.webp"
+      },
+      {
+        "selector": ".no-webp .headingCare",
+        "line": 575,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womanandgirl.jpg"
+      },
+      {
+        "selector": ".headingSocial",
+        "line": 582,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/happyfamily.jpg"
+      },
+      {
+        "selector": ".no-webp .headingSocial",
+        "line": 594,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/happyfamily.webp"
+      },
+      {
+        "selector": ".headingTheraplay",
+        "line": 605,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/motherplaying.webp"
+      },
+      {
+        "selector": ".no-webp .headingTheraplay",
+        "line": 617,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/motherplaying.jpg"
+      },
+      {
+        "selector": ".headingCircle",
+        "line": 628,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/parentswithbaby.jpg"
+      },
+      {
+        "selector": ".no-webp .headingCircle",
+        "line": 640,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/parentswithbaby.webp"
+      },
+      {
+        "selector": ".headingCareer",
+        "line": 651,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithipad.webp"
+      },
+      {
+        "selector": ".no-webp .headingCareer",
+        "line": 663,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/womenwithipad.jpg"
+      },
+      {
+        "selector": ".heading404",
+        "line": 674,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/404error.jpg"
+      },
+      {
+        "selector": ".headingSupervision",
+        "line": 689,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/clinicalsupervision.webp"
+      },
+      {
+        "selector": ".no-webp .headingSupervision",
+        "line": 701,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/clinicalsupervision.jpg"
+      },
+      {
+        "selector": "header.masthead",
+        "line": 12394,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family-6475821_1920.jpg?updatedAt=1681258577997"
+      },
+      {
+        "selector": ".no-webp header.masthead",
+        "line": 12406,
+        "url": "https://ik.imagekit.io/qjk625zh0/thumbnails/family-6475821_1920_copy.webp?updatedAt=1681258578677"
+      }
+    ],
+    "imports": [],
+    "exactRuleTextGroups": []
+  }
+]

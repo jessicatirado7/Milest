@@ -1,0 +1,224 @@
+{
+  "modals": [
+    {
+      "id": "mm-spec-trauma",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "mm-spec-child",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "mm-spec-attachment",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "mm-spec-perinatal",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "rachelModal",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "heatherModal",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "samanthaModal",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "katrinaModal",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "paigeModal",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "graceModal",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "meaghanModal",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "briModal",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "madelineModal",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "sarahNModal",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "jenniferOModal",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "elizabethModal",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "victoriaModal",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "michaelModal",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "aaronModal",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    },
+    {
+      "id": "kelsieModal",
+      "focusInside": true,
+      "tabContained": true,
+      "focusReturned": true,
+      "closed": true
+    }
+  ],
+  "motion": [
+    {
+      "reducedMotion": "reduce",
+      "scroll": {
+        "y": 25988,
+        "bodyHeight": 29332,
+        "htmlHeight": 29332
+      },
+      "elements": [
+        {
+          "cls": "mm-contact__intro aos-init aos-animate",
+          "opacity": "1",
+          "top": -841.9375
+        },
+        {
+          "cls": "mm-contact__reach aos-init aos-animate",
+          "opacity": "1",
+          "top": -489.21875
+        },
+        {
+          "cls": "mm-contact__privacy aos-init",
+          "opacity": "0",
+          "top": 808.890625
+        },
+        {
+          "cls": "mm-contact__location aos-init",
+          "opacity": "0",
+          "top": 1417.671875
+        }
+      ]
+    },
+    {
+      "reducedMotion": "no-preference",
+      "scroll": {
+        "y": 25988,
+        "bodyHeight": 29332,
+        "htmlHeight": 29332
+      },
+      "elements": [
+        {
+          "cls": "mm-contact__intro aos-init aos-animate",
+          "opacity": "1",
+          "top": -841.9375
+        },
+        {
+          "cls": "mm-contact__reach aos-init aos-animate",
+          "opacity": "1",
+          "top": -489.21875
+        },
+        {
+          "cls": "mm-contact__privacy aos-init",
+          "opacity": "0",
+          "top": 808.890625
+        },
+        {
+          "cls": "mm-contact__location aos-init",
+          "opacity": "0",
+          "top": 1417.671875
+        }
+      ]
+    }
+  ],
+  "noJs": [
+    {
+      "cls": "mm-contact__intro",
+      "opacity": "0"
+    },
+    {
+      "cls": "mm-contact__reach",
+      "opacity": "0"
+    },
+    {
+      "cls": "mm-contact__privacy",
+      "opacity": "0"
+    },
+    {
+      "cls": "mm-contact__location",
+      "opacity": "0"
+    }
+  ]
+}
