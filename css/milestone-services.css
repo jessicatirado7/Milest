@@ -1,0 +1,80 @@
+/* ============================================================
+   MILESTONE — SERVICES SECTION
+   Load AFTER milestone-styles.fixed.css and milestone-hero.css.
+   Scoped to .mm-services to avoid conflicts with legacy .serviceFlex,
+   .serviceImg, .services, and generic Bootstrap .card styles.
+   ============================================================ */
+.mm-services {
+  background: #F7F5EF;
+  color: #283C46;
+  padding: clamp(4.5rem, 7vw, 7rem) 0;
+  scroll-margin-top: 110px;
+}
+
+.mm-services__container { max-width: 1160px; }
+.mm-services__intro { max-width: 740px; margin: 0 auto clamp(3rem, 6vw, 4.5rem); text-align: center; }
+.mm-services__eyebrow { margin: 0 0 .85rem; color: #405A4F; font: 700 .84rem/1.5 "Source Sans 3", Arial, sans-serif; letter-spacing: .15em; text-transform: uppercase; }
+.mm-services__intro h2 { margin: 0; color: #283C46; font: 500 clamp(2.15rem, 3.8vw, 3.4rem)/1.2 "Lora", Georgia, serif; letter-spacing: -.025em; text-wrap: balance; }
+.mm-services__rule { background: #7898B0; width: 54px; height: 3px; border-radius: 99px; margin: 1.5rem auto; }
+.mm-services__intro > p:last-child { max-width: 61ch; margin: 0 auto; font: 400 clamp(1.05rem, 1.2vw, 1.16rem)/1.75 "Source Sans 3", Arial, sans-serif; color: #42545C; }
+
+/* Areas of support: original family photograph + original concern list. */
+.mm-services__support { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); align-items: center; gap: clamp(2rem, 5.5vw, 5rem); margin-bottom: clamp(4.5rem, 8vw, 7rem); }
+.mm-services__support-photo { border-radius: 16px; overflow: hidden; aspect-ratio: 4 / 5; max-height: 660px; }
+.mm-services__support-photo picture, .mm-services__support-photo img { width: 100%; height: 100%; display: block; }
+.mm-services__support-photo img { object-fit: cover; object-position: center; }
+.mm-services__support-copy h3 { margin: 0 0 1.25rem; color: #283C46; font: 500 clamp(1.75rem, 2.7vw, 2.4rem)/1.25 "Lora", Georgia, serif; }
+.mm-services__support-copy > p { margin: 0 0 1.75rem; color: #42545C; font: 400 1.06rem/1.7 "Source Sans 3", Arial, sans-serif; }
+.mm-services__concerns { display: grid; gap: 0.85rem 1.2rem; padding: 0; margin: 0; list-style: none; }
+.mm-services__concerns li { position: relative; padding-left: 1.7rem; color: #283C46; font: 400 1rem/1.55 "Source Sans 3", Arial, sans-serif; }
+.mm-services__concerns li::before { content: ""; position: absolute; top: .4rem; left: .3rem; width: .45rem; height: .8rem; border: solid #526F61; border-width: 0 2px 2px 0; transform: rotate(45deg); }
+
+/* Six services, in approved updated order. */
+.mm-services__subhead { margin: 0 auto 2rem; text-align: center; max-width: 750px; }
+.mm-services__subhead h3 { margin: 0 0 .65rem; color: #283C46; font: 500 clamp(1.8rem, 3vw, 2.5rem)/1.25 "Lora", Georgia, serif; }
+.mm-services__subhead p { margin: 0 auto; color: #42545C; font: 400 1.05rem/1.6 "Source Sans 3", Arial, sans-serif; }
+.mm-services__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.5rem, 3.5vw, 2.5rem); align-items: stretch; }
+.mm-service-card { min-width: 0; background: #FFFFFF; border: 1px solid #E3E5DF; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; }
+.mm-service-card__photo { width: 100%; aspect-ratio: 16 / 10; display: block; overflow: hidden; background: #DCE5DE; }
+.mm-service-card__photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.mm-service-card__body { padding: clamp(1.4rem, 2.5vw, 2rem); }
+.mm-service-card__body h4 { margin: 0 0 1rem; color: #283C46; font: 600 clamp(1.28rem, 1.8vw, 1.6rem)/1.3 "Lora", Georgia, serif; text-wrap: balance; }
+.mm-service-card__body p { margin: 0 0 1rem; color: #42545C; font: 400 1.035rem/1.72 "Source Sans 3", Arial, sans-serif; }
+.mm-service-card__body > p:last-child { margin-bottom: 0; }
+.mm-service-card__notice { margin-top: 1.25rem; padding: 1rem 1.15rem; background: #F7F5EF; border-left: 3px solid #526F61; border-radius: 0 10px 10px 0; color: #283C46; font: 400 1rem/1.6 "Source Sans 3", Arial, sans-serif; }
+.mm-service-card__notice strong { display: block; margin-bottom: .35rem; font-weight: 700; }
+.mm-service-card__notice p { margin: 0; }
+.mm-services a { color: #405A4F; text-underline-offset: .18em; }
+.mm-services a:hover { color: #283C46; }
+.mm-services a:focus-visible { outline: 3px solid #7898B0; outline-offset: 4px; border-radius: 3px; }
+
+/* New neuropsychology photo placeholder. Remove placeholder when approved image arrives. */
+.mm-service-card__photo--placeholder { display: grid; place-items: center; position: relative; isolation: isolate; background: #DCE5DE; }
+.mm-service-card__placeholder-shape { position: absolute; width: 75%; height: 75%; border-radius: 50%; border: 2px solid #7898B0; opacity: .65; }
+.mm-service-card__placeholder-shape--one { transform: translate(-20%, 30%) rotate(-10deg); }
+.mm-service-card__placeholder-shape--two { transform: translate(22%, -24%) rotate(18deg); border-color: #526F7F; }
+.mm-service-card__placeholder-label { z-index: 1; background: #F7F5EF; padding: .65rem 1rem; border-radius: 99px; color: #283C46; font: 700 .8rem/1.3 "Source Sans 3", Arial, sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+
+.mm-services__next-step { display: flex; justify-content: space-between; align-items: center; gap: 2rem; margin-top: clamp(3rem, 6vw, 5rem); padding: clamp(1.5rem, 3vw, 2.4rem); border-radius: 16px; background: #DCE5DE; }
+.mm-services__next-step h3 { margin: 0 0 .4rem; color: #283C46; font: 500 clamp(1.45rem, 2.5vw, 2rem)/1.25 "Lora", Georgia, serif; }
+.mm-services__next-step p { margin: 0; color: #42545C; font: 400 1.03rem/1.6 "Source Sans 3", Arial, sans-serif; }
+.mm-services .mm-services__button { display: inline-flex; flex-shrink: 0; align-items: center; justify-content: center; gap: .9rem; min-height: 48px; padding: .85rem 1.35rem; border-radius: 99px; background: #526F61; color: #FFFFFF; text-decoration: none; font: 700 .98rem/1.3 "Source Sans 3", Arial, sans-serif; }
+.mm-services .mm-services__button:hover { background: #405A4F; color: #FFFFFF; }
+
+@media (max-width: 991.98px) {
+  .mm-services__support { grid-template-columns: 1fr; gap: 2rem; }
+  .mm-services__support-photo { max-height: 470px; aspect-ratio: 16 / 9; }
+  .mm-services__concerns { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 767.98px) {
+  .mm-services { padding: 4rem 0; scroll-margin-top: 96px; }
+  .mm-services__grid { grid-template-columns: 1fr; }
+  .mm-services__next-step { flex-direction: column; align-items: flex-start; }
+  .mm-services__support-photo { aspect-ratio: 4 / 3; }
+}
+@media (max-width: 575.98px) {
+  .mm-services__concerns { grid-template-columns: 1fr; }
+  .mm-service-card__photo { aspect-ratio: 16 / 9; }
+  .mm-services__next-step { align-items: stretch; }
+  .mm-services .mm-services__button { width: 100%; }
+}

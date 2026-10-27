@@ -1,0 +1,236 @@
+/* ================================================================
+   MILESTONE — SPECIALIZATIONS
+   Load AFTER milestone-styles.fixed.css and milestone-services.css.
+   Scoped to .mm-specializations so legacy #portfolio .portfolio-box,
+   .serviceImg, and global .modal styles are not reused.
+   ================================================================ */
+
+.mm-specializations {
+  background: #FFFFFF;
+  color: #283C46;
+  padding: clamp(4.5rem, 7vw, 7rem) 0;
+  scroll-margin-top: 110px;
+}
+
+.mm-specializations__container { max-width: 1160px; }
+.mm-specializations__intro {
+  max-width: 760px;
+  margin: 0 auto clamp(3rem, 5vw, 4.5rem);
+  text-align: center;
+}
+.mm-specializations__eyebrow {
+  margin: 0 0 .85rem;
+  color: #405A4F;
+  font: 700 .84rem/1.5 "Source Sans 3", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+}
+.mm-specializations__intro h2 {
+  margin: 0;
+  color: #283C46;
+  font: 500 clamp(2.15rem, 3.8vw, 3.4rem)/1.2 "Lora", Georgia, serif;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+.mm-specializations__rule {
+  width: 54px;
+  height: 3px;
+  margin: 1.5rem auto;
+  background: #7898B0;
+  border-radius: 99px;
+}
+.mm-specializations__intro > p:last-child {
+  margin: 0 auto;
+  max-width: 59ch;
+  color: #42545C;
+  font: 400 clamp(1.05rem, 1.2vw, 1.16rem)/1.75 "Source Sans 3", Arial, sans-serif;
+}
+
+/* Four photo cards. Each full card is a real keyboard-operable button. */
+.mm-specializations__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.1rem, 2.4vw, 1.8rem);
+}
+.mm-specializations__card {
+  position: relative;
+  min-width: 0;
+  aspect-ratio: 1.54 / 1;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #526F61;
+}
+.mm-specializations__image, .mm-specializations__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.mm-specializations__image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+.mm-specializations__image img {
+  object-fit: cover;
+  object-position: center;
+  transition: transform .35s ease;
+}
+/* Darkest where text sits; no pale veil that weakens text contrast. */
+.mm-specializations__card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+
+  background: linear-gradient(
+    180deg,
+    rgba(82, 111, 97, 0.25) 0%,
+    rgba(82, 111, 97, 0.65) 40%,
+    rgba(82, 111, 97, 0.94) 72%,
+    #526F61 100%
+  );
+    pointer-events: none;
+}
+.mm-specializations__card-heading { margin: 0; height: 100%; font-size: inherit; }
+.mm-specializations__card-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: .85rem;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: clamp(1.5rem, 3vw, 2.6rem);
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.mm-specializations__card-title {
+  display: block;
+  max-width: 22ch;
+  color: #FFFFFF;
+  font: 600 clamp(1.35rem, 2.1vw, 1.85rem)/1.28 "Lora", Georgia, serif;
+  text-wrap: balance;
+}
+.mm-specializations__card-prompt {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  color: #FFFFFF;
+  font: 700 1.02rem/1.4 "Source Sans 3", Arial, sans-serif;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .28em;
+}
+.mm-specializations__card-button:focus-visible {
+  outline: 4px solid #FFFFFF;
+  outline-offset: -8px;
+}
+.mm-specializations__card-button:hover .mm-specializations__card-prompt,
+.mm-specializations__card-button:focus-visible .mm-specializations__card-prompt {
+  text-decoration-thickness: 2px;
+}
+.mm-specializations__card:hover img,
+.mm-specializations__card:focus-within img { transform: scale(1.035); }
+
+/* Modal readability: scoped to this section; doesn't affect Team modals. */
+.mm-specializations__modal .modal-content {
+  border: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #FFFFFF;
+  box-shadow: 0 24px 72px rgba(24, 43, 52, .24);
+  color: #283C46;
+}
+.mm-specializations__modal .modal-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.7rem clamp(1.35rem, 3vw, 2.5rem);
+  border-bottom: 1px solid #E3E5DF;
+  background: #F7F5EF;
+}
+.mm-specializations__modal .modal-title {
+  margin: 0;
+  color: #283C46;
+  font: 600 clamp(1.45rem, 2.6vw, 2rem)/1.26 "Lora", Georgia, serif;
+  text-wrap: balance;
+}
+.mm-specializations__modal .btn-close {
+  flex-shrink: 0;
+  margin: 0;
+  padding: .6rem;
+  border-radius: 6px;
+}
+.mm-specializations__modal .btn-close:focus-visible {
+  outline: 3px solid #526F61;
+  outline-offset: 3px;
+  box-shadow: none;
+}
+.mm-specializations__modal .modal-body {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  font: 400 1.075rem/1.75 "Source Sans 3", Arial, sans-serif;
+  color: #42545C;
+  overflow-wrap: anywhere;
+}
+.mm-specializations__modal .modal-body p { margin: 0 0 1.2rem; }
+.mm-specializations__modal .modal-body > :last-child { margin-bottom: 0; }
+.mm-specializations__approaches {
+  display: grid;
+  gap: .65rem;
+  margin: .55rem 0 0;
+  padding: .75rem 0 .25rem 1.45rem;
+  border-top: 1px solid #E3E5DF;
+}
+.mm-specializations__approaches li { padding-left: .3rem; }
+.mm-specializations__approaches li::marker { color: #526F61; }
+.mm-specializations__modal a {
+  color: #405A4F;
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  text-decoration-thickness: 1px;
+}
+.mm-specializations__modal a:hover { color: #283C46; }
+.mm-specializations__modal a:focus-visible {
+  outline: 3px solid #526F61;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.mm-specializations__credentials {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 1.8rem;
+}
+.mm-specializations__credentials picture { display: block; text-align: center; }
+.mm-specializations__credentials img {
+  display: inline-block;
+  width: 100%;
+  max-width: 220px;
+  max-height: 210px;
+  object-fit: contain;
+}
+
+@media (max-width: 767.98px) {
+  .mm-specializations { padding: 4rem 0; scroll-margin-top: 96px; }
+  .mm-specializations__grid { grid-template-columns: 1fr; }
+  .mm-specializations__card { aspect-ratio: 1.7 / 1; }
+  .mm-specializations__card-button { padding: 1.6rem; }
+  .mm-specializations__modal .modal-header { padding: 1.25rem; }
+  .mm-specializations__modal .modal-body { padding: 1.25rem; }
+}
+@media (max-width: 420px) {
+  .mm-specializations__card { aspect-ratio: 1.35 / 1; }
+  .mm-specializations__credentials { gap: .85rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mm-specializations__image img { transition: none; }
+  .mm-specializations__card:hover img,
+  .mm-specializations__card:focus-within img { transform: none; }
+}

@@ -1,0 +1,680 @@
+
+/* ==========================================================
+   MILESTONE MENTAL HEALTH — OUR TEAM
+   Three-column editorial card layout
+
+   - Soft blue-green section background
+   - Ivory information panels
+   - 3 columns desktop / 2 tablet / 1 mobile
+   - Accessible typography and contrast
+   - Matching biography modals
+   - Appointment CTA inside modals
+
+   REPLACE the previous milestone-team.css entirely.
+   ========================================================== */
+
+
+/* ==========================================================
+   1. SECTION COLORS & BASE STYLES
+   ========================================================== */
+
+#team-therapist.mm-team {
+  --mm-team-bg: #B6CBC1;
+  --mm-team-ink: #283C46;
+  --mm-team-copy: #42545C;
+  --mm-team-sage: #526F61;
+  --mm-team-link: #294D43;
+  --mm-team-ivory: #F7F5EF;
+  --mm-team-rule: #6A91AA;
+
+  background: var(--mm-team-bg);
+  color: var(--mm-team-ink);
+
+  padding-block: clamp(4.5rem, 7vw, 7rem);
+  scroll-margin-top: 110px;
+}
+
+#team-therapist.mm-team,
+#team-therapist.mm-team * {
+  box-sizing: border-box;
+}
+
+#team-therapist .mm-team__container {
+  max-width: 1320px;
+}
+
+
+/* ==========================================================
+   2. SECTION INTRODUCTION
+   ========================================================== */
+
+#team-therapist .mm-team__intro {
+  max-width: 740px;
+  margin: 0 auto clamp(3.5rem, 6vw, 5.25rem);
+  text-align: center;
+}
+
+#team-therapist .mm-team__intro h2 {
+  margin: 0;
+  color: var(--mm-team-ink);
+
+  font: 500 clamp(2.3rem, 4vw, 3.4rem)/1.18
+    "Lora", Georgia, serif;
+
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+#team-therapist .mm-team__rule {
+  width: 52px;
+  height: 3px;
+  margin: 1.35rem auto 1.4rem;
+  border-radius: 99px;
+  background: var(--mm-team-rule);
+}
+
+#team-therapist .mm-team__lead {
+  margin: 0 0 0.65rem;
+  color: var(--mm-team-ink);
+
+  font: 500 clamp(1.32rem, 2vw, 1.65rem)/1.38
+    "Lora", Georgia, serif;
+}
+
+#team-therapist .mm-team__description {
+  max-width: 65ch;
+  margin: 0 auto;
+  color: var(--mm-team-copy);
+
+  font: 400 clamp(1.02rem, 1.25vw, 1.13rem)/1.7
+    "Source Sans 3", Arial, sans-serif;
+}
+
+
+/* ==========================================================
+   3. CLINICIANS & ADMINISTRATIVE TEAM HEADINGS
+   ========================================================== */
+
+#team-therapist .mm-team__group-heading {
+  margin: 0 0 clamp(1.7rem, 3vw, 2.2rem);
+  color: var(--mm-team-ink);
+
+  font: 500 clamp(1.45rem, 2.3vw, 1.85rem)/1.3
+    "Lora", Georgia, serif;
+
+  text-align: center;
+}
+
+#team-therapist .mm-team__group--admin {
+  margin-top: clamp(4.5rem, 7vw, 6rem);
+  padding-top: clamp(2.8rem, 4vw, 3.6rem);
+
+  border-top: 1px solid rgba(40, 60, 70, 0.23);
+}
+
+
+/* ==========================================================
+   4. TEAM GRID — THREE COLUMNS ON DESKTOP
+   ========================================================== */
+
+#team-therapist .mm-team__grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  align-items: stretch;
+
+  gap: clamp(1.5rem, 2.5vw, 2.25rem);
+}
+
+
+/* ==========================================================
+   5. INDIVIDUAL CLINICIAN CARDS
+   ========================================================== */
+
+#team-therapist .mm-team__profile {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(40, 60, 70, 0.12);
+  border-radius: 15px;
+
+  background: var(--mm-team-ivory);
+
+  box-shadow: 0 5px 20px rgba(40, 60, 70, 0.035);
+}
+
+
+/* ==========================================================
+   6. CLINICIAN PHOTOGRAPHS
+   ========================================================== */
+
+#team-therapist .mm-team__portrait {
+  display: block;
+  flex: 0 0 auto;
+
+  width: 100%;
+  aspect-ratio: 4 / 5;
+
+  overflow: hidden;
+
+  border-radius: 0;
+  background: #DCE5DF;
+}
+
+#team-therapist .mm-team__portrait img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  max-width: none;
+
+  object-fit: cover;
+  object-position: center 26%;
+
+  border-radius: 0;
+  transform: none;
+}
+
+
+/* ==========================================================
+   7. IVORY INFORMATION PANELS
+   ========================================================== */
+
+#team-therapist .mm-team__profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  flex: 1 1 auto;
+  min-width: 0;
+
+  padding: clamp(1.2rem, 1.9vw, 1.55rem);
+
+  background: var(--mm-team-ivory);
+}
+
+
+/* CLINICIAN NAME */
+
+#team-therapist .mm-team__name {
+  margin: 0 0 0.22rem;
+
+  color: var(--mm-team-ink);
+
+  font: 650 clamp(1.2rem, 1.4vw, 1.4rem)/1.33
+    "Source Sans 3", Arial, sans-serif;
+
+  overflow-wrap: break-word;
+}
+
+
+/* CREDENTIALS */
+
+#team-therapist .mm-team__credentials {
+  margin: 0;
+
+  color: var(--mm-team-copy);
+
+  font: 400 0.99rem/1.55
+    "Source Sans 3", Arial, sans-serif;
+
+  overflow-wrap: break-word;
+}
+
+
+/* AREAS OF FOCUS */
+
+#team-therapist .mm-team__focus {
+  margin: 0.9rem 0 1.15rem;
+
+  color: var(--mm-team-ink);
+
+  font: 400 1.02rem/1.6
+    "Source Sans 3", Arial, sans-serif;
+
+  overflow-wrap: break-word;
+}
+
+
+/* ==========================================================
+   8. MEET THE CLINICIAN CTA
+   ========================================================== */
+
+#team-therapist .mm-team__bio-link {
+  appearance: none;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 0.55rem;
+
+  min-height: 44px;
+
+  margin: auto 0 -0.25rem -0.25rem;
+  padding: 0.35rem 0.25rem;
+
+  border: 0;
+  border-radius: 4px;
+
+  background: transparent;
+  color: var(--mm-team-link);
+
+  cursor: pointer;
+
+  font: 700 1.025rem/1.5
+    "Source Sans 3", Arial, sans-serif;
+
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.23em;
+}
+
+#team-therapist .mm-team__bio-link:hover {
+  color: #1F3C33;
+  text-decoration-thickness: 2px;
+}
+
+#team-therapist .mm-team__bio-link span {
+  font-size: 1.15em;
+  line-height: 1;
+}
+
+
+/* ==========================================================
+   9. ADMINISTRATIVE TEAM
+   ========================================================== */
+
+/* Center the single administrative card on desktop */
+
+#team-therapist
+.mm-team__grid--admin
+> .mm-team__profile:only-child {
+  grid-column: 2;
+}
+
+
+/* ==========================================================
+   10. BIOGRAPHY MODALS
+   ========================================================== */
+
+#team-therapist .mm-team__modal {
+  color: var(--mm-team-ink);
+}
+
+
+/* MODAL WIDTH */
+
+#team-therapist .mm-team__modal .modal-dialog {
+  width: calc(100% - 2rem);
+  max-width: 840px;
+  margin: 1rem auto;
+}
+
+
+/* MODAL SURFACE */
+
+#team-therapist .mm-team__modal .modal-content {
+  display: flex;
+  flex-direction: column;
+
+  max-height: calc(100vh - 2rem);
+  max-height: calc(100dvh - 2rem);
+
+  overflow: hidden;
+
+  border: 0;
+  border-radius: 16px;
+
+  background: #FFFFFF;
+
+  box-shadow: 0 24px 72px rgba(24, 43, 52, 0.24);
+}
+
+
+/* MODAL HEADER */
+
+#team-therapist .mm-team__modal .modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 1.2rem;
+
+  padding:
+    clamp(1.25rem, 2.5vw, 1.9rem)
+    clamp(1.35rem, 3vw, 2.5rem);
+
+  border-bottom: 1px solid #E3E5DF;
+
+  background: var(--mm-team-ivory);
+}
+
+#team-therapist .mm-team__modal-identity {
+  min-width: 0;
+}
+
+
+/* MODAL EYEBROW */
+
+#team-therapist .mm-team__modal-eyebrow {
+  margin: 0 0 0.4rem;
+
+  color: var(--mm-team-sage);
+
+  font: 700 0.78rem/1.5
+    "Source Sans 3", Arial, sans-serif;
+
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+
+/* MODAL CLINICIAN NAME */
+
+#team-therapist .mm-team__modal .modal-title {
+  margin: 0;
+
+  color: var(--mm-team-ink);
+
+  font: 500 clamp(1.5rem, 2.6vw, 2rem)/1.3
+    "Lora", Georgia, serif;
+
+  overflow-wrap: break-word;
+}
+
+
+/* MODAL CREDENTIALS */
+
+#team-therapist .mm-team__modal-credentials {
+  margin: 0.28rem 0 0;
+
+  color: var(--mm-team-copy);
+
+  font: 400 0.98rem/1.45
+    "Source Sans 3", Arial, sans-serif;
+}
+
+
+/* CLOSE BUTTON */
+
+#team-therapist .mm-team__modal .btn-close {
+  flex: 0 0 auto;
+
+  margin: 0;
+  padding: 0.65rem;
+
+  border-radius: 7px;
+}
+
+
+/* ==========================================================
+   11. MODAL BIOGRAPHY TEXT
+   ========================================================== */
+
+#team-therapist .mm-team__modal .modal-body {
+  min-height: 0;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+
+  color: var(--mm-team-copy);
+
+  font: 400 1.075rem/1.76
+    "Source Sans 3", Arial, sans-serif;
+
+  overflow-wrap: break-word;
+}
+
+#team-therapist .mm-team__modal .modal-body p,
+#team-therapist .mm-team__modal .modal-body li,
+#team-therapist .mm-team__modal .modal-body .card-text {
+  color: var(--mm-team-copy);
+  font: inherit;
+  line-height: 1.76;
+}
+
+#team-therapist .mm-team__modal .modal-body > p.card-text {
+  margin: 0 0 1.2rem;
+}
+
+
+/* EDUCATION, CREDENTIALS, TRAINING HEADINGS */
+
+#team-therapist .mm-team__modal .modal-body .card-subtitle {
+  margin: 1.6rem 0 0.65rem !important;
+
+  color: var(--mm-team-ink);
+
+  font: 700 1.12rem/1.4
+    "Source Sans 3", Arial, sans-serif;
+}
+
+#team-therapist .mm-team__modal .modal-body .card-subtitle b {
+  font-weight: 700;
+}
+
+
+/* MODAL LISTS */
+
+#team-therapist .mm-team__modal .modal-body ul {
+  margin: 0 0 1.35rem;
+  padding-left: 1.4rem;
+}
+
+#team-therapist .mm-team__modal .modal-body li {
+  margin-bottom: 0.4rem;
+  padding-left: 0.15rem;
+}
+
+#team-therapist .mm-team__modal .modal-body li::marker {
+  color: var(--mm-team-sage);
+}
+
+
+/* MODAL BODY LINKS */
+
+#team-therapist .mm-team__modal .modal-body a {
+  color: var(--mm-team-link);
+  font-weight: 700;
+  text-underline-offset: 0.2em;
+}
+
+#team-therapist .mm-team__modal .modal-body a:hover {
+  color: #1F3C33;
+}
+
+
+/* ==========================================================
+   12. MODAL APPOINTMENT CTA FOOTER
+   ========================================================== */
+
+/* Footer remains visible beneath the scrollable biography */
+
+#team-therapist .mm-team__modal .mm-team__modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 0.75rem 1.25rem;
+
+  padding:
+    1rem
+    clamp(1.35rem, 3vw, 2.5rem);
+
+  background: var(--mm-team-ivory);
+
+  border-top: 1px solid #E3E5DF;
+}
+
+
+/* CTA SUPPORTING TEXT */
+
+#team-therapist .mm-team__modal-cta-copy {
+  margin: 0;
+
+  flex: 1 1 220px;
+
+  color: var(--mm-team-copy);
+
+  font: 400 0.97rem/1.5
+    "Source Sans 3", Arial, sans-serif;
+}
+
+
+/* REQUEST AN APPOINTMENT BUTTON */
+
+#team-therapist .mm-team__appointment-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.6rem;
+
+  min-height: 48px;
+
+  padding: 0.7rem 1.1rem;
+
+  border: 2px solid var(--mm-team-sage);
+  border-radius: 999px;
+
+  background: var(--mm-team-sage);
+  color: #FFFFFF;
+
+  font: 700 0.98rem/1.35
+    "Source Sans 3", Arial, sans-serif;
+
+  text-align: center;
+  text-decoration: none;
+}
+
+#team-therapist .mm-team__appointment-link:hover {
+  background: #405A4F;
+  border-color: #405A4F;
+  color: #FFFFFF;
+}
+
+
+/* ==========================================================
+   13. KEYBOARD ACCESSIBILITY
+   ========================================================== */
+
+#team-therapist .mm-team__bio-link:focus-visible,
+#team-therapist .mm-team__modal a:focus-visible,
+#team-therapist .mm-team__modal .btn-close:focus-visible {
+  outline: 3px solid #294D43;
+  outline-offset: 3px;
+  box-shadow: none;
+}
+
+
+/* ==========================================================
+   14. TABLET — TWO COLUMNS
+   ========================================================== */
+
+@media (max-width: 991.98px) {
+
+  #team-therapist .mm-team__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: clamp(1.25rem, 3vw, 2rem);
+  }
+
+  /* Center the administrative card */
+
+  #team-therapist
+  .mm-team__grid--admin
+  > .mm-team__profile:only-child {
+    grid-column: 1 / -1;
+    width: min(100%, 395px);
+    justify-self: center;
+  }
+
+}
+
+
+/* ==========================================================
+   15. MOBILE — SINGLE COLUMN
+   ========================================================== */
+
+@media (max-width: 679.98px) {
+
+  #team-therapist.mm-team {
+    padding-block: 4rem;
+    scroll-margin-top: 96px;
+  }
+
+  #team-therapist .mm-team__intro {
+    margin-bottom: 3rem;
+  }
+
+  #team-therapist .mm-team__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.65rem;
+  }
+
+  #team-therapist .mm-team__profile {
+    max-width: 440px;
+    margin-inline: auto;
+  }
+
+  #team-therapist .mm-team__portrait {
+    aspect-ratio: 4 / 5;
+  }
+
+  #team-therapist
+  .mm-team__grid--admin
+  > .mm-team__profile:only-child {
+    grid-column: auto;
+  }
+
+  /* Mobile modal sizing */
+
+  #team-therapist .mm-team__modal .modal-dialog {
+    width: calc(100% - 1rem);
+    margin: 0.5rem auto;
+  }
+
+  #team-therapist .mm-team__modal .modal-content {
+    max-height: calc(100vh - 1rem);
+    max-height: calc(100dvh - 1rem);
+  }
+
+  #team-therapist .mm-team__modal .modal-header,
+  #team-therapist .mm-team__modal .modal-body,
+  #team-therapist .mm-team__modal .mm-team__modal-footer {
+    padding: 1.2rem;
+  }
+
+  #team-therapist .mm-team__appointment-link {
+    width: 100%;
+  }
+
+}
+
+
+/* ==========================================================
+   16. REDUCED MOTION
+   ========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  #team-therapist .mm-team__bio-link,
+  #team-therapist .mm-team__appointment-link {
+    transition: none;
+  }
+
+}

@@ -1,0 +1,254 @@
+/* ==========================================================
+   MILESTONE MENTAL HEALTH — FOOTER
+   Load after the site's existing stylesheets.
+   Light blue-sage main footer + deep slate copyright bar.
+   ========================================================== */
+
+#site-footer.mm-footer {
+  --footer-bg: #E3ECE8;
+  --footer-ink: #283C46;
+  --footer-copy: #42545C;
+  --footer-link: #294D43;
+  --footer-sage: #526F61;
+  --footer-bottom: #344F60;
+  --footer-bottom-muted: #CADBD6;
+
+  background: var(--footer-bg);
+  color: var(--footer-ink);
+  font-family: "Source Sans 3", "Source Sans Pro", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+#site-footer.mm-footer,
+#site-footer.mm-footer *,
+#site-footer.mm-footer *::before,
+#site-footer.mm-footer *::after {
+  box-sizing: border-box;
+}
+
+/* Main area */
+#site-footer .mm-footer__main {
+  padding-block: clamp(3.75rem, 6vw, 5.75rem);
+}
+
+#site-footer .mm-footer__brand {
+  display: inline-block;
+  max-width: 100%;
+  line-height: 0;
+  border-radius: 6px;
+}
+
+#site-footer .mm-footer__brand picture { display: block; }
+
+#site-footer .mm-footer__logo {
+  display: block;
+  width: min(100%, 290px);
+  height: auto;
+  object-fit: contain;
+}
+
+#site-footer .mm-footer__description {
+  max-width: 34ch;
+  margin: 1.35rem 0 1.65rem;
+  color: var(--footer-copy);
+  font-size: 1.075rem;
+  line-height: 1.7;
+}
+
+/* Appointment CTA */
+#site-footer .mm-footer__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  min-height: 48px;
+  padding: .75rem 1.35rem;
+  border: 2px solid var(--footer-sage);
+  border-radius: 999px;
+  background: var(--footer-sage);
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s ease, border-color .2s ease;
+}
+
+#site-footer .mm-footer__cta:hover {
+  background: #405A4F;
+  border-color: #405A4F;
+  color: #FFFFFF;
+}
+
+/* Navigation & contact headings */
+#site-footer .mm-footer__heading {
+  margin: 0 0 1.25rem;
+  color: var(--footer-ink);
+  font-family: "Lora", Georgia, serif;
+  font-size: clamp(1.25rem, 1.6vw, 1.45rem);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Explore links */
+#site-footer .mm-footer__links {
+  display: grid;
+  gap: .3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#site-footer .mm-footer__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding-block: .25rem;
+  color: var(--footer-link);
+  font-size: 1.025rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  text-underline-offset: .22em;
+}
+
+#site-footer .mm-footer__links a:hover {
+  color: var(--footer-ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+}
+
+/* Contact information */
+#site-footer .mm-footer__contact {
+  margin: 0;
+  color: var(--footer-copy);
+  font-style: normal;
+}
+
+#site-footer .mm-footer__address {
+  margin: 0 0 .3rem;
+  color: var(--footer-ink);
+  font-size: 1.075rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+#site-footer .mm-footer__availability {
+  margin: 0 0 1.5rem;
+  color: var(--footer-copy);
+  font-size: 1rem;
+}
+
+#site-footer .mm-footer__contact-list {
+  display: grid;
+  gap: .75rem;
+  margin: 0;
+}
+
+#site-footer .mm-footer__contact-list > div {
+  display: grid;
+  grid-template-columns: 4.25rem minmax(0, 1fr);
+  gap: .4rem 1rem;
+}
+
+#site-footer .mm-footer__contact-list dt {
+  color: var(--footer-ink);
+  font-weight: 700;
+}
+
+#site-footer .mm-footer__contact-list dd {
+  min-width: 0;
+  margin: 0;
+  color: var(--footer-copy);
+  overflow-wrap: anywhere;
+}
+
+#site-footer .mm-footer__contact-list a {
+  color: var(--footer-link);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: .22em;
+}
+
+#site-footer .mm-footer__contact-list a:hover {
+  color: var(--footer-ink);
+  text-decoration-thickness: 2px;
+}
+
+#site-footer .mm-footer__privacy-note {
+  max-width: 42ch;
+  margin: 1.45rem 0 0;
+  color: var(--footer-copy);
+  font-size: .95rem;
+  line-height: 1.65;
+}
+
+/* Copyright bar */
+#site-footer .mm-footer__bottom {
+  padding-block: 1.35rem;
+  background: var(--footer-bottom);
+  color: #FFFFFF;
+}
+
+#site-footer .mm-footer__bottom-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .65rem 1.5rem;
+}
+
+#site-footer .mm-footer__bottom small {
+  color: var(--footer-bottom-muted);
+  font-size: .95rem;
+  line-height: 1.6;
+}
+
+#site-footer .mm-footer__bottom a {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+
+#site-footer .mm-footer__bottom a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Focus states */
+#site-footer a:focus-visible {
+  outline: 3px solid var(--footer-ink);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+#site-footer .mm-footer__bottom a:focus-visible {
+  outline-color: #FFFFFF;
+}
+
+/* Tablet and mobile */
+@media (max-width: 991.98px) {
+  #site-footer .mm-footer__description { max-width: 46ch; }
+}
+
+@media (max-width: 575.98px) {
+  #site-footer .mm-footer__main {
+    padding-block: 3.5rem;
+  }
+
+  #site-footer .mm-footer__logo {
+    width: min(100%, 260px);
+  }
+
+  #site-footer .mm-footer__bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #site-footer .mm-footer__cta { transition: none; }
+}

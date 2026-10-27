@@ -1,0 +1,123 @@
+/* ==========================================
+   MILESTONE — PHILOSOPHY SECTION
+   Add AFTER the existing template CSS.
+   Do not use bg-primary / text-white classes here.
+   ========================================== */
+.philosophy-section {
+  position: relative;
+  overflow: hidden;
+  /* Reserve room for the top decorative wave without overlapping text. */
+  padding: clamp(7.25rem, 9vw, 8.5rem) 0 clamp(4rem, 7vw, 6rem);
+  background-color: #526F7F;
+  color: #FFFFFF;
+}
+
+.philosophy-section__eyebrow {
+  margin: 0 0 1rem;
+  color: #FFFFFF;
+  font-family: "Source Sans 3", Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.philosophy-section__title {
+  margin: 0;
+  color: #FFFFFF;
+  font-family: "Lora", Georgia, serif;
+  font-size: clamp(2.1rem, 3.3vw, 3.3rem);
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.philosophy-section__rule {
+  width: 3.5rem;
+  height: 3px;
+  margin: 1.65rem auto 1.9rem;
+  border-radius: 100px;
+  background-color: #BED5DB;
+}
+
+.philosophy-section__text {
+  max-width: 65ch;
+  margin: 0 auto 1.1rem;
+  color: #FFFFFF;
+  font-family: "Source Sans 3", Arial, sans-serif;
+  font-size: clamp(1.05rem, 1.25vw, 1.2rem);
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.philosophy-section__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 44px;
+  margin-top: 0.8rem;
+  padding: 0.35rem 0.1rem;
+  color: #FFFFFF;
+  font-family: "Source Sans 3", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.3em;
+  transition: color 180ms ease;
+}
+
+.philosophy-section__link:hover {
+  color: #FFFFFF;
+  text-decoration-thickness: 3px;
+}
+
+.philosophy-section__link:focus-visible {
+  outline: 3px solid #FFFFFF;
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+
+@media (max-width: 575.98px) {
+  .philosophy-section {
+    padding: 6rem 0 3.5rem;
+  }
+
+  .philosophy-section__title {
+    font-size: clamp(1.9rem, 8vw, 2.3rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .philosophy-section__link { transition: none; }
+}
+
+/*
+ * Seamless hero-to-philosophy wave
+ * The SVG MUST be an immediate child of <section class="philosophy-section">,
+ * before the .container. Do not place it inside .container (which has its own
+ * positioning and would push the wave below the top of the section).
+ */
+.philosophy-section__wave {
+  position: absolute;
+  top: -1px; /* Close any subpixel seam with the ivory hero. */
+  left: 0;
+  display: block;
+  width: 100%;
+  height: clamp(66px, 7.5vw, 108px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.philosophy-section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 575.98px) {
+  .philosophy-section__wave {
+    height: 65px;
+  }
+}
