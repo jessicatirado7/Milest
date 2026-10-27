@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Who PCIT supports — card options</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f7f5ef; color: #283c46; font: 17px/1.6 system-ui, sans-serif; }
+    main { max-width: 1540px; margin: auto; padding: 28px 24px 64px; }
+    h1 { font: 500 clamp(28px, 4vw, 42px)/1.2 Georgia, serif; margin: 0 0 18px; }
+    h2 { font-size: 23px; }
+    p { max-width: 85ch; }
+    .notice { padding: 12px 18px; background: white; border-left: 4px solid #526f61; }
+    .options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: 24px 0; }
+    article { padding: 24px; border: 1px solid #c2cbc5; border-radius: 16px; }
+    article h2 { margin: 0 0 12px; }
+    article p { margin: 0; }
+    .ivory { background: #f7f5ef; color: #283c46; }
+    .pale-blue { background: #eaf1f4; color: #283c46; }
+    .muted-blue { background: #5b7583; color: white; }
+    a { color: #294d43; text-underline-offset: 3px; }
+    a:focus-visible, select:focus-visible { outline: 3px solid #283c46; outline-offset: 4px; }
+    figure { margin: 24px 0; }
+    img { width: 100%; height: auto; display: block; border-radius: 12px; }
+    label { font-weight: 700; }
+    select { display: block; margin: 8px 0 12px; padding: 12px; max-width: 100%; color: #283c46; border: 1px solid #526f61; border-radius: 6px; background: white; font: inherit; }
+    iframe { width: 100%; height: 780px; border: 1px solid #c2cbc5; border-radius: 12px; background: white; }
+    @media (max-width: 800px) { .options { grid-template-columns: 1fr; } main { padding: 24px 16px; } }
+  </style>
+</head>
+<body>
+<main>
+  <p>Milestone Mental Health · Phase 1 design review</p>
+  <h1>Who PCIT supports: keep the card distinct</h1>
+  <p class="notice"><strong>Ivory with dark blue text is selected and applied.</strong> The screenshot comparison preserves the original review options. The controls below let you revisit the alternatives without changing the site.</p>
+  <p><strong>I recommend ivory with dark blue text.</strong> It creates the clearest separation from the surrounding blue and repeats the site's warm ivory palette. If you prefer the original muted look, the third option stays close to it while meeting the text contrast requirement.</p>
+  <div class="options">
+    <article class="ivory"><h2>1. Ivory · recommended</h2><p>Warm ivory surface with dark blue text. Strongest visual separation. <strong>10.55:1 text contrast.</strong></p></article>
+    <article class="pale-blue"><h2>2. Pale blue</h2><p>A cool, subtle surface with the same dark blue text. A softer contrast between surfaces. <strong>10.07:1 text contrast.</strong></p></article>
+    <article class="muted-blue"><h2>3. Muted blue + white</h2><p>Close to the original: slightly deepen its muted tint and use solid white text. <strong>4.86:1 text contrast.</strong></p></article>
+  </div>
+  <figure><a href="evidence/pcit-card-options.png"><img src="evidence/pcit-card-options.png" alt="Actual PCIT card screenshots: original muted blue, proposed ivory, proposed pale blue, and proposed muted blue with white text. Text contrast values are described above. Click to enlarge."></a></figure>
+  <h2>See an option in the full section</h2>
+  <label for="choice">Preview card treatment</label>
+  <select id="choice">
+    <option value="ivory">Ivory with dark blue text — recommended</option>
+    <option value="pale-blue">Pale blue with dark blue text</option>
+    <option value="muted-blue">Muted blue with white text — closest to original</option>
+  </select>
+  <p id="status" role="status">Loading ivory preview…</p>
+  <iframe id="section" title="Selected PCIT card treatment in the full blue section" aria-describedby="status"></iframe>
+  <p>All three alternatives meet the 4.5:1 normal-text contrast minimum for these tested color pairs. This review does not certify whole-site WCAG conformance. The card wording, layout and surrounding section blue are unchanged.</p>
+  <p><a href="pcit-card-review.md">Review notes, applied changes and verification</a></p>
+  <noscript><p>The static comparison image works without JavaScript. JavaScript is needed to switch the full-section preview.</p></noscript>
+</main>
+<script>
+  const frame = document.getElementById('section');
+  const choice = document.getElementById('choice');
+  const status = document.getElementById('status');
+  const allowed = ['ivory', 'pale-blue', 'muted-blue', 'original'];
+  frame.addEventListener('load', async () => {
+    try {
+      const key = new URL(frame.contentWindow.location.href).searchParams.get('card-review');
+      if (!allowed.includes(key)) return;
+      const doc = frame.contentDocument;
+      if (key !== 'original') {
+        const css = doc.createElement('link');
+        css.rel = 'stylesheet';
+        css.href = '/docs/phase1/pcit-' + key + '-proposal.css';
+        const loaded = new Promise((resolve, reject) => { css.onload = resolve; css.onerror = reject; });
+        doc.head.append(css);
+        await loaded;
+      }
+      await doc.fonts.ready;
+      const section = doc.querySelector('.mm-ses-blue');
+      const nav = doc.querySelector('#mainNav');
+      frame.contentWindow.scrollTo(0, section.getBoundingClientRect().top + frame.contentWindow.scrollY - (nav?.getBoundingClientRect().height || 0));
+      status.textContent = 'Preview loaded: ' + key.replaceAll('-', ' ') + '. The applied site treatment is ivory with dark blue text.';
+      status.dataset.loaded = key;
+    } catch (error) { status.textContent = 'Open this review through the local HTTP server, or use the static comparison image above.'; }
+  });
+  function update() {
+    status.textContent = 'Loading selected preview…';
+    status.dataset.loaded = '';
+    frame.src = '/parent-child-interaction-therapy.html?card-review=' + choice.value;
+  }
+  choice.addEventListener('change', update);
+  update();
+</script>
+</body>
+</html>

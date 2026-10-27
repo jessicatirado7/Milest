@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Contrast proposal review — Milestone Mental Health</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f7f5ef; color: #283c46; font: 17px/1.6 system-ui, sans-serif; }
+    main { width: min(1500px, 100%); margin: auto; padding: 32px 24px 64px; }
+    h1, h2 { line-height: 1.2; }
+    h1 { margin: 8px 0 16px; font-family: Georgia, serif; font-size: clamp(28px, 4vw, 42px); font-weight: 500; }
+    p { max-width: 82ch; }
+    .notice { border-left: 4px solid #526f61; padding: 12px 18px; background: white; }
+    a { color: #294d43; text-underline-offset: 3px; }
+    a:focus-visible, select:focus-visible { outline: 3px solid #283c46; outline-offset: 4px; }
+    label { font-weight: 700; }
+    select { display: block; max-width: 100%; margin: 6px 0 24px; padding: 12px; font: inherit; border: 1px solid #526f61; color: inherit; background: white; border-radius: 6px; }
+    .comparisons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    figure { margin: 0; padding: 16px; background: white; border: 1px solid #c2cbc5; border-radius: 12px; min-width: 0; }
+    figcaption { font-size: 21px; font-weight: 700; margin-bottom: 8px; }
+    iframe { display: block; width: 100%; height: 780px; border: 1px solid #d4dbd6; }
+    .state { font-size: 15px; min-height: 24px; margin: 4px 0; }
+    table { border-collapse: collapse; width: 100%; max-width: 1100px; background: white; }
+    th, td { text-align: left; border: 1px solid #c2cbc5; padding: 12px; }
+    th { background: #eaf1f4; }
+    .table-wrap { overflow-x: auto; }
+    code { font-size: .9em; }
+    @media (max-width: 850px) { main { padding: 24px 16px; } .comparisons { grid-template-columns: 1fr; } iframe { height: 700px; } }
+  </style>
+</head>
+<body>
+<main>
+  <p>Milestone Mental Health · Phase 1 review</p>
+  <h1>Proposed contrast corrections</h1>
+  <p class="notice"><strong>Contrast choices approved and implemented.</strong> PCIT uses the selected ivory card with dark blue text. <a href="pcit-card-options.html">View the PCIT selection and review history here.</a> These original-proposal frames now reflect the current site styles; stored screenshots preserve the earlier before-and-after evidence.</p>
+  <p>The cards use a slightly darker tint of the existing blue. Pale and white text stays the same. Resource links become white and underlined, with a white keyboard-focus outline on blue backgrounds. Layouts, typography and photographs stay the same.</p>
+  <label for="page">Choose an affected page</label>
+  <select id="page">
+    <option value="parent-child-interaction-therapy.html">Parent–Child Interaction Therapy — card and resource link</option>
+    <option value="career.html">Careers — pale labels and white values</option>
+    <option value="caregiver-coaching-and-consultation.html">Caregiver Coaching — pale list text</option>
+    <option value="circle-of-security-parenting.html">Circle of Security Parenting</option>
+    <option value="clinical-supervision.html">Clinical Supervision</option>
+    <option value="experiental-play-therapy.html">Experiential Play Therapy</option>
+    <option value="eye-movement-densensitizaion-and-reprocessing.html">EMDR — card and resource link</option>
+    <option value="social-emotional-skill-building.html">Social-Emotional Skill Building</option>
+    <option value="theraplay.html">Theraplay</option>
+    <option value="trauma-focused-cognitive-behavorial-therapy.html">Trauma-Focused CBT</option>
+    <option value="trauma-informed-child-parent-psychotherapy.html">Child-Parent Psychotherapy</option>
+  </select>
+  <div class="comparisons">
+    <figure>
+      <figcaption>Current</figcaption>
+      <p class="state" id="before-status" role="status">Loading current page…</p>
+      <iframe id="before" title="Current site blue section" aria-describedby="before-status"></iframe>
+    </figure>
+    <figure>
+      <figcaption>Proposed</figcaption>
+      <p class="state" id="after-status" role="status">Loading proposed page…</p>
+      <iframe id="after" title="Proposed contrast correction" aria-describedby="after-status"></iframe>
+    </figure>
+  </div>
+  <p>Scroll inside either preview to inspect the full section. At this side-by-side width the site uses its responsive layout. Use the screenshots below to review the full desktop layout.</p>
+  <h2>Contrast comparison</h2>
+  <p>Normal-sized text needs at least 4.5:1. These rounded ratios describe the tested color combinations, rather than whole-site WCAG conformance.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th scope="col">Element</th><th scope="col">Current</th><th scope="col">Proposed</th><th scope="col">Change</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Pale card body text</th><td>4.23:1</td><td>5.34:1</td><td>Card tint only</td></tr>
+      <tr><th scope="row">White card text / links</th><td>4.47:1</td><td>5.65:1</td><td>Card tint only</td></tr>
+      <tr><th scope="row">Pale careers labels</th><td>3.91:1</td><td>4.95:1</td><td>Card tint only</td></tr>
+      <tr><th scope="row">PCIT / EMDR resource links</th><td>1.23:1</td><td>5.33:1</td><td>White, underlined links</td></tr>
+    </tbody>
+  </table></div>
+  <h2>Desktop screenshots and exact proposal</h2>
+  <ul>
+    <li>PCIT: <a href="evidence/pcit-current-desktop.png">Current</a> · <a href="evidence/pcit-proposed-desktop.png">Proposed</a></li>
+    <li>Careers: <a href="evidence/careers-current-desktop.png">Current</a> · <a href="evidence/careers-proposed-desktop.png">Proposed</a></li>
+    <li><a href="evidence/pcit-proposed-focus.png">Proposed keyboard-focus outline</a></li>
+    <li><a href="evidence/pcit-comparison.png">PCIT comparison image</a> · <a href="evidence/careers-comparison.png">Careers comparison image</a></li>
+    <li><a href="contrast-review.md">Review notes and verification</a> · <a href="contrast-proposal.css">Exact proposed CSS</a></li>
+  </ul>
+  <noscript><p>JavaScript is needed for the paired live previews. The screenshot links above work without it.</p></noscript>
+</main>
+<script>
+  const picker = document.getElementById('page');
+  async function prepare(frame, proposed) {
+    const status = document.getElementById(proposed ? 'after-status' : 'before-status');
+    try {
+      const doc = frame.contentDocument;
+      if (!doc.querySelector('.mm-ses-blue')) throw new Error('Section unavailable');
+      if (proposed) {
+        const css = doc.createElement('link');
+        css.rel = 'stylesheet';
+        css.href = '/docs/phase1/contrast-proposal.css';
+        const loaded = new Promise((resolve, reject) => { css.onload = resolve; css.onerror = reject; });
+        doc.head.append(css);
+        await loaded;
+      }
+      await doc.fonts.ready;
+      const section = doc.querySelector('.mm-ses-blue');
+      const nav = doc.querySelector('#mainNav');
+      frame.contentWindow.scrollTo(0, section.getBoundingClientRect().top + frame.contentWindow.scrollY - (nav?.getBoundingClientRect().height || 0));
+      status.textContent = proposed ? 'Proposal loaded — no site stylesheet changes.' : 'Current site styles loaded.';
+    } catch (error) {
+      status.textContent = 'Preview unavailable. Please open this review through the local HTTP server; screenshot links are also provided.';
+    }
+  }
+  for (const [id, proposed] of [['before', false], ['after', true]]) {
+    const frame = document.getElementById(id);
+    frame.addEventListener('load', () => prepare(frame, proposed));
+  }
+  function update() {
+    document.getElementById('before-status').textContent = 'Loading current page…';
+    document.getElementById('after-status').textContent = 'Loading proposed page…';
+    for (const id of ['before', 'after']) document.getElementById(id).src = '/' + picker.value;
+  }
+  picker.addEventListener('change', update);
+  update();
+</script>
+</body>
+</html>

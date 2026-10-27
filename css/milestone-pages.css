@@ -6067,6 +6067,48 @@ body.mm-careers-page {
   color: #53656c;
   margin: 0.75rem 0 0;
 }
+
+/* Phase 1: approved contrast corrections. PCIT uses the owner-selected ivory
+   support card; the other blue-section cards retain their approved dark tint. */
+.mm-ses-blue__card:not([aria-labelledby="pcit-at-glance-heading"]) {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.mm-ses-blue .mm-ses-body a,
+.mm-ses-blue .mm-ses-body a:visited,
+.mm-ses-blue .mm-ses-body a:hover,
+.mm-ses-blue .mm-ses-body a:focus,
+.mm-ses-blue .mm-ses-body a:active {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+body.mm-interior-page main .mm-ses-blue a[href]:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+}
+
+body.mm-interior-page main .mm-ses-blue[aria-labelledby="pcit-timeline-heading"]
+  .mm-ses-blue__card[aria-labelledby="pcit-at-glance-heading"] {
+  background: #f7f5ef;
+  color: #283c46;
+}
+
+body.mm-interior-page main .mm-ses-blue[aria-labelledby="pcit-timeline-heading"]
+  .mm-ses-blue__card[aria-labelledby="pcit-at-glance-heading"] :is(h3, p, strong, a),
+body.mm-interior-page main .mm-ses-blue[aria-labelledby="pcit-timeline-heading"]
+  .mm-ses-blue__card[aria-labelledby="pcit-at-glance-heading"]
+  a:is(:visited, :hover, :focus, :active) {
+  color: #283c46;
+}
+
+body.mm-interior-page main .mm-ses-blue[aria-labelledby="pcit-timeline-heading"]
+  .mm-ses-blue__card[aria-labelledby="pcit-at-glance-heading"] a:focus-visible {
+  outline: 3px solid #283c46;
+  outline-offset: 4px;
+}
+
 @media (max-width: 767.98px) {
   .mm-supervision-refined__profile {
     grid-template-columns: 1fr;

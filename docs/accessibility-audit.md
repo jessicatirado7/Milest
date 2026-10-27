@@ -1,5 +1,7 @@
 # Accessibility baseline — Phase 0
 
+Phase 1 update: approved contrast fixes are implemented, including the owner's selected ivory/dark-blue PCIT support card. See the [applied PCIT verification](phase1/pcit-card-review.md). A01/A02's identified text contrast defects are corrected in the implemented styles; the Phase 0 observations below are historical baseline evidence. Full Phase 1 manual verification and other findings remain outstanding.
+
 October 27, 2026. Required technical target: WCAG 2.1 A/AA; WCAG 2.2 AA enhancements evaluated where evidence is available. **No conformance certification.** Findings use the complete records, recommendations, risk, tests and status in the [master register](site-audit.md#finding-register).
 
 ## Results and highest-value work

@@ -1,5 +1,7 @@
 # Milestone Mental Health — Phase 0 site audit
 
+Phase 1 update: approved contrast fixes are implemented, including the owner's selected [ivory/dark-blue PCIT card](phase1/pcit-card-review.md), white resource links/focus outlines and other-card tints. The owner has directed appointment inquiries to the existing webform for now; privacy restrictions remain, and route/copy consistency remains a separate Phase 1 task. The report below records the Phase 0 baseline; Phase 1 is not yet complete.
+
 Audit date: October 27, 2026 (America/Chicago). Scope: complete repository inventory, source inspection, local browser baseline, and separate public production checks. **Phase 0 only; application code unchanged.**
 
 ## Executive summary
@@ -64,7 +66,7 @@ Live homepage additionally requests Adobe Typekit, Google Cinzel/Raleway, Bootst
 
 ## Finding register
 
-All findings below are **open recommendations, not implemented**. Severity reflects user/release impact, not a legal conclusion. Locations refer to the audited working source; browser selectors and raw evidence identify rendered targets.
+Finding observations below preserve the Phase 0 baseline. Current implementation update: A01/A02 text contrast corrections are implemented, with an ivory/dark-blue PCIT card selected by the owner. Current evidence and limitations are recorded in the [Phase 1 follow-up](phase1/pcit-card-review.md). Other findings remain open unless explicitly updated. Severity reflects user/release impact, not a legal conclusion. Locations refer to the audited working source; browser selectors and raw evidence identify rendered targets.
 
 ### D01 — High / Maintainability — local/live release divergence
 

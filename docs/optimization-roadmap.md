@@ -1,6 +1,6 @@
 # Controlled optimization roadmap and change log
 
-October 27, 2026. **Phase 0 completed; all implementation awaits approval.** Master evidence and complete finding records: [site audit](site-audit.md), [accessibility](accessibility-audit.md), [SEO](technical-seo-audit.md), [performance](performance-baseline.md).
+October 27, 2026 baseline. **Phase 0 completed. Phase 1 is authorized; approved contrast fixes are implemented, including the owner-selected ivory/dark-blue PCIT support card.** Record: [PCIT implementation](phase1/pcit-card-review.md). Other Phase 1 checks remain open; later phases remain unapproved. Master evidence and complete finding records: [site audit](site-audit.md), [accessibility](accessibility-audit.md), [SEO](technical-seo-audit.md), [performance](performance-baseline.md).
 
 ## Safest implementation order
 
@@ -9,7 +9,7 @@ Keep the requested sequence: Phase 1 accessibility/functionality → Phase 2 tec
 | Phase | Authorized state | Proposed work / finding IDs | Expected impact | Complexity | Exit evidence |
 | --- | --- | --- | --- | --- | --- |
 | 0 | Complete, documentation only | Inventory, baseline, findings, roadmap | Establish trustworthy source/live distinction | Medium | Five reports, complete file/page/image inventories, raw test artifacts and explicit gaps |
-| 1 | Await approval | A01/A02 minimal scoped contrast; A03 essential content fallback; C01 confirmed appointment path; A04/A05/A06 manual form/PDF/semantics checks; full keyboard/screen reader/zoom review | High: readable text and reliable contact/intake access | Medium; third-party/manual work may require owner access | All affected pages/widths/states, axe, keyboard, native screen reader, zoom, provider outcomes; log remaining external barriers |
+| 1 | Authorized; contrast corrections implemented | A01/A02 appearance approved and applied; A03 essential content fallback; C01 retain webform destination per owner and review conflicting copy; A04/A05/A06/A07 manual form/PDF/semantics/layout checks; full keyboard/screen reader/zoom review | High: readable text and reliable contact/intake access | Medium; third-party/manual work may require owner access | All affected pages/widths/states, axe, keyboard, native screen reader, zoom, provider outcomes; log remaining external barriers |
 | 2 | Not approved | S01 canonicals/URL plan; S02 historical output handling plan; S03 sitemap; S04 links; S05 truthful schema/social tags; clinical/GBP/Search Console review | High discovery/trust potential; no ranking guarantee | Medium; redirects need hosting owner | Raw response chains, crawl graph, metadata/schema validation, owner-approved factual matrix |
 | 3 | Not approved | P02/M01/M02 source/bundle mapping, supported tooling, safe duplicate cleanup, dependency consumers and multi-page package | Medium maintenance/render-path potential | Medium-high; purge risk high | Reproducible isolated complete build, cross-page/state coverage union and visual/accessibility regressions |
 | 4 | Not approved | P01 responsive interior photos, P03 staged production payloads; actual critical path/font/cache work | High on image-heavy mobile pages | Medium | ≥3 consistent before/after samples per scenario, medians/range, screenshots/currentSrc; field CWV when available |
@@ -69,7 +69,7 @@ Classify files by source, current local consumer, live consumer, build output an
 
 | Decision / access | Why needed | Dependent work |
 | --- | --- | --- |
-| Exact new-client intake URL/policy and provider-selection behavior | Current homepage CTA conflicts with general-form disclaimer | Phase 1 C01 and any integration cleanup |
+| Appointment destination confirmed: existing webform for now; secure new-client portal later | Preserve destination and privacy restrictions; conflicting appointment/general-inquiry wording still needs a reviewable clarification | Phase 1 C01; no portal routing change authorized |
 | Host document root, deployment owner/tool, intended public directories | Live design differs; new CSS absent; historical dist public | Staging, redirects, release |
 | Controlled provider/mailbox test workflow | Confirm error/success, delivery, redirects without patient information | Phase 1 A04 |
 | Rachel's clinical/insurance/fee/policy approval | Preserve accurate scope, credentials and service availability | Content/PDF/schema/SEO work |
@@ -100,5 +100,8 @@ For each approved phase record: summary, changed files, before/after behavior, e
 | Date | Phase | Changes | Validation / remaining issues |
 | --- | --- | --- | --- |
 | 2026-10-27 | 0 | Added five audit reports plus inventories, scripts and evidence under docs/; application source untouched | 14-page inventory/validation, 28 local axe scans + 4 live sample scans, 70 width checks, 20 event-based dialog keyboard samples, 6 Lighthouse runs, HTTP/link checks, partial coverage. Native screen reader, true zoom, PDF checks and provider outcomes remain open. No commits/push/deploy/deletions |
+| Current checkpoint | 1 — contrast preview | Added review-only CSS, actual-page comparisons, interactive preview, and 56 current/proposed axe scans; no application color changes | All 11 affected pages clear tested contrast findings with draft CSS at both widths. Owner requested visual approval before implementation. Existing webform destination retained by owner direction. Phase 1 incomplete. |
+| Follow-up checkpoint | 1 — approved contrast fixes and PCIT options | Applied approved resource-link/focus rules and other-card tints in milestone-pages.css; left PCIT card surface unchanged; prepared three PCIT alternatives | 28 applied-page scans: only pending PCIT card has detected contrast failures. 8 option/reference scans: all three alternatives clear selected axe checks at both widths; original reference fails as expected. Phase 1 remains incomplete. |
+| Ivory selection | 1 — PCIT card applied | Integrated the selected ivory surface, dark blue text/link states and dark focus outline into milestone-pages.css | Applied-source checks at all five widths; remaining Phase 1 findings/manual checks still open. No commit or deployment. |
 
-**Next gate: review findings and approve Phase 1. Stop here; no implementation is authorized by completion of this roadmap.**
+**Contrast appearance approval is complete. Continue the remaining authorized Phase 1 work; subsequent phases and deployment remain gated.**
