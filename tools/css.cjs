@@ -1,0 +1,9 @@
+// Whitespace-only CSS serialization. No selector purge, value rewriting or reordering.
+const fs=require('fs'),path=require('path'),assert=require('assert/strict');
+const postcss=require('postcss');
+const root=path.resolve(__dirname,'..');
+function structure(node){return{type:node.type,...(node.name?{name:node.name,params:node.params}:{}),...(node.selector?{selector:node.selector}:{}),...(node.type==='decl'?{prop:node.prop,value:node.value,important:!!node.important}:{}),...(node.nodes?{nodes:node.nodes.filter(n=>n.type!=='comment').map(structure)}:{})};}
+function format(text,pretty=false){const ast=postcss.parse(text);const charset=ast.nodes.find(n=>n.type==='atrule'&&n.name==='charset');if(charset&&ast.nodes.slice(0,ast.nodes.indexOf(charset)).every(n=>n.type==='comment')){charset.remove();ast.prepend(charset);}ast.walk(n=>{let depth=0;for(let p=n.parent;p?.type!=='root';p=p.parent)depth++;n.raws.before=pretty?'\n'+'  '.repeat(depth):'';if(n.nodes){n.raws.between=pretty?' ':'';n.raws.after=pretty?'\n'+'  '.repeat(depth):'';}});ast.raws.after=pretty?'\n':'';const output=ast.toString().trim()+'\n';assert.deepEqual(structure(postcss.parse(output)),structure(postcss.parse(text)),'CSS semantics changed during formatting');return output;}
+function generate(){const source=fs.readFileSync(path.join(root,'css/milestone-home.source.css'),'utf8');return format(source);}
+if(require.main===module){const output=generate(),file=path.join(root,'css/milestone-home.min.css');if(process.argv.includes('--check')){assert.equal(fs.readFileSync(file,'utf8'),output,'Generated CSS is stale; run npm run css');console.log('Generated CSS matches its readable source.');}else{fs.writeFileSync(file,output);console.log('Generated css/milestone-home.min.css without selector/value changes.');}}
+module.exports={format,structure,generate};

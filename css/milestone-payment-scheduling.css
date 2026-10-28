@@ -77,6 +77,8 @@
 
 .mm-payment-section__sections {
   display: grid;
+  /* Keep the wider desktop card from expanding the grid's implicit column. */
+  grid-template-columns: minmax(0, 1fr);
   gap: clamp(2rem, 4vw, 3.5rem);
 }
 
@@ -257,8 +259,61 @@
   white-space: nowrap;
 }
 
-/* CONTACT BUTTONS */
+/* Group each document title with its available formats. */
+.mm-payment-documents .mm-payment-document {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--mm-pay-border);
+  border-radius: 12px;
+  background: var(--mm-pay-bg);
+}
+.mm-payment-documents .mm-payment-document__title {
+  min-width: 0;
+  margin: 0;
+  color: var(--mm-pay-heading);
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.mm-payment-document__formats {
+  display: flex;
+  align-items: center;
+  gap: .25rem .85rem;
+  margin: 0;
+}
+.mm-payment-documents .mm-payment-document__formats a {
+  display: inline-flex;
+  justify-content: flex-start;
+  gap: .4rem;
+  min-width: 44px;
+  min-height: 44px;
+  padding: .3rem 0;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  color: var(--mm-pay-sage);
+  text-decoration: underline;
+  text-underline-offset: .2em;
+  white-space: nowrap;
+}
+.mm-payment-documents .mm-payment-document__formats a:hover {
+  background: transparent;
+  color: var(--mm-pay-heading);
+  text-decoration-thickness: 2px;
+}
+@media (max-width: 575.98px) {
+  .mm-payment-document__formats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+}
 
+/* CONTACT BUTTONS */
 .mm-payment-contact-actions {
   display: flex;
   flex-wrap: wrap;

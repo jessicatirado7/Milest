@@ -670,6 +670,26 @@
    16. REDUCED MOTION
    ========================================================== */
 
+/* The biography body is a named keyboard-scroll region. */
+#team-therapist .mm-team__modal .modal-body:focus-visible {
+  outline: 3px solid #283c46;
+  outline-offset: -4px;
+}
+
+/* At high zoom/short window heights, keep the header, biography and footer
+   within one vertically scrollable dialog instead of clipping the footer. */
+@media (max-height: 360px) {
+  #team-therapist .mm-team__modal .modal-dialog-scrollable {
+    height: auto;
+  }
+  #team-therapist .mm-team__modal .modal-dialog-scrollable .modal-content {
+    max-height: none;
+  }
+  #team-therapist .mm-team__modal .modal-body {
+    overflow-y: visible;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
 
   #team-therapist .mm-team__bio-link,

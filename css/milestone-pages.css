@@ -6068,11 +6068,8 @@ body.mm-careers-page {
   margin: 0.75rem 0 0;
 }
 
-/* Phase 1: approved contrast corrections. PCIT uses the owner-selected ivory
-   support card; the other blue-section cards retain their approved dark tint. */
-.mm-ses-blue__card:not([aria-labelledby="pcit-at-glance-heading"]) {
-  background: rgba(0, 0, 0, 0.04);
-}
+/* Phase 1: approved contrast corrections. All shared blue-section support cards
+   use the owner-selected ivory surface and dark blue text. */
 
 .mm-ses-blue .mm-ses-body a,
 .mm-ses-blue .mm-ses-body a:visited,
@@ -6089,24 +6086,33 @@ body.mm-interior-page main .mm-ses-blue a[href]:focus-visible {
   outline-offset: 4px;
 }
 
-body.mm-interior-page main .mm-ses-blue[aria-labelledby="pcit-timeline-heading"]
-  .mm-ses-blue__card[aria-labelledby="pcit-at-glance-heading"] {
+body.mm-interior-page:not(.mm-error-page):not(.mm-careers-page)
+  main .mm-ses-blue .mm-ses-blue__card {
   background: #f7f5ef;
   color: #283c46;
 }
 
-body.mm-interior-page main .mm-ses-blue[aria-labelledby="pcit-timeline-heading"]
-  .mm-ses-blue__card[aria-labelledby="pcit-at-glance-heading"] :is(h3, p, strong, a),
-body.mm-interior-page main .mm-ses-blue[aria-labelledby="pcit-timeline-heading"]
-  .mm-ses-blue__card[aria-labelledby="pcit-at-glance-heading"]
+body.mm-interior-page:not(.mm-error-page):not(.mm-careers-page)
+  main .mm-ses-blue .mm-ses-blue__card :is(h3, p, li, dt, dd, strong, a),
+body.mm-interior-page:not(.mm-error-page):not(.mm-careers-page)
+  main .mm-ses-blue .mm-ses-blue__card
   a:is(:visited, :hover, :focus, :active) {
   color: #283c46;
 }
 
-body.mm-interior-page main .mm-ses-blue[aria-labelledby="pcit-timeline-heading"]
-  .mm-ses-blue__card[aria-labelledby="pcit-at-glance-heading"] a:focus-visible {
+body.mm-interior-page:not(.mm-error-page):not(.mm-careers-page)
+  main .mm-ses-blue .mm-ses-blue__card a:focus-visible {
   outline: 3px solid #283c46;
   outline-offset: 4px;
+}
+
+.mm-ses-blue .mm-ses-blue__card .mm-career-glance > div,
+.mm-ses-blue .mm-ses-blue__card .mm-caregiver-refined__audiences li {
+  border-color: rgba(40, 60, 70, 0.18);
+}
+
+.mm-ses-blue .mm-ses-blue__card .mm-caregiver-refined__audiences li::before {
+  background: currentColor;
 }
 
 @media (max-width: 767.98px) {

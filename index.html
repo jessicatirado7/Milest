@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="mm-home-page">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -8,11 +8,11 @@
     />
     <meta
       name="description"
-      content="Therapy for children, adults, couples, and families in Oakdale, MN. Meet our therapists, explore insurance options, and request an appointment."
+      content="Therapy for children, teens, adults, couples, and families in Oakdale and the Twin Cities, with telehealth in Minnesota. Meet Milestone Mental Health."
     />
     <meta name="author" content="JVT Design Studios" />
     <title>Therapy in Oakdale, MN | Milestone Mental Health</title>
-    <!--<link rel=“canonical” href=“https://www.milestonementalhealth.com/” />-->
+    <link rel="canonical" href="https://www.milestonementalhealth.com/" />
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- ImageKit hosts the homepage photographs. Connect early. -->
@@ -26,17 +26,6 @@
     />
     <!-- Homepage-only consolidated CSS; preserve the original stylesheets for secondary pages. -->
     <link rel="stylesheet" href="css/milestone-home.min.css" />
-    <!--AOS CSS-->
-    <!-- AOS is used only below the fold. Fetch its CSS without delaying first paint. -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-      media="print"
-      onload="this.media = 'all'"
-    />
-    <noscript
-      ><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-    /></noscript>
     <!-- Keyboard skip link: works without JavaScript. -->
     <style>
       .mm-skip-link {
@@ -56,124 +45,71 @@
     </style>
 
     <!-- General-inquiries-only WebForms: styles isolated to the contact section. -->
-    <style>
-      #contact .mm-webforms__intro {
-        margin: 0 0 1.1rem;
-        color: var(--mm-contact-body);
-        line-height: 1.65;
+    <!-- Contact form styles are maintained in milestone-home.source.css. -->
+  <!-- Phase 2: sharing and structured data -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Milestone Mental Health" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:title" content="Therapy in Oakdale, MN | Milestone Mental Health" />
+<meta property="og:description" content="Therapy for children, teens, adults, couples, and families in Oakdale and the Twin Cities, with telehealth in Minnesota. Meet Milestone Mental Health." />
+<meta property="og:url" content="https://www.milestonementalhealth.com/" />
+<meta property="og:image" content="https://www.milestonementalhealth.com/assets/img/Logo_dark_fontHortizontal.png" />
+<meta property="og:image:alt" content="Milestone Mental Health logo" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Therapy in Oakdale, MN | Milestone Mental Health" />
+<meta name="twitter:description" content="Therapy for children, teens, adults, couples, and families in Oakdale and the Twin Cities, with telehealth in Minnesota. Meet Milestone Mental Health." />
+<meta name="twitter:image" content="https://www.milestonementalhealth.com/assets/img/Logo_dark_fontHortizontal.png" />
+<meta name="twitter:image:alt" content="Milestone Mental Health logo" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.milestonementalhealth.com/#webpage",
+      "url": "https://www.milestonementalhealth.com/",
+      "name": "Therapy in Oakdale, MN | Milestone Mental Health",
+      "description": "Therapy for children, teens, adults, couples, and families in Oakdale and the Twin Cities, with telehealth in Minnesota. Meet Milestone Mental Health.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://www.milestonementalhealth.com/#website"
+      },
+      "about": {
+        "@id": "https://www.milestonementalhealth.com/#practice"
       }
-      #contact .mm-webforms__notice {
-        padding: 1rem 1.1rem;
-        margin: 0.25rem 0 1.5rem;
-        border-left: 4px solid var(--mm-contact-sage);
-        border-radius: 0 0.55rem 0.55rem 0;
-        background: var(--mm-contact-tint);
-        color: var(--mm-contact-ink);
-        font-size: 0.95rem;
-        line-height: 1.6;
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.milestonementalhealth.com/#website",
+      "url": "https://www.milestonementalhealth.com/",
+      "name": "Milestone Mental Health",
+      "publisher": {
+        "@id": "https://www.milestonementalhealth.com/#practice"
       }
-      #contact .mm-webforms__notice strong {
-        font-weight: 750;
+    },
+    {
+      "@type": "MedicalBusiness",
+      "@id": "https://www.milestonementalhealth.com/#practice",
+      "name": "Milestone Mental Health",
+      "url": "https://www.milestonementalhealth.com/",
+      "telephone": "+1-651-500-2389",
+      "logo": "https://www.milestonementalhealth.com/assets/img/Logo_dark_fontHortizontal.png",
+      "image": "https://www.milestonementalhealth.com/assets/img/Logo_dark_fontHortizontal.png",
+      "description": "Mental health services in Oakdale, serving the Twin Cities, with telehealth in Minnesota.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6230 10th St. N., Suite 120",
+        "addressLocality": "Oakdale",
+        "addressRegion": "MN",
+        "postalCode": "55128",
+        "addressCountry": "US"
       }
-      #contact .mm-webforms {
-        display: grid;
-        gap: 1.1rem;
-        margin-top: 1.35rem;
-      }
-      #contact .mm-webforms__field {
-        display: grid;
-        gap: 0.4rem;
-      }
-      #contact .mm-webforms__field label {
-        color: var(--mm-contact-ink);
-        font:
-          700 0.96rem/1.4 "Source Sans 3",
-          Arial,
-          sans-serif;
-      }
-      #contact .mm-webforms .form-control {
-        display: block;
-        width: 100%;
-        min-height: 48px;
-        border: 1px solid #abbdb3;
-        border-radius: 0.6rem;
-        padding: 0.75rem 0.9rem;
-        background: #fff;
-        color: #283c46;
-        font:
-          400 1rem/1.5 "Source Sans 3",
-          Arial,
-          sans-serif;
-        box-shadow: none;
-      }
-      #contact .mm-webforms textarea.form-control {
-        min-height: 140px;
-        resize: vertical;
-      }
-      #contact .mm-webforms .form-control:focus-visible {
-        outline: 3px solid #526f61;
-        outline-offset: 2px;
-        border-color: #526f61;
-        box-shadow: none;
-      }
-      #contact .mm-webforms__required {
-        margin: -0.35rem 0 0;
-        color: var(--mm-contact-body);
-        font-size: 0.85rem;
-      }
-      #contact .mm-webforms__submit {
-        justify-self: start;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.7rem;
-        min-height: 50px;
-        padding: 0.85rem 1.5rem;
-        border: 2px solid var(--mm-contact-sage);
-        border-radius: 999px;
-        background: var(--mm-contact-sage);
-        color: #fff;
-        font:
-          700 1.05rem/1.4 "Source Sans 3",
-          Arial,
-          sans-serif;
-        text-align: center;
-        cursor: pointer;
-        transition:
-          background-color 0.2s ease,
-          border-color 0.2s ease;
-      }
-      #contact .mm-webforms__submit:hover {
-        background: #405a4f;
-        border-color: #405a4f;
-      }
-      #contact .mm-webforms__submit:focus-visible,
-      #contact .mm-webforms__phone a:focus-visible {
-        outline: 3px solid #526f61;
-        outline-offset: 4px;
-      }
-      #contact .mm-webforms__phone {
-        margin: 1.4rem 0 0;
-        color: var(--mm-contact-body);
-      }
-      #contact .mm-webforms__phone a {
-        color: var(--mm-contact-link);
-        font-weight: 700;
-      }
-      #contact .mm-webforms__honeypot {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        left: -10000px;
-      }
-      @media (prefers-reduced-motion: reduce) {
-        #contact .mm-webforms__submit {
-          transition: none;
-        }
-      }
-    </style>
-  </head>
+    }
+  ]
+}
+</script>
+<!-- End Phase 2 metadata -->
+</head>
   <body id="page-top">
     <a class="mm-skip-link" href="#main-content">Skip to main content</a>
     <!-- Navigation-->
@@ -241,20 +177,20 @@
 
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#portfolio">Trauma</a>
+                  <a class="dropdown-item" href="#specialization-trauma">Trauma</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#portfolio">
-                    Child &amp; Adolescents Mental Health
+                  <a class="dropdown-item" href="#specialization-child">
+                    Child &amp; Adolescent Mental Health
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#portfolio">
+                  <a class="dropdown-item" href="#specialization-attachment">
                     Attachment &amp; Relationships
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#portfolio">
+                  <a class="dropdown-item" href="#specialization-perinatal">
                     Perinatal Mental Health
                   </a>
                 </li>
@@ -376,6 +312,10 @@
                 Virtual appointments available
               </span>
             </div>
+          <nav class="mm-visit-links" aria-label="Plan your visit">
+              <a href="#team-therapist">Meet our team</a>
+              <a href="#payment-info">Fees &amp; insurance</a>
+            </nav>
           </div>
         </div>
 
@@ -465,7 +405,7 @@
         </div>
       </section>
       <!-- MILESTONE: Services section (replacement for existing #services section) -->
-      <section
+      <section tabindex="-1"
         class="page-section mm-services"
         id="services"
         aria-labelledby="mm-services-title"
@@ -479,6 +419,10 @@
               Compassionate mental health services for children, teens, adults,
               couples, and families. Explore the support we offer and find a
               place to begin.
+            </p>
+            <p>
+              Based in Oakdale, we welcome clients from across the Twin Cities
+              and offer telehealth in Minnesota.
             </p>
           </header>
 
@@ -547,6 +491,16 @@
               appropriate for you or your family.
             </p>
           </div>
+          <nav class="mm-service-index" aria-label="Browse services">
+            <ul>
+              <li><a href="#service-diagnostic-assessments">Diagnostic assessments</a></li>
+              <li><a href="#service-neuropsychological-evaluations">Child &amp; teen evaluations</a></li>
+              <li><a href="#service-care-coordination">Care coordination</a></li>
+              <li><a href="#service-psychotherapy">Psychotherapy</a></li>
+              <li><a href="#service-virtual-care">Virtual care</a></li>
+              <li><a href="#service-group-therapy">Group therapy availability</a></li>
+            </ul>
+          </nav>
 
           <div
             class="mm-services__grid"
@@ -554,7 +508,7 @@
             aria-labelledby="mm-services-list-title"
           >
             <!-- 1. Mental Health Diagnostic Assessments: original image preserved -->
-            <article
+            <article tabindex="-1"
               class="mm-service-card"
               id="service-diagnostic-assessments"
             >
@@ -607,7 +561,7 @@
             </article>
 
             <!-- 2. Neuropsychological Evaluations: approved ImageKit photograph. -->
-            <article
+            <article tabindex="-1"
               class="mm-service-card"
               id="service-neuropsychological-evaluations"
             >
@@ -657,7 +611,7 @@
             </article>
 
             <!-- 3. Consultation & Coordination: original image preserved -->
-            <article class="mm-service-card" id="service-care-coordination">
+            <article tabindex="-1" class="mm-service-card" id="service-care-coordination">
               <picture class="mm-service-card__photo">
                 <source
                   srcset="
@@ -705,7 +659,7 @@
             </article>
 
             <!-- 4. Psychotherapy: original image preserved -->
-            <article class="mm-service-card" id="service-psychotherapy">
+            <article tabindex="-1" class="mm-service-card" id="service-psychotherapy">
               <picture class="mm-service-card__photo">
                 <source
                   srcset="
@@ -758,7 +712,7 @@
             </article>
 
             <!-- 5. Virtual care: original local image preserved -->
-            <article class="mm-service-card" id="service-virtual-care">
+            <article tabindex="-1" class="mm-service-card" id="service-virtual-care">
               <picture class="mm-service-card__photo">
                 <source
                   srcset="
@@ -789,7 +743,7 @@
             </article>
 
             <!-- 6. Group therapy: retain image, clearly disclose unavailability -->
-            <article class="mm-service-card" id="service-group-therapy">
+            <article tabindex="-1" class="mm-service-card" id="service-group-therapy">
               <picture class="mm-service-card__photo">
                 <source
                   srcset="
@@ -852,7 +806,7 @@
         </div>
       </section>
       <!-- SPECIALIZATIONS: Preserves all four original ImageKit photographs and Bootstrap 5 modals. -->
-      <section
+      <section tabindex="-1"
         class="mm-specializations"
         id="portfolio"
         aria-labelledby="mm-specializations-title"
@@ -898,12 +852,12 @@
                 />
               </picture>
               <h3 class="mm-specializations__card-heading">
-                <button
+                <button id="specialization-trauma"
                   type="button"
                   class="mm-specializations__card-button"
                   data-bs-toggle="modal"
                   data-bs-target="#mm-spec-trauma"
-                  aria-haspopup="dialog"
+                  aria-controls="mm-spec-trauma"
                 >
                   <span class="mm-specializations__card-title"
                     >Stress, Life Changes &amp; Trauma</span
@@ -911,6 +865,7 @@
                   <span class="mm-specializations__card-prompt"
                     >Learn more <span aria-hidden="true">&rarr;</span></span
                   >
+                  <span class="visually-hidden"> (opens a dialog)</span>
                 </button>
               </h3>
             </article>
@@ -944,12 +899,12 @@
                 />
               </picture>
               <h3 class="mm-specializations__card-heading">
-                <button
+                <button id="specialization-child"
                   type="button"
                   class="mm-specializations__card-button"
                   data-bs-toggle="modal"
                   data-bs-target="#mm-spec-child"
-                  aria-haspopup="dialog"
+                  aria-controls="mm-spec-child"
                 >
                   <span class="mm-specializations__card-title"
                     >Child &amp; Adolescent Mental Health</span
@@ -957,6 +912,7 @@
                   <span class="mm-specializations__card-prompt"
                     >Learn more <span aria-hidden="true">&rarr;</span></span
                   >
+                  <span class="visually-hidden"> (opens a dialog)</span>
                 </button>
               </h3>
             </article>
@@ -990,12 +946,12 @@
                 />
               </picture>
               <h3 class="mm-specializations__card-heading">
-                <button
+                <button id="specialization-attachment"
                   type="button"
                   class="mm-specializations__card-button"
                   data-bs-toggle="modal"
                   data-bs-target="#mm-spec-attachment"
-                  aria-haspopup="dialog"
+                  aria-controls="mm-spec-attachment"
                 >
                   <span class="mm-specializations__card-title"
                     >Attachment &amp; Relationships</span
@@ -1003,6 +959,7 @@
                   <span class="mm-specializations__card-prompt"
                     >Learn more <span aria-hidden="true">&rarr;</span></span
                   >
+                  <span class="visually-hidden"> (opens a dialog)</span>
                 </button>
               </h3>
             </article>
@@ -1036,12 +993,12 @@
                 />
               </picture>
               <h3 class="mm-specializations__card-heading">
-                <button
+                <button id="specialization-perinatal"
                   type="button"
                   class="mm-specializations__card-button"
                   data-bs-toggle="modal"
                   data-bs-target="#mm-spec-perinatal"
-                  aria-haspopup="dialog"
+                  aria-controls="mm-spec-perinatal"
                 >
                   <span class="mm-specializations__card-title"
                     >Perinatal Mental Health</span
@@ -1049,6 +1006,7 @@
                   <span class="mm-specializations__card-prompt"
                     >Learn more <span aria-hidden="true">&rarr;</span></span
                   >
+                  <span class="visually-hidden"> (opens a dialog)</span>
                 </button>
               </h3>
             </article>
@@ -1081,7 +1039,7 @@
                   aria-label="Close dialog"
                 ></button>
               </div>
-              <div class="modal-body">
+              <section class="modal-body" tabindex="0" aria-labelledby="mm-spec-trauma-title">
                 <p id="mm-spec-trauma-intro">
                   Difficult experiences and significant life changes can affect
                   how we feel, relate to others, and navigate daily life. We
@@ -1119,7 +1077,7 @@
                   </li>
                   <li>Cognitive Processing Therapy (CPT)</li>
                 </ul>
-              </div>
+              </section>
             </div>
           </div>
         </div>
@@ -1149,7 +1107,7 @@
                   aria-label="Close dialog"
                 ></button>
               </div>
-              <div class="modal-body">
+              <section class="modal-body" tabindex="0" aria-labelledby="mm-spec-child-title">
                 <p id="mm-spec-child-intro">
                   Children and teens may express emotional distress through
                   changes in their mood, behavior, relationships, or ability to
@@ -1192,6 +1150,11 @@
                   </li>
                   <li>Play Therapy</li>
                   <li>
+                    <a href="experiental-play-therapy.html"
+                      >Experiential Play Therapy</a
+                    >
+                  </li>
+                  <li>
                     <a href="caregiver-coaching-and-consultation.html"
                       >Caregiver Coaching &amp; Consultation</a
                     >
@@ -1215,7 +1178,7 @@
                     >
                   </li>
                 </ul>
-              </div>
+              </section>
             </div>
           </div>
         </div>
@@ -1245,7 +1208,7 @@
                   aria-label="Close dialog"
                 ></button>
               </div>
-              <div class="modal-body">
+              <section class="modal-body" tabindex="0" aria-labelledby="mm-spec-attachment-title">
                 <p id="mm-spec-attachment-intro">
                   Our relationships shape how we experience connection, trust,
                   and emotional safety throughout life. We support children,
@@ -1284,7 +1247,7 @@
                   <li>Couple’s Therapy</li>
                   <li>Family Therapy</li>
                 </ul>
-              </div>
+              </section>
             </div>
           </div>
         </div>
@@ -1314,7 +1277,7 @@
                   aria-label="Close dialog"
                 ></button>
               </div>
-              <div class="modal-body">
+              <section class="modal-body" tabindex="0" aria-labelledby="mm-spec-perinatal-title">
                 <!-- Perinatal copy retained from existing site; Rachel did not provide replacement copy. -->
                 <p id="mm-spec-perinatal-intro">
                   Did you know, 1 in 7 women and 1 in 10 dads suffer from
@@ -1368,7 +1331,7 @@
                     />
                   </picture>
                 </div>
-              </div>
+              </section>
             </div>
           </div>
         </div>
@@ -1377,7 +1340,7 @@
      Replace the previous <section id="payment-info"> ... </section> with this entire section.
      Uses the ORIGINAL three site photos: family2, family3, family4 on ImageKit.
       -->
-      <section
+      <section tabindex="-1"
         class="mm-payment-section"
         id="payment-info"
         aria-labelledby="mm-payment-title"
@@ -1403,31 +1366,8 @@
               <div class="mm-payment-block__media">
                 <picture>
                   <!-- WebP is produced from the JPEG file, not the *_720.webp file. -->
-                  <source
-                    type="image/webp"
-                    srcset="
-                      https://ik.imagekit.io/qjk625zh0/tr:w-480,q-90,f-webp/thumbnails/family2.jpg   480w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-800,q-90,f-webp/thumbnails/family2.jpg   800w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-1200,q-90,f-webp/thumbnails/family2.jpg 1200w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-1600,q-90,f-webp/thumbnails/family2.jpg 1600w
-                    "
-                    sizes="(min-width: 1200px) 500px, (min-width: 992px) 43vw, 90vw"
-                  />
-                  <img
-                    src="https://ik.imagekit.io/qjk625zh0/tr:w-800,q-90,f-jpg/thumbnails/family2.jpg"
-                    srcset="
-                      https://ik.imagekit.io/qjk625zh0/tr:w-480,q-90,f-jpg/thumbnails/family2.jpg   480w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-800,q-90,f-jpg/thumbnails/family2.jpg   800w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-1200,q-90,f-jpg/thumbnails/family2.jpg 1200w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-1600,q-90,f-jpg/thumbnails/family2.jpg 1600w
-                    "
-                    sizes="(min-width: 1200px) 500px, (min-width: 992px) 43vw, 90vw"
-                    alt="Family spending time together at home"
-                    loading="lazy"
-                    decoding="async"
-                    width="720"
-                    height="900"
-                  />
+                  <source type="image/webp" srcset="https://ik.imagekit.io/qjk625zh0/tr:w-480,q-90,f-webp/thumbnails/family2.jpg 480w, https://ik.imagekit.io/qjk625zh0/tr:w-640,q-90,f-webp/thumbnails/family2.jpg 640w, https://ik.imagekit.io/qjk625zh0/tr:w-800,q-90,f-webp/thumbnails/family2.jpg 800w, https://ik.imagekit.io/qjk625zh0/tr:w-960,q-90,f-webp/thumbnails/family2.jpg 960w, https://ik.imagekit.io/qjk625zh0/tr:w-1200,q-90,f-webp/thumbnails/family2.jpg 1200w, https://ik.imagekit.io/qjk625zh0/tr:w-1600,q-90,f-webp/thumbnails/family2.jpg 1600w, https://ik.imagekit.io/qjk625zh0/tr:w-2048,q-90,f-webp/thumbnails/family2.jpg 2048w, https://ik.imagekit.io/qjk625zh0/tr:w-2560,q-90,f-webp/thumbnails/family2.jpg 2560w, https://ik.imagekit.io/qjk625zh0/tr:w-3072,q-90,f-webp/thumbnails/family2.jpg 3072w, https://ik.imagekit.io/qjk625zh0/tr:w-3500,q-90,f-webp/thumbnails/family2.jpg 3500w" sizes="(min-width: 992px) 1000px, 100vw"/>
+                  <img src="https://ik.imagekit.io/qjk625zh0/tr:w-1600,q-90,f-jpg/thumbnails/family2.jpg" srcset="https://ik.imagekit.io/qjk625zh0/tr:w-480,q-90,f-jpg/thumbnails/family2.jpg 480w, https://ik.imagekit.io/qjk625zh0/tr:w-640,q-90,f-jpg/thumbnails/family2.jpg 640w, https://ik.imagekit.io/qjk625zh0/tr:w-800,q-90,f-jpg/thumbnails/family2.jpg 800w, https://ik.imagekit.io/qjk625zh0/tr:w-960,q-90,f-jpg/thumbnails/family2.jpg 960w, https://ik.imagekit.io/qjk625zh0/tr:w-1200,q-90,f-jpg/thumbnails/family2.jpg 1200w, https://ik.imagekit.io/qjk625zh0/tr:w-1600,q-90,f-jpg/thumbnails/family2.jpg 1600w, https://ik.imagekit.io/qjk625zh0/tr:w-2048,q-90,f-jpg/thumbnails/family2.jpg 2048w, https://ik.imagekit.io/qjk625zh0/tr:w-2560,q-90,f-jpg/thumbnails/family2.jpg 2560w, https://ik.imagekit.io/qjk625zh0/tr:w-3072,q-90,f-jpg/thumbnails/family2.jpg 3072w, https://ik.imagekit.io/qjk625zh0/tr:w-3500,q-90,f-jpg/thumbnails/family2.jpg 3500w" sizes="(min-width: 992px) 1000px, 100vw" alt="Family spending time together at home" loading="lazy" decoding="async" width="3500" height="2336"/>
                 </picture>
               </div>
               <div class="mm-payment-block__content">
@@ -1477,35 +1417,35 @@
                   receive a Good Faith Estimate before your visit.
                 </p>
                 <ul class="mm-payment-documents">
-                  <li>
-                    <a
-                      href="./assets/Files/no-surprises-act.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <span>Good Faith Estimate — No Surprises Act</span>
-                      <span class="mm-payment-documents__meta"
-                        >PDF <span aria-hidden="true">↗</span
-                        ><span class="visually-hidden">
-                          (opens in a new tab)</span
-                        ></span
-                      >
-                    </a>
+                  <li class="mm-payment-document">
+                    <p class="mm-payment-document__title" id="gfe-document-title">
+                      Good Faith Estimate - No Surprises Act
+                    </p>
+                    <div class="mm-payment-document__formats">
+                      <a href="no-surprises-act.html" aria-labelledby="gfe-document-title gfe-web-format">
+                        <span id="gfe-web-format">Web page</span>
+                      </a>
+                      <a href="./assets/Files/no-surprises-act.pdf" target="_blank" rel="noopener noreferrer" aria-labelledby="gfe-document-title gfe-pdf-format gfe-pdf-new-tab">
+                        <span id="gfe-pdf-format">PDF</span>
+                        <span aria-hidden="true">↗</span>
+                        <span class="visually-hidden" id="gfe-pdf-new-tab"> (opens in a new tab)</span>
+                      </a>
+                    </div>
                   </li>
-                  <li>
-                    <a
-                      href="./assets/Files/4_2_25_FEE_SCHEDULE.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <span>Fee Schedule</span>
-                      <span class="mm-payment-documents__meta"
-                        >PDF <span aria-hidden="true">↗</span
-                        ><span class="visually-hidden">
-                          (opens in a new tab)</span
-                        ></span
-                      >
-                    </a>
+                  <li class="mm-payment-document">
+                    <p class="mm-payment-document__title" id="fee-document-title">
+                      Fee Schedule
+                    </p>
+                    <div class="mm-payment-document__formats">
+                      <a href="fee-schedule.html" aria-labelledby="fee-document-title fee-web-format">
+                        <span id="fee-web-format">Web page</span>
+                      </a>
+                      <a href="./assets/Files/4_2_25_FEE_SCHEDULE.pdf" target="_blank" rel="noopener noreferrer" aria-labelledby="fee-document-title fee-pdf-format fee-pdf-new-tab">
+                        <span id="fee-pdf-format">PDF</span>
+                        <span aria-hidden="true">↗</span>
+                        <span class="visually-hidden" id="fee-pdf-new-tab"> (opens in a new tab)</span>
+                      </a>
+                    </div>
                   </li>
                 </ul>
                 <p class="mm-payment-block__fine-print">
@@ -1514,31 +1454,8 @@
               </div>
               <div class="mm-payment-block__media">
                 <picture>
-                  <source
-                    srcset="
-                      https://ik.imagekit.io/qjk625zh0/tr:w-480,q-83/thumbnails/family3.webp   480w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-800,q-83/thumbnails/family3.webp   800w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-1200,q-83/thumbnails/family3.webp 1200w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-1600,q-83/thumbnails/family3.webp 1600w
-                    "
-                    type="image/webp"
-                    sizes="(min-width: 1200px) 550px, 84vw"
-                  />
-                  <img
-                    src="https://ik.imagekit.io/qjk625zh0/tr:w-800,q-83/thumbnails/family3.jpg"
-                    alt="Family walking together outdoors"
-                    loading="lazy"
-                    decoding="async"
-                    width="720"
-                    height="900"
-                    srcset="
-                      https://ik.imagekit.io/qjk625zh0/tr:w-480,q-83/thumbnails/family3.jpg   480w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-800,q-83/thumbnails/family3.jpg   800w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-1200,q-83/thumbnails/family3.jpg 1200w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-1600,q-83/thumbnails/family3.jpg 1600w
-                    "
-                    sizes="(min-width: 1200px) 550px, 84vw"
-                  />
+                  <source srcset="https://ik.imagekit.io/qjk625zh0/tr:w-480,q-90,f-webp/thumbnails/family3.jpg 480w, https://ik.imagekit.io/qjk625zh0/tr:w-640,q-90,f-webp/thumbnails/family3.jpg 640w, https://ik.imagekit.io/qjk625zh0/tr:w-800,q-90,f-webp/thumbnails/family3.jpg 800w, https://ik.imagekit.io/qjk625zh0/tr:w-960,q-90,f-webp/thumbnails/family3.jpg 960w, https://ik.imagekit.io/qjk625zh0/tr:w-1200,q-90,f-webp/thumbnails/family3.jpg 1200w, https://ik.imagekit.io/qjk625zh0/tr:w-1600,q-90,f-webp/thumbnails/family3.jpg 1600w, https://ik.imagekit.io/qjk625zh0/tr:w-2048,q-90,f-webp/thumbnails/family3.jpg 2048w, https://ik.imagekit.io/qjk625zh0/tr:w-2560,q-90,f-webp/thumbnails/family3.jpg 2560w, https://ik.imagekit.io/qjk625zh0/tr:w-3072,q-90,f-webp/thumbnails/family3.jpg 3072w, https://ik.imagekit.io/qjk625zh0/tr:w-3840,q-90,f-webp/thumbnails/family3.jpg 3840w, https://ik.imagekit.io/qjk625zh0/tr:w-6016,q-90,f-webp/thumbnails/family3.jpg 6016w" type="image/webp" sizes="(min-width: 992px) 650px, 100vw"/>
+                  <img src="https://ik.imagekit.io/qjk625zh0/tr:w-1600,q-90,f-jpg/thumbnails/family3.jpg" alt="Family walking together outdoors" loading="lazy" decoding="async" width="6016" height="4016" srcset="https://ik.imagekit.io/qjk625zh0/tr:w-480,q-90,f-jpg/thumbnails/family3.jpg 480w, https://ik.imagekit.io/qjk625zh0/tr:w-640,q-90,f-jpg/thumbnails/family3.jpg 640w, https://ik.imagekit.io/qjk625zh0/tr:w-800,q-90,f-jpg/thumbnails/family3.jpg 800w, https://ik.imagekit.io/qjk625zh0/tr:w-960,q-90,f-jpg/thumbnails/family3.jpg 960w, https://ik.imagekit.io/qjk625zh0/tr:w-1200,q-90,f-jpg/thumbnails/family3.jpg 1200w, https://ik.imagekit.io/qjk625zh0/tr:w-1600,q-90,f-jpg/thumbnails/family3.jpg 1600w, https://ik.imagekit.io/qjk625zh0/tr:w-2048,q-90,f-jpg/thumbnails/family3.jpg 2048w, https://ik.imagekit.io/qjk625zh0/tr:w-2560,q-90,f-jpg/thumbnails/family3.jpg 2560w, https://ik.imagekit.io/qjk625zh0/tr:w-3072,q-90,f-jpg/thumbnails/family3.jpg 3072w, https://ik.imagekit.io/qjk625zh0/tr:w-3840,q-90,f-jpg/thumbnails/family3.jpg 3840w, https://ik.imagekit.io/qjk625zh0/tr:w-6016,q-90,f-jpg/thumbnails/family3.jpg 6016w" sizes="(min-width: 992px) 650px, 100vw"/>
                 </picture>
               </div>
             </article>
@@ -1551,31 +1468,8 @@
               <div class="mm-payment-block__media">
                 <picture>
                   <!-- WebP is produced from the JPEG file, not the *_720.webp file. -->
-                  <source
-                    type="image/webp"
-                    srcset="
-                      https://ik.imagekit.io/qjk625zh0/tr:w-480,q-90,f-webp/thumbnails/happygirl.jpg   480w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-800,q-90,f-webp/thumbnails/happygirl.jpg   800w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-1200,q-90,f-webp/thumbnails/happygirl.jpg 1200w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-1600,q-90,f-webp/thumbnails/happygirl.jpg 1600w
-                    "
-                    sizes="(min-width: 1200px) 500px, (min-width: 992px) 43vw, 90vw"
-                  />
-                  <img
-                    src="https://ik.imagekit.io/qjk625zh0/tr:w-800,q-90,f-jpg/thumbnails/happygirl.jpg"
-                    srcset="
-                      https://ik.imagekit.io/qjk625zh0/tr:w-480,q-90,f-jpg/thumbnails/happygirl.jpg   480w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-800,q-90,f-jpg/thumbnails/happygirl.jpg   800w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-1200,q-90,f-jpg/thumbnails/happygirl.jpg 1200w,
-                      https://ik.imagekit.io/qjk625zh0/tr:w-1600,q-90,f-jpg/thumbnails/happygirl.jpg 1600w
-                    "
-                    sizes="(min-width: 1200px) 500px, (min-width: 992px) 43vw, 90vw"
-                    alt="Happy girl smiling"
-                    loading="lazy"
-                    decoding="async"
-                    width="720"
-                    height="900"
-                  />
+                  <source type="image/webp" srcset="https://ik.imagekit.io/qjk625zh0/tr:w-480,q-90,f-webp/thumbnails/happygirl.jpg 480w, https://ik.imagekit.io/qjk625zh0/tr:w-640,q-90,f-webp/thumbnails/happygirl.jpg 640w, https://ik.imagekit.io/qjk625zh0/tr:w-800,q-90,f-webp/thumbnails/happygirl.jpg 800w, https://ik.imagekit.io/qjk625zh0/tr:w-960,q-90,f-webp/thumbnails/happygirl.jpg 960w, https://ik.imagekit.io/qjk625zh0/tr:w-1200,q-90,f-webp/thumbnails/happygirl.jpg 1200w, https://ik.imagekit.io/qjk625zh0/tr:w-1600,q-90,f-webp/thumbnails/happygirl.jpg 1600w, https://ik.imagekit.io/qjk625zh0/tr:w-2048,q-90,f-webp/thumbnails/happygirl.jpg 2048w, https://ik.imagekit.io/qjk625zh0/tr:w-2560,q-90,f-webp/thumbnails/happygirl.jpg 2560w, https://ik.imagekit.io/qjk625zh0/tr:w-3072,q-90,f-webp/thumbnails/happygirl.jpg 3072w, https://ik.imagekit.io/qjk625zh0/tr:w-3840,q-90,f-webp/thumbnails/happygirl.jpg 3840w, https://ik.imagekit.io/qjk625zh0/tr:w-5000,q-90,f-webp/thumbnails/happygirl.jpg 5000w" sizes="(min-width: 992px) 2200px, 100vw"/>
+                  <img src="https://ik.imagekit.io/qjk625zh0/tr:w-1600,q-90,f-jpg/thumbnails/happygirl.jpg" srcset="https://ik.imagekit.io/qjk625zh0/tr:w-480,q-90,f-jpg/thumbnails/happygirl.jpg 480w, https://ik.imagekit.io/qjk625zh0/tr:w-640,q-90,f-jpg/thumbnails/happygirl.jpg 640w, https://ik.imagekit.io/qjk625zh0/tr:w-800,q-90,f-jpg/thumbnails/happygirl.jpg 800w, https://ik.imagekit.io/qjk625zh0/tr:w-960,q-90,f-jpg/thumbnails/happygirl.jpg 960w, https://ik.imagekit.io/qjk625zh0/tr:w-1200,q-90,f-jpg/thumbnails/happygirl.jpg 1200w, https://ik.imagekit.io/qjk625zh0/tr:w-1600,q-90,f-jpg/thumbnails/happygirl.jpg 1600w, https://ik.imagekit.io/qjk625zh0/tr:w-2048,q-90,f-jpg/thumbnails/happygirl.jpg 2048w, https://ik.imagekit.io/qjk625zh0/tr:w-2560,q-90,f-jpg/thumbnails/happygirl.jpg 2560w, https://ik.imagekit.io/qjk625zh0/tr:w-3072,q-90,f-jpg/thumbnails/happygirl.jpg 3072w, https://ik.imagekit.io/qjk625zh0/tr:w-3840,q-90,f-jpg/thumbnails/happygirl.jpg 3840w, https://ik.imagekit.io/qjk625zh0/tr:w-5000,q-90,f-jpg/thumbnails/happygirl.jpg 5000w" sizes="(min-width: 992px) 2200px, 100vw" alt="Happy girl smiling" loading="lazy" decoding="async" width="5000" height="3338"/>
                 </picture>
               </div>
               <div class="mm-payment-block__content">
@@ -1672,7 +1566,7 @@
       </section>
       <!-- MILESTONE MENTAL HEALTH | TEAM SECTION — editorial, conversion-focused -->
       <!-- Replace the full old #team-therapist section including ALL old biography modals. -->
-      <section
+      <section tabindex="-1"
         class="team page-section mm-team"
         id="team-therapist"
         aria-labelledby="mm-team-heading"
@@ -1687,6 +1581,7 @@
               clinicians, explore their areas of focus, and find someone who may
               be a good fit for you or your family.
             </p>
+            <p class="mm-team__guidance">You do not need to choose a therapist before contacting our office. You can ask us about getting started.</p>
           </header>
           <div
             class="mm-team__group"
@@ -1742,7 +1637,8 @@
                     class="mm-team__bio-link"
                     data-bs-toggle="modal"
                     data-bs-target="#rachelModal"
-                    aria-label="Meet Rachel Milan and read biography"
+                    aria-controls="rachelModal"
+                    aria-label="Meet Rachel Milan and read biography (opens a dialog)"
                   >
                     Meet Rachel <span aria-hidden="true">→</span>
                   </button>
@@ -1793,7 +1689,8 @@
                     class="mm-team__bio-link"
                     data-bs-toggle="modal"
                     data-bs-target="#heatherModal"
-                    aria-label="Meet Heather Milovac and read biography"
+                    aria-controls="heatherModal"
+                    aria-label="Meet Heather Milovac and read biography (opens a dialog)"
                   >
                     Meet Heather <span aria-hidden="true">→</span>
                   </button>
@@ -1844,7 +1741,8 @@
                     class="mm-team__bio-link"
                     data-bs-toggle="modal"
                     data-bs-target="#samanthaModal"
-                    aria-label="Meet Samantha Lee and read biography"
+                    aria-controls="samanthaModal"
+                    aria-label="Meet Samantha Lee and read biography (opens a dialog)"
                   >
                     Meet Samantha <span aria-hidden="true">→</span>
                   </button>
@@ -1895,7 +1793,8 @@
                     class="mm-team__bio-link"
                     data-bs-toggle="modal"
                     data-bs-target="#katrinaModal"
-                    aria-label="Meet Katrina Boogerd and read biography"
+                    aria-controls="katrinaModal"
+                    aria-label="Meet Katrina Boogerd and read biography (opens a dialog)"
                   >
                     Meet Katrina <span aria-hidden="true">→</span>
                   </button>
@@ -1946,7 +1845,8 @@
                     class="mm-team__bio-link"
                     data-bs-toggle="modal"
                     data-bs-target="#paigeModal"
-                    aria-label="Meet Paige Jablonski and read biography"
+                    aria-controls="paigeModal"
+                    aria-label="Meet Paige Jablonski and read biography (opens a dialog)"
                   >
                     Meet Paige <span aria-hidden="true">→</span>
                   </button>
@@ -1997,7 +1897,8 @@
                     class="mm-team__bio-link"
                     data-bs-toggle="modal"
                     data-bs-target="#graceModal"
-                    aria-label="Meet Grace Shimek and read biography"
+                    aria-controls="graceModal"
+                    aria-label="Meet Grace Shimek and read biography (opens a dialog)"
                   >
                     Meet Grace <span aria-hidden="true">→</span>
                   </button>
@@ -2049,7 +1950,8 @@
                     class="mm-team__bio-link"
                     data-bs-toggle="modal"
                     data-bs-target="#meaghanModal"
-                    aria-label="Meet Meaghan Puckett and read biography"
+                    aria-controls="meaghanModal"
+                    aria-label="Meet Meaghan Puckett and read biography (opens a dialog)"
                   >
                     Meet Meaghan <span aria-hidden="true">→</span>
                   </button>
@@ -2102,7 +2004,8 @@
                     class="mm-team__bio-link"
                     data-bs-toggle="modal"
                     data-bs-target="#briModal"
-                    aria-label="Meet Bri Dieffenbach and read biography"
+                    aria-controls="briModal"
+                    aria-label="Meet Bri Dieffenbach and read biography (opens a dialog)"
                   >
                     Meet Bri <span aria-hidden="true">→</span>
                   </button>
@@ -2152,7 +2055,8 @@
                     class="mm-team__bio-link"
                     data-bs-toggle="modal"
                     data-bs-target="#madelineModal"
-                    aria-label="Meet Madeline Dosser and read biography"
+                    aria-controls="madelineModal"
+                    aria-label="Meet Madeline Dosser and read biography (opens a dialog)"
                   >
                     Meet Madeline <span aria-hidden="true">→</span>
                   </button>
@@ -2203,7 +2107,8 @@
                     class="mm-team__bio-link"
                     data-bs-toggle="modal"
                     data-bs-target="#sarahNModal"
-                    aria-label="Meet Sarah Neururer and read biography"
+                    aria-controls="sarahNModal"
+                    aria-label="Meet Sarah Neururer and read biography (opens a dialog)"
                   >
                     Meet Sarah <span aria-hidden="true">→</span>
                   </button>
@@ -2254,7 +2159,8 @@
                     class="mm-team__bio-link"
                     data-bs-toggle="modal"
                     data-bs-target="#jenniferOModal"
-                    aria-label="Meet Jennifer Olsen and read biography"
+                    aria-controls="jenniferOModal"
+                    aria-label="Meet Jennifer Olsen and read biography (opens a dialog)"
                   >
                     Meet Jennifer <span aria-hidden="true">→</span>
                   </button>
@@ -2305,7 +2211,8 @@
                     class="mm-team__bio-link"
                     data-bs-toggle="modal"
                     data-bs-target="#elizabethModal"
-                    aria-label="Meet Elizabeth Bertini and read biography"
+                    aria-controls="elizabethModal"
+                    aria-label="Meet Elizabeth Bertini and read biography (opens a dialog)"
                   >
                     Meet Elizabeth <span aria-hidden="true">→</span>
                   </button>
@@ -2356,7 +2263,8 @@
                     class="mm-team__bio-link"
                     data-bs-toggle="modal"
                     data-bs-target="#victoriaModal"
-                    aria-label="Meet Victoria Tinucci and read biography"
+                    aria-controls="victoriaModal"
+                    aria-label="Meet Victoria Tinucci and read biography (opens a dialog)"
                   >
                     Meet Victoria <span aria-hidden="true">→</span>
                   </button>
@@ -2409,7 +2317,8 @@
                     class="mm-team__bio-link"
                     data-bs-toggle="modal"
                     data-bs-target="#michaelModal"
-                    aria-label="Meet Michael Sutton and read biography"
+                    aria-controls="michaelModal"
+                    aria-label="Meet Michael Sutton and read biography (opens a dialog)"
                   >
                     Meet Michael <span aria-hidden="true">→</span>
                   </button>
@@ -2460,7 +2369,8 @@
                     class="mm-team__bio-link"
                     data-bs-toggle="modal"
                     data-bs-target="#aaronModal"
-                    aria-label="Meet Aaron Elliott and read biography"
+                    aria-controls="aaronModal"
+                    aria-label="Meet Aaron Elliott and read biography (opens a dialog)"
                   >
                     Meet Aaron <span aria-hidden="true">→</span>
                   </button>
@@ -2522,7 +2432,8 @@
                     class="mm-team__bio-link"
                     data-bs-toggle="modal"
                     data-bs-target="#kelsieModal"
-                    aria-label="Meet Kelsie Leof and read biography"
+                    aria-controls="kelsieModal"
+                    aria-label="Meet Kelsie Leof and read biography (opens a dialog)"
                   >
                     Meet Kelsie <span aria-hidden="true">→</span>
                   </button>
@@ -2564,7 +2475,12 @@
                   aria-label="Close biography"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div
+                class="modal-body"
+                tabindex="0"
+                role="region"
+                aria-labelledby="rachelModalLabel"
+              >
                 <p class="card-text">
                   I am a trauma-informed individual and family therapist. I
                   provide hope and encouragement to clients on their journey
@@ -2627,7 +2543,7 @@
                   <li>Trauma-Focused Cognitive Behavioral Therapy (TF-CBT)</li>
                   <li>Parent-Child Interaction Therapy (PCIT)</li>
                   <li>Trauma-Informed Child-Parent Psychotherapy (TI-CPP)</li>
-                  <li>Experiential Play Therapy</li>
+                  <li><a href="experiental-play-therapy.html">Experiential Play Therapy</a></li>
                   <li>Theraplay, Level One</li>
                   <li>Circle of Security Parenting</li>
                   <li>Safe &amp; Sound Protocol (SSP)</li>
@@ -2678,7 +2594,12 @@
                   aria-label="Close biography"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div
+                class="modal-body"
+                tabindex="0"
+                role="region"
+                aria-labelledby="heatherModalLabel"
+              >
                 <p class="card-text">
                   I am a Licensed Independent Clinical Social Worker who
                   prioritizes connection and collaboration to help you move
@@ -2789,7 +2710,12 @@
                   aria-label="Close biography"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div
+                class="modal-body"
+                tabindex="0"
+                role="region"
+                aria-labelledby="samanthaModalLabel"
+              >
                 <p class="card-text">
                   I am a trauma-informed Licensed Marriage and Family Therapist
                   who specializes in working with children, families, teens, and
@@ -2865,7 +2791,7 @@
                 </ul>
                 <p class="card-text">
                   <a
-                    href="https://www.psychologytoday.com/profile/999777?preview=1&amp;return_to=https%3A%2F%2Fmember.psychologytoday.com%2Fus%2Fhome"
+                    href="https://www.psychologytoday.com/us/therapists/samantha-lee-oakdale-mn/999777"
                     rel="noopener"
                     target="_blank"
                   >
@@ -2918,7 +2844,12 @@
                   aria-label="Close biography"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div
+                class="modal-body"
+                tabindex="0"
+                role="region"
+                aria-labelledby="katrinaModalLabel"
+              >
                 <p class="card-text">
                   I am a Licensed Professional Clinical Counselor and
                   Board-Certified Art Therapist. I work with clients of all
@@ -3020,7 +2951,12 @@
                   aria-label="Close biography"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div
+                class="modal-body"
+                tabindex="0"
+                role="region"
+                aria-labelledby="paigeModalLabel"
+              >
                 <p class="card-text">
                   Dr. Jablonski is a Pediatric Clinical Neuropsychologist with
                   several years of experience working with children,
@@ -3113,7 +3049,12 @@
                   aria-label="Close biography"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div
+                class="modal-body"
+                tabindex="0"
+                role="region"
+                aria-labelledby="graceModalLabel"
+              >
                 <p class="card-text">
                   I am a mental health practitioner completing the required
                   post-graduate supervised experience to become a Licensed
@@ -3206,7 +3147,12 @@
                   aria-label="Close biography"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div
+                class="modal-body"
+                tabindex="0"
+                role="region"
+                aria-labelledby="meaghanModalLabel"
+              >
                 <p class="card-text">
                   As part of a healthy and meaningful life, I
                   believe&nbsp;balance is imperative. Sometimes we lose balance
@@ -3298,7 +3244,12 @@
                   aria-label="Close biography"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div
+                class="modal-body"
+                tabindex="0"
+                role="region"
+                aria-labelledby="briModalLabel"
+              >
                 <p class="card-text">
                   I am an advanced psychotherapy trainee completing graduate
                   school requirements in the University of Minnesota&rsquo;s
@@ -3397,7 +3348,12 @@
                   aria-label="Close biography"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div
+                class="modal-body"
+                tabindex="0"
+                role="region"
+                aria-labelledby="madelineModalLabel"
+              >
                 <p class="card-text">
                   I am a Mental Health Practitioner, completing the required
                   supervised practice hours to become a Licensed Professional
@@ -3487,7 +3443,12 @@
                   aria-label="Close biography"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div
+                class="modal-body"
+                tabindex="0"
+                role="region"
+                aria-labelledby="sarahNModalLabel"
+              >
                 <p class="card-text">
                   I am a mental health practitioner, completing the required
                   supervised practice hours to become a Licensed Professional
@@ -3610,7 +3571,12 @@
                   aria-label="Close biography"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div
+                class="modal-body"
+                tabindex="0"
+                role="region"
+                aria-labelledby="jenniferOModalLabel"
+              >
                 <p class="card-text">
                   I am a licensed Marriage and Family Therapist and MN LMFT
                   Board Approved Supervisor. I specialize in providing
@@ -3698,7 +3664,12 @@
                   aria-label="Close biography"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div
+                class="modal-body"
+                tabindex="0"
+                role="region"
+                aria-labelledby="elizabethModalLabel"
+              >
                 <p class="card-text">
                   Trained in Eye Movement Desensitization and Reprocessing
                   (EMDR), Adlerian therapy, Somatic techniques and experience
@@ -3784,7 +3755,12 @@
                   aria-label="Close biography"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div
+                class="modal-body"
+                tabindex="0"
+                role="region"
+                aria-labelledby="victoriaModalLabel"
+              >
                 <p class="card-text">
                   I am a mental health practitioner completing the required
                   post-graduate supervised experience to become a Licensed
@@ -3893,7 +3869,12 @@
                   aria-label="Close biography"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div
+                class="modal-body"
+                tabindex="0"
+                role="region"
+                aria-labelledby="michaelModalLabel"
+              >
                 <p class="card-text">
                   I am a Mental Health Intern Practitioner, completing the
                   required supervised practice hours to complete my
@@ -3964,7 +3945,12 @@
                   aria-label="Close biography"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div
+                class="modal-body"
+                tabindex="0"
+                role="region"
+                aria-labelledby="aaronModalLabel"
+              >
                 <p class="card-text">
                   My name is Aaron Elliott, and I am a mental health
                   practitioner and addiction counselor offering services both
@@ -4063,7 +4049,12 @@
                   aria-label="Close biography"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div
+                class="modal-body"
+                tabindex="0"
+                role="region"
+                aria-labelledby="kelsieModalLabel"
+              >
                 <p class="card-text">
                   As the administrative coordinator,&nbsp;Kelsie&nbsp;provides
                   prospective clients relevant information about our clinic and
@@ -4126,6 +4117,18 @@
                     if (heading) {
                       if (!heading.hasAttribute("tabindex"))
                         heading.setAttribute("tabindex", "-1");
+                      var bounds = heading.getBoundingClientRect();
+                      var headerBottom = document
+                        .getElementById("mainNav")
+                        .getBoundingClientRect().bottom;
+                      if (
+                        bounds.top < headerBottom ||
+                        bounds.bottom > window.innerHeight
+                      )
+                        window.scrollBy({
+                          top: bounds.top - headerBottom - 16,
+                          behavior: "auto",
+                        });
                       heading.focus({ preventScroll: true });
                     }
                   },
@@ -4137,36 +4140,33 @@
         });
       </script>
       <!-- CONTACT — Milestone Mental Health -->
-      <section
+      <section tabindex="-1"
         class="mm-contact page-section"
         id="contact"
         aria-labelledby="mm-contact-title"
       >
         <div class="mm-contact__container">
-          <header class="mm-contact__intro" data-aos="fade-up">
+          <header class="mm-contact__intro">
             <p class="mm-contact__eyebrow">We're here to help</p>
             <h2 id="mm-contact-title">Let's take the next step together.</h2>
             <span class="mm-contact__rule" aria-hidden="true"></span>
             <p class="mm-contact__lead">
-              Have a general question about our office or services? Send us a
-              note below. For appointments, care-related questions, or
-              confidential communication, please call our office or use the
-              secure client portal.
+              Have a question or want to get started? Use the form below for a
+              general inquiry or to ask our team to contact you about an
+              appointment.
             </p>
           </header>
 
           <div class="mm-contact__grid">
-            <div
-              class="mm-contact__reach"
-              id="request-appointment"
-              data-aos="fade-up"
-            >
+            <div tabindex="-1" class="mm-contact__reach" id="request-appointment">
               <p class="mm-contact__label">Connect with our team</p>
-              <h3>Send a General Inquiry or an Appointment Request</h3>
+              <h3 id="contact-form-title">
+                Send us a message
+              </h3>
               <p class="mm-webforms__intro">
-                This form is for general, non-confidential questions and
-                appointment requests only. Our team will follow up using the
-                email address you provide.
+                Please keep your message brief and non-confidential. For an
+                appointment inquiry, simply ask our team to contact you. We'll
+                follow up using the email address you provide.
               </p>
 
               <p class="mm-webforms__notice" id="general-contact-warning">
@@ -4182,8 +4182,15 @@
                 id="contactForm"
                 action="https://send.webforms.to/wft_tr54vmjarpv578ciatwp"
                 method="POST"
+                aria-labelledby="contact-form-title"
                 aria-describedby="general-contact-warning"
               >
+                <p
+                  id="contact-form-status"
+                  class="visually-hidden"
+                  role="status"
+                  aria-atomic="true"
+                ></p>
                 <!-- WebForms honeypot: keep invisible to people, not type=hidden. -->
                 <div class="mm-webforms__honeypot" aria-hidden="true">
                   <label for="mm-webforms-gotcha">Leave this field empty</label>
@@ -4209,6 +4216,11 @@
                     maxlength="100"
                     required
                   />
+                  <p
+                    id="contact-name-error"
+                    class="mm-webforms__error"
+                    hidden
+                  ></p>
                 </div>
 
                 <div class="mm-webforms__field">
@@ -4224,11 +4236,16 @@
                     maxlength="254"
                     required
                   />
+                  <p
+                    id="contact-email-error"
+                    class="mm-webforms__error"
+                    hidden
+                  ></p>
                 </div>
 
                 <div class="mm-webforms__field">
                   <label for="contact-message"
-                    >General Question or Appointment Request
+                    >Message
                     <span aria-hidden="true">*</span></label
                   >
                   <textarea
@@ -4239,8 +4256,13 @@
                     maxlength="1000"
                     required
                     aria-describedby="general-contact-warning"
-                    placeholder="Please share a general question only—no personal or medical details."
+                    placeholder="General questions or a request to be contacted only—no medical or appointment details."
                   ></textarea>
+                  <p
+                    id="contact-message-error"
+                    class="mm-webforms__error"
+                    hidden
+                  ></p>
                 </div>
 
                 <p class="mm-webforms__required">* Required fields</p>
@@ -4249,31 +4271,29 @@
                   id="submitButton"
                   type="submit"
                 >
-                  Send General Inquiry <span aria-hidden="true">&#8594;</span>
+                  Send Message <span aria-hidden="true">&#8594;</span>
                 </button>
               </form>
 
               <p class="mm-contact__helper">
-                Please allow time for an office response. Submitting this form
-                will not schedule, or confirm an appointment.
+                Submitting this form does not schedule or confirm an
+                appointment. Please allow time for our office to respond.
               </p>
             </div>
 
             <aside
               class="mm-contact__privacy"
               aria-labelledby="mm-contact-privacy-title"
-              data-aos="fade-up"
             >
               <p class="mm-contact__label">Private communication</p>
-              <h3 id="mm-contact-privacy-title">For appointments and care</h3>
+              <h3 id="mm-contact-privacy-title">Already a client?</h3>
               <p>
-                Please do not send personal health or treatment information
-                through the general inquiry form.
+                Existing clients can use the Client Portal or call our office
+                for private care-related communication.
               </p>
               <p class="mm-contact__privacy-detail">
-                For appointments or matters related to your care, call our
-                office or use the secure client portal. The general form above
-                is not a confidential patient communication channel.
+                Please do not send personal health or treatment information
+                through the webform. It is for non-confidential inquiries only.
               </p>
               <a
                 class="mm-contact__portal-link"
@@ -4289,7 +4309,7 @@
           </div>
 
           <!-- Office location -->
-          <div class="mm-contact__location" data-aos="fade-up">
+          <div class="mm-contact__location">
             <div class="mm-contact__location-heading">
               <div>
                 <p class="mm-contact__label">Find us</p>
@@ -4483,22 +4503,7 @@
     </footer>
 
     <!-- Automatically update the copyright year -->
-    <script>
-      partytown = {
-        forward: ["dataLayer.push"],
-      };
 
-      document.getElementById("copyright-year").textContent =
-        new Date().getFullYear();
-    </script>
-
-    <!--Jquery-->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-      defer
-    ></script>
 
     <!-- Bootstrap core JS-->
     <script
@@ -4508,12 +4513,10 @@
       defer
     ></script>
 
-    <!-- Core theme JS-->
-    <script type="module" src="./js/scripts.js"></script>
+    <script src="js/navigation.js" defer></script>
 
-    <!-- Modernizer-->
-    <script src="modernizr.js" defer></script>
-    <!--AOS-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <!-- Core theme JS-->
+    <script src="./js/scripts.js" defer></script>
+
   </body>
 </html>
