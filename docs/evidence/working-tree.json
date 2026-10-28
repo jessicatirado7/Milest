@@ -1,6 +1,0 @@
-﻿{
-    "status":  "## master...origin/master\r\n M index.html\r\n?? docs/\r\n",
-    "head":  "0351e43571aeb984f20ba047858563df7737ac3c 2026-10-26T19:27:27-05:00 Updated layout for conversion, more user friendly, and user flow.\r\n",
-    "existingIndexDiff":  "diff --git a/index.html b/index.html\r\nindex dd416d1..0134af5 100644\r\n--- a/index.html\r\n+++ b/index.html\r\n@@ -2573,8 +2573,8 @@\r\n                 \u003cp class=\"card-subtitle mb-2\"\u003e\u003cb\u003eLicense and Credentials\u003c/b\u003e\u003c/p\u003e\r\n                 \u003cul class=\"card-text\"\u003e\r\n                   \u003cli\u003e\r\n-                    Licensed Graduate Social Worker (License# 32199) - MN Board\r\n-                    of Social Work\r\n+                    Licensed Independent Clinical Social Worker (LICSW) -\r\n+                    MN Board of Social Work\r\n                   \u003c/li\u003e\r\n                 \u003c/ul\u003e\r\n                 \u003cp class=\"card-subtitle mb-2\"\u003e\u003cb\u003eSpecialized Training\u003c/b\u003e\u003c/p\u003e\r\n",
-    "trackedChanges":  "index.html\r\n"
-}

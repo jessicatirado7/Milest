@@ -1,5 +1,0 @@
-/* REVIEW ONLY — not loaded by application pages. */
-body.mm-interior-page main .mm-ses-blue[aria-labelledby="pcit-timeline-heading"] .mm-ses-blue__card[aria-labelledby="pcit-at-glance-heading"] { background: #5b7583; color: #ffffff; }
-body.mm-interior-page main .mm-ses-blue[aria-labelledby="pcit-timeline-heading"] .mm-ses-blue__card[aria-labelledby="pcit-at-glance-heading"] :is(h3, p, strong, a) { color: #ffffff; }
-body.mm-interior-page main .mm-ses-blue[aria-labelledby="pcit-timeline-heading"] .mm-ses-blue__card[aria-labelledby="pcit-at-glance-heading"] a:is(:visited, :hover, :focus, :active) { color: #ffffff; }
-body.mm-interior-page main .mm-ses-blue[aria-labelledby="pcit-timeline-heading"] .mm-ses-blue__card[aria-labelledby="pcit-at-glance-heading"] a:focus-visible { outline: 3px solid #ffffff; outline-offset: 4px; }
