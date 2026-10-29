@@ -491,6 +491,7 @@
               appropriate for you or your family.
             </p>
           </div>
+          <div class="mm-service-index-slot">
           <nav class="mm-service-index" aria-label="Browse services">
             <ul>
               <li><a href="#service-diagnostic-assessments">Diagnostic assessments</a></li>
@@ -501,6 +502,7 @@
               <li><a href="#service-group-therapy">Group therapy availability</a></li>
             </ul>
           </nav>
+          </div>
 
           <div
             class="mm-services__grid"
@@ -511,7 +513,7 @@
             <article tabindex="-1"
               class="mm-service-card"
               id="service-diagnostic-assessments"
-            >
+             aria-labelledby="service-diagnostic-assessments-title">
               <picture class="mm-service-card__photo">
                 <source
                   type="image/webp"
@@ -538,7 +540,7 @@
                 />
               </picture>
               <div class="mm-service-card__body">
-                <h4>Mental Health Diagnostic Assessments</h4>
+                <h4 id="service-diagnostic-assessments-title">Mental Health Diagnostic Assessments</h4>
                 <p>
                   We offer mental health diagnostic assessments to individuals
                   of all ages to determine a diagnosis and provide
@@ -564,7 +566,7 @@
             <article tabindex="-1"
               class="mm-service-card"
               id="service-neuropsychological-evaluations"
-            >
+             aria-labelledby="service-neuropsychological-evaluations-title">
               <picture class="mm-service-card__photo">
                 <source
                   type="image/webp"
@@ -591,7 +593,7 @@
                 />
               </picture>
               <div class="mm-service-card__body">
-                <h4>
+                <h4 id="service-neuropsychological-evaluations-title">
                   Neuropsychological Evaluations for Children &amp; Adolescents
                 </h4>
                 <p>
@@ -611,7 +613,7 @@
             </article>
 
             <!-- 3. Consultation & Coordination: original image preserved -->
-            <article tabindex="-1" class="mm-service-card" id="service-care-coordination">
+            <article tabindex="-1" class="mm-service-card" id="service-care-coordination" aria-labelledby="service-care-coordination-title">
               <picture class="mm-service-card__photo">
                 <source
                   srcset="
@@ -638,7 +640,7 @@
                 />
               </picture>
               <div class="mm-service-card__body">
-                <h4>Consultation &amp; Coordination of Care</h4>
+                <h4 id="service-care-coordination-title">Consultation &amp; Coordination of Care</h4>
                 <p>
                   We support coordinated mental health care for clients of all
                   ages. With your permission, we collaborate with other
@@ -659,7 +661,7 @@
             </article>
 
             <!-- 4. Psychotherapy: original image preserved -->
-            <article tabindex="-1" class="mm-service-card" id="service-psychotherapy">
+            <article tabindex="-1" class="mm-service-card" id="service-psychotherapy" aria-labelledby="service-psychotherapy-title">
               <picture class="mm-service-card__photo">
                 <source
                   srcset="
@@ -686,7 +688,7 @@
                 />
               </picture>
               <div class="mm-service-card__body">
-                <h4>Psychotherapy for Individuals, Couples &amp; Families</h4>
+                <h4 id="service-psychotherapy-title">Psychotherapy for Individuals, Couples &amp; Families</h4>
                 <p>
                   We provide psychotherapy for children, adolescents, and
                   adults, as well as couples and families. Our approach is
@@ -712,7 +714,7 @@
             </article>
 
             <!-- 5. Virtual care: original local image preserved -->
-            <article tabindex="-1" class="mm-service-card" id="service-virtual-care">
+            <article tabindex="-1" class="mm-service-card" id="service-virtual-care" aria-labelledby="service-virtual-care-title">
               <picture class="mm-service-card__photo">
                 <source
                   srcset="
@@ -728,7 +730,7 @@
                 />
               </picture>
               <div class="mm-service-card__body">
-                <h4>Virtual Mental Health Care</h4>
+                <h4 id="service-virtual-care-title">Virtual Mental Health Care</h4>
                 <p>
                   We offer virtual therapy through a secure, HIPAA-compliant
                   platform, allowing you to attend sessions from a private,
@@ -743,7 +745,7 @@
             </article>
 
             <!-- 6. Group therapy: retain image, clearly disclose unavailability -->
-            <article tabindex="-1" class="mm-service-card" id="service-group-therapy">
+            <article tabindex="-1" class="mm-service-card" id="service-group-therapy" aria-labelledby="service-group-therapy-title">
               <picture class="mm-service-card__photo">
                 <source
                   srcset="
@@ -770,7 +772,7 @@
                 />
               </picture>
               <div class="mm-service-card__body">
-                <h4>Group Therapy</h4>
+                <h4 id="service-group-therapy-title">Group Therapy</h4>
                 <p>
                   We periodically offer therapeutic and peer support groups that
                   provide opportunities to connect with others, explore shared
@@ -4151,9 +4153,9 @@
             <h2 id="mm-contact-title">Let's take the next step together.</h2>
             <span class="mm-contact__rule" aria-hidden="true"></span>
             <p class="mm-contact__lead">
-              Have a question or want to get started? Use the form below for a
-              general inquiry or to ask our team to contact you about an
-              appointment.
+              Interested in a first appointment? Use the form below to ask our
+              team to contact you about next steps. General questions are
+              welcome, too.
             </p>
           </header>
 
@@ -4161,19 +4163,20 @@
             <div tabindex="-1" class="mm-contact__reach" id="request-appointment">
               <p class="mm-contact__label">Connect with our team</p>
               <h3 id="contact-form-title">
-                Send us a message
+                Contact our team
               </h3>
               <p class="mm-webforms__intro">
-                Please keep your message brief and non-confidential. For an
-                appointment inquiry, simply ask our team to contact you. We'll
-                follow up using the email address you provide.
+                Please provide your own name and email address and a brief,
+                non-confidential message, such as &ldquo;Please contact me.&rdquo;
+                Our team will follow up by email to discuss next steps.
               </p>
 
               <p class="mm-webforms__notice" id="general-contact-warning">
                 <strong>Please protect your privacy.</strong>
-                Do not include symptoms, diagnoses, treatment information,
-                insurance details, appointment specifics, or any other sensitive
-                information in this form. Please do not use it for emergencies.
+                Do not include symptoms, diagnoses, medical history, dates of
+                birth, insurance information, or details about a child. Please
+                call our office to discuss private information. This form is
+                not for emergencies.
               </p>
 
               <!-- WebForms integration. Standard HTML POST; no third-party JS required. -->
@@ -4205,7 +4208,7 @@
 
                 <div class="mm-webforms__field">
                   <label for="contact-name"
-                    >Name <span aria-hidden="true">*</span></label
+                    >Your name <span aria-hidden="true">*</span></label
                   >
                   <input
                     class="form-control"
@@ -4225,7 +4228,7 @@
 
                 <div class="mm-webforms__field">
                   <label for="contact-email"
-                    >Email Address <span aria-hidden="true">*</span></label
+                    >Your email address <span aria-hidden="true">*</span></label
                   >
                   <input
                     class="form-control"
@@ -4245,7 +4248,7 @@
 
                 <div class="mm-webforms__field">
                   <label for="contact-message"
-                    >Message
+                    >Brief message
                     <span aria-hidden="true">*</span></label
                   >
                   <textarea
@@ -4256,7 +4259,7 @@
                     maxlength="1000"
                     required
                     aria-describedby="general-contact-warning"
-                    placeholder="General questions or a request to be contacted only—no medical or appointment details."
+                    placeholder="For example: Please contact me. No health or insurance information."
                   ></textarea>
                   <p
                     id="contact-message-error"
@@ -4271,13 +4274,13 @@
                   id="submitButton"
                   type="submit"
                 >
-                  Send Message <span aria-hidden="true">&#8594;</span>
+                  Send Contact Request <span aria-hidden="true">&#8594;</span>
                 </button>
               </form>
 
               <p class="mm-contact__helper">
-                Submitting this form does not schedule or confirm an
-                appointment. Please allow time for our office to respond.
+                This is a request for contact, not a scheduled appointment.
+                Our office will respond by email about next steps.
               </p>
             </div>
 

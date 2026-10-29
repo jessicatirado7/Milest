@@ -16,6 +16,11 @@ window.addEventListener('DOMContentLoaded', () => {
     // Coordinate same-page glides with focus and the mobile menu. Keeping
     // document focus scrolling immediate avoids two competing animations.
     if (document.documentElement.classList.contains('mm-home-page')) {
+        const focusFragment = element => {
+            element.classList.add('mm-fragment-target');
+            element.addEventListener('blur', () => element.classList.remove('mm-fragment-target'), {once: true});
+            element.focus({preventScroll: true});
+        };
         // Tall payment photos use cover crops. Select for the full scaled
         // source footprint, including height, rather than just the narrow box.
         const paymentPhotos = document.querySelectorAll('.mm-payment-block__media img');
@@ -69,7 +74,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 // Abort an earlier glide before starting the latest destination.
                 window.scrollTo({left: scrollX, top: scrollY, behavior: 'auto'});
                 // A named heading gives screen readers a clear reading position.
-                const focusTarget = target.matches('section, article, div')
+                const focusTarget = target.matches('.mm-service-card') ? target : target.matches('section, article, div')
                     ? target.querySelector('h1, h2, h3, h4') || target : target;
                 const focusDestination = () => {
                     if (current !== navigation) return;
@@ -79,7 +84,7 @@ window.addEventListener('DOMContentLoaded', () => {
                             focusTarget.setAttribute('tabindex', '-1');
                             focusTarget.addEventListener('blur', () => focusTarget.removeAttribute('tabindex'), {once: true});
                         }
-                        focusTarget.focus({preventScroll: true});
+                        focusFragment(focusTarget);
                     };
                     if (document.activeElement === focusTarget) {
                         focusTarget.blur();
@@ -108,6 +113,28 @@ window.addEventListener('DOMContentLoaded', () => {
                 window.bootstrap.Collapse.getOrCreateInstance(menu, {toggle: false}).hide();
             } else glide();
         });
+        // Incoming section links should land at a named reading heading,
+        // including from interior pages and at high zoom. Respect any visitor
+        // interaction while the page loads rather than moving focus later.
+        const arrivalHash = location.hash;
+        if (['#services', '#portfolio', '#payment-info', '#team-therapist', '#contact', '#request-appointment'].includes(arrivalHash)) {
+            const arrive = () => {
+                if (navigation !== 0 || location.hash !== arrivalHash) return;
+                const destination = document.getElementById(arrivalHash.slice(1));
+                const heading = destination?.querySelector('h1, h2, h3, h4');
+                if (!heading) return;
+                const headerHeight = document.getElementById('mainNav')?.getBoundingClientRect().height || 0;
+                window.scrollTo({top: Math.max(0, scrollY + heading.getBoundingClientRect().top - headerHeight - 16), behavior: 'auto'});
+                if (!heading.hasAttribute('tabindex')) {
+                    heading.setAttribute('tabindex', '-1');
+                    heading.addEventListener('blur', () => heading.removeAttribute('tabindex'), {once: true});
+                }
+                focusFragment(heading);
+            };
+            const ready = () => document.fonts.ready.then(() => requestAnimationFrame(() => requestAnimationFrame(arrive)));
+            if (document.readyState === 'complete') ready();
+            else window.addEventListener('load', ready, {once: true});
+        }
     }
 
     // In Bootstrap 5.1.3, Escape from a menu item hides the menu but can leave

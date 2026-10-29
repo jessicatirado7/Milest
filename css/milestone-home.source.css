@@ -4579,8 +4579,30 @@ address {
   outline: 3px solid #294d43;
   outline-offset: 4px;
 }
+.mm-service-index-slot {
+  position: relative;
+}
 .mm-service-index {
-  margin: 1.1rem 0 2rem;
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 5;
+  margin: 0;
+  padding: 1rem;
+  background: #f7f5ef;
+  border: 1px solid #ccd8cf;
+  border-radius: 12px;
+}
+/* Retain the shortcuts in the reading/Tab order and reveal them on focus. */
+.mm-service-index:not(:focus-within) {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
 .mm-service-index ul {
   list-style: none;
@@ -4615,4 +4637,24 @@ html.mm-home-page {
 .mm-specializations__modal .modal-body:focus-visible {
   outline: 3px solid #294d43;
   outline-offset: -3px;
+}
+
+/* Named fragment destinations keep keyboard focus without a mouse-click box. */
+html.mm-home-page .mm-fragment-target:focus-visible {
+  outline: 3px solid #294d43;
+  outline-offset: 4px;
+}
+html.mm-home-page .mm-fragment-target:focus:not(:focus-visible) {
+  outline: none;
+}
+/* Reading destinations keep DOM focus/announcements without framing content.
+   This deliberately excludes links, buttons, fields and service-card articles. */
+html.mm-home-page :is(h1, h2, h3, h4, section, main, div, body).mm-fragment-target:focus,
+html.mm-home-page :is(#services, #portfolio, #payment-info, #team-therapist,
+  #contact, #request-appointment, #main-content, #contact-form-title)[tabindex="-1"]:focus {
+  outline: none;
+}
+/* Native/no-script card links also clear the sticky header. */
+.mm-service-card[id] {
+  scroll-margin-top: 16px;
 }

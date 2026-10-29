@@ -2,7 +2,7 @@
 
 Static HTML website. Preserve established `.html` URLs, clinical text, appointment/client-portal destinations and approved photography. No server-side Node application runs on HostGator.
 
-`docs/` contains local audit/release records and is excluded from GitHub. Documentation links below refer to that local folder. Keep `tools/` in GitHub because the npm build, CSS and preview commands depend on it. Generated `build/` packages also stay local; the FileZilla upload folder is inside `build/release-6304cb7ceece9e2d/upload/`.
+`docs/` contains local audit/release records and is excluded from GitHub. Documentation links below refer to that local folder. Keep `tools/` in GitHub because the npm build, CSS and preview commands depend on it. Generated `build/` packages also stay local; the current combined appointment-routing/service-navigation/section-focus revision's upload folder is `build/release-e5edd803a2a4d58b/upload/`. Older packages do not contain the latest revision.
 
 ## Local development
 
@@ -58,7 +58,7 @@ The package preserves all 16 HTML filenames and exact HTML bytes, both linked PD
 
 The output excludes audit documents/evidence, tools, node_modules, package/config files, readable CSS sources/references, source maps, historical `dist/` and the draft server configuration. The tracked historical `dist` folder is never overwritten. The manifest is a local integrity record, not evidence of a deployment or a final Phase 7 release sign-off.
 
-`npm run preview -- --port 4180` uses an alternate port when needed. Phase 7 prepares the exact runtime-only folder at `build/release-6304cb7ceece9e2d/upload/` and equivalent `site-files.zip`, with integrity records beside them. [Release review](docs/phase7/release-checklist.md), [FileZilla upload/backup/rollback guide](docs/phase7/upload-guide.md). Upload approval and host-side backup/configuration checks remain pending; preparation does not publish the site. Keep the source/audit folders, historical dist, ZIPs and integrity records off the server. The reviewed `.htaccess` remains separate and requires its own host/configuration approval.
+`npm run preview -- --port 4180` uses an alternate port when needed. The current runtime-only folder is `build/release-e5edd803a2a4d58b/upload/`, with equivalent `site-files.zip` and integrity records beside it. [Section destination focus fix](docs/updates/2026-10-29-section-focus/review.md), [service-navigation revision](docs/updates/2026-10-29-service-navigation/review.md), [appointment routing and provider-review requirement](docs/updates/2026-10-29-appointment-routing/review.md), [FileZilla upload/backup/rollback guide](docs/phase7/upload-guide.md). Upload approval, provider suitability and host-side backup/configuration checks remain separate; preparation does not publish the site. Keep the source/audit folders, historical dist, ZIPs and integrity records off the server. The reviewed `.htaccess` remains separate and requires its own host/configuration approval.
 
 ## Verification and follow-up
 
